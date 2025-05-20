@@ -4,8 +4,8 @@ const navigation = {
   main: [
     { name: "About Us", href: "/about-us" },
     { name: "Donations", href: "/donations" },
-    { name: "Volunteer", href: "/volunteer" },
-    { name: "Fundraising", href: "/donations/fundraising" },
+    { name: "Volunteer", href: "/events/volunteer" },
+    { name: "Fundraising", href: "/events/fundraising" },
     { name: "Events", href: "/events" },
     { name: "Programs & Services", href: "/programs-and-services" },
   ],
