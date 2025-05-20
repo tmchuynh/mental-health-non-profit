@@ -10,7 +10,7 @@ import {
 import useSmallScreen from "@/hooks/useSmallScreen";
 import { articles } from "@/lib/constants/articles/articles";
 import { articlesMap } from "@/lib/constants/articleSectioned";
-import { formatIDToUrl } from "@/lib/utils/format";
+import { formatCamelCaseToTitle, formatIDToUrl } from "@/lib/utils/format";
 import {
   CheckIcon,
   ChevronRightIcon,
@@ -33,13 +33,16 @@ import {
 } from "@/components/ui/pagination";
 
 function Categories({ selected }: { selected?: string }) {
-  const allCategories = Object.values(articlesMap).flat();
-  const categories =
-    selected && articlesMap[selected as keyof typeof articlesMap]
-      ? articlesMap[selected as keyof typeof articlesMap]
-      : allCategories;
+  // Get all categories from articlesMap
+  const allCategories = Object.keys(articlesMap).map((categoryId) => ({
+    categoryId,
+    title:
+      formatCamelCaseToTitle(
+        articlesMap[categoryId as keyof typeof articlesMap][0]?.categoryId
+      ) ?? categoryId.charAt(0).toUpperCase() + categoryId.slice(1),
+  }));
 
-  if (categories.length === 0) {
+  if (allCategories.length === 0) {
     return null;
   }
 
@@ -49,7 +52,7 @@ function Categories({ selected }: { selected?: string }) {
         <MenubarMenu>
           <MenubarTrigger className="flex justify-between items-center gap-2 font-medium">
             {selected
-              ? categories.find(({ categoryId }) => categoryId === selected)
+              ? allCategories.find(({ categoryId }) => categoryId === selected)
                   ?.title || "All categories"
               : "All categories"}
             <ChevronUpDownIcon className="size-4 fill-gray-900" />
@@ -87,14 +90,11 @@ function Categories({ selected }: { selected?: string }) {
 }
 
 function Posts({ category }: { category?: string }) {
+  // Filter articles by categoryId only
   let filteredArticles = articles;
   const isSmallDevice = useSmallScreen();
   if (category) {
-    filteredArticles = articles.filter(
-      (a) =>
-        a.categoryId === category ||
-        a.title.toLowerCase().includes(category.toLowerCase())
-    );
+    filteredArticles = articles.filter((a) => a.categoryId === category);
   }
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -103,7 +103,7 @@ function Posts({ category }: { category?: string }) {
   // Calculate the indexes for pagination
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
-  const currentArticles = articles.slice(
+  const currentArticles = filteredArticles.slice(
     indexOfFirstArticle,
     indexOfLastArticle
   );
@@ -120,7 +120,7 @@ function Posts({ category }: { category?: string }) {
   };
 
   // Calculate total pages
-  const totalPages = Math.ceil(articles.length / articlesPerPage);
+  const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
 
   if (filteredArticles.length === 0) {
     return <p className="mt-6 text-gray-500">No posts found.</p>;
@@ -143,19 +143,19 @@ function Posts({ category }: { category?: string }) {
               onClick={() => handleArticlesPerPageChange(5)}
               className="px-3 md:text-md lg:text-lg"
             >
-              15 articles per page
+              5 articles per page
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => handleArticlesPerPageChange(10)}
               className="px-3 md:text-md lg:text-lg"
             >
-              25 articles per page
+              10 articles per page
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => handleArticlesPerPageChange(15)}
               className="px-3 md:text-md lg:text-lg"
             >
-              50 articles per page
+              15 articles per page
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -204,19 +204,20 @@ function Posts({ category }: { category?: string }) {
         />
         {!isSmallDevice && (
           <section className="text-center">
-            {indexOfLastArticle >= articles.length && totalPages === 1 ? (
-              articles.length === articles.length ? (
-                <p>Showing all {articles.length} blogs</p>
+            {indexOfLastArticle >= filteredArticles.length &&
+            totalPages === 1 ? (
+              filteredArticles.length === filteredArticles.length ? (
+                <p>Showing all {filteredArticles.length} blogs</p>
               ) : (
-                <p>Showing all {articles.length} filtered blogs</p>
+                <p>Showing all {filteredArticles.length} filtered blogs</p>
               )
             ) : (
               <p>
                 Showing {indexOfFirstArticle + 1} to{" "}
-                {indexOfLastArticle > articles.length
-                  ? articles.length
+                {indexOfLastArticle > filteredArticles.length
+                  ? filteredArticles.length
                   : indexOfLastArticle}{" "}
-                of {articles.length} blogs
+                of {filteredArticles.length} blogs
               </p>
             )}
           </section>
