@@ -1,3 +1,5 @@
+"use client";
+
 import { Container } from "@/components/Container";
 import {
   GitHubIcon,
@@ -5,6 +7,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from "@/components/SocialIcons";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 import image1 from "@/images/photos/image-1.jpg";
 import image2 from "@/images/photos/image-2.jpg";
 import image3 from "@/images/photos/image-3.jpg";
@@ -16,7 +19,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Home() {
+export default function Home() {
   const disorderCategories = sortByProperty(articleCategories, "title");
   return (
     <>
@@ -53,7 +56,19 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
-      <main className="mx-auto pb-24 lg:pb-32 w-10/12 md:w-11/12"></main>
+      <main className="mx-auto pb-24 lg:pb-32 w-10/12 md:w-11/12">
+        <section className="gap-6 grid md:grid-cols-2 lg:grid-cols-3 mt-16">
+          {disorderCategories.map((category, index) => (
+            <HoverEffect
+              key={index}
+              title={category.title}
+              description={category.subtitle}
+              introduction={category.introduction}
+              index={index}
+            />
+          ))}
+        </section>
+      </main>
     </>
   );
 }
