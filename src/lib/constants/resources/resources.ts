@@ -172,4 +172,89 @@ export const learningResources: Resource[] = [
       "https://images.unsplash.com/photo-1615395242066-c3d7d46e64c2?fit=crop&w=800&q=80",
     categoryId: "lgbtqMentalHealth",
   },
+  {
+    id: "socialAnxiety",
+    title: "Social Anxiety Disorder",
+    subtitle: "Intense fear of social situations and being judged",
+    description:
+      "Social Anxiety Disorder causes overwhelming anxiety and self-consciousness in everyday social situations, often leading to avoidance.",
+    introduction: [
+      "People with social anxiety may fear embarrassment, rejection, or scrutiny.",
+      "Symptoms include blushing, sweating, trembling, and difficulty speaking in groups.",
+      "The disorder can interfere with work, school, and relationships.",
+      "CBT and exposure therapy are highly effective treatments.",
+      "InnerLight offers social skills groups and peer-led exposure workshops.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?fit=crop&w=800&q=80",
+    categoryId: "anxietyDisorders",
+  },
+  {
+    id: "specificPhobia",
+    title: "Specific Phobias",
+    subtitle: "Intense, irrational fear of specific objects or situations",
+    description:
+      "Specific phobias are marked by excessive fear of a particular object or situation, such as heights, animals, or flying.",
+    introduction: [
+      "Exposure to the phobic stimulus almost always provokes immediate anxiety.",
+      "People may go to great lengths to avoid the feared object or situation.",
+      "Phobias can develop in childhood or adulthood and may persist if untreated.",
+      "Gradual exposure therapy is the most effective intervention.",
+      "InnerLight provides phobia-specific support groups and therapist referrals.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?fit=crop&w=800&q=80",
+    categoryId: "anxietyDisorders",
+  },
+  {
+    id: "autismSpectrum",
+    title: "Autism Spectrum Disorder (ASD)",
+    subtitle: "Differences in social communication and behavior",
+    description:
+      "ASD is a neurodevelopmental condition characterized by challenges in social interaction, communication, and restricted or repetitive behaviors.",
+    introduction: [
+      "Symptoms and abilities vary widely across the spectrum.",
+      "Early intervention and tailored education plans can improve outcomes.",
+      "Many autistic individuals have unique strengths and perspectives.",
+      "Support may include speech therapy, occupational therapy, and social skills training.",
+      "InnerLight partners with neurodiversity advocates to provide inclusive resources.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?fit=crop&w=800&q=80",
+    categoryId: "youthMentalHealth",
+  },
+  {
+    id: "dissociativeIdentity",
+    title: "Dissociative Identity Disorder (DID)",
+    subtitle: "Presence of two or more distinct identities",
+    description:
+      "DID, formerly known as Multiple Personality Disorder, involves disruptions in identity, memory, and perception, often linked to severe trauma.",
+    introduction: [
+      "Individuals may experience gaps in memory and changes in behavior or voice.",
+      "DID is often misunderstood and stigmatized.",
+      "Treatment focuses on integration, trauma processing, and building safety.",
+      "Therapy may include trauma-informed approaches and grounding techniques.",
+      "InnerLight provides DID education and trauma survivor peer support.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "personalityDisorders",
+  },
+  {
+    id: "premenstrualDysphoric",
+    title: "Premenstrual Dysphoric Disorder (PMDD)",
+    subtitle: "Severe mood symptoms before menstruation",
+    description:
+      "PMDD is a mood disorder causing significant emotional and physical symptoms in the luteal phase of the menstrual cycle.",
+    introduction: [
+      "Symptoms include irritability, depression, anxiety, and physical discomfort.",
+      "PMDD can disrupt relationships, work, and daily functioning.",
+      "Diagnosis requires tracking symptoms over several cycles.",
+      "Treatment may involve SSRIs, hormonal therapy, and lifestyle changes.",
+      "InnerLight offers PMDD support circles and menstrual health education.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "moodDisorders",
+  },
 ];
