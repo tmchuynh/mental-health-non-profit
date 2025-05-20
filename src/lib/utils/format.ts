@@ -54,14 +54,12 @@ export const generateRandomString = (length: number): string => {
 export const formatUrlToID = (url: string): string => {
   const string = url
     .replaceAll(/-/g, " ")
+    .replace("%26", "")
     .replace(/\b\w/g, (char) => char.toUpperCase());
   return string.charAt(0).toLowerCase() + string.slice(1).replace(/\s+/g, "");
 };
 
 export const formatIDToUrl = (id: string): string => {
-  const string = id
-    .replace(/([a-z])([A-Z])/g, "$1-$2")
-    .replace(/_/g, "-")
-    .toLowerCase();
+  const string = id.replaceAll(" ", "-").replace("_", "-").toLowerCase();
   return string;
 };
