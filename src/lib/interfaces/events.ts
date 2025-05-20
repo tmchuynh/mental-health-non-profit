@@ -48,3 +48,14 @@ export interface FutureVolunteeringEvent {
   goals: string[];
   milestones: string[];
 }
+
+export interface HostedEvent {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  time: string;
+  location: string;
+  type: string;
+  image: string;
+}
