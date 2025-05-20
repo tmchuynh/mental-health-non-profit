@@ -1,5 +1,5 @@
 import DynamicBreadcrumb from "@/components/navigation/dynamic-breadcrumb";
-import { NavBar } from "@/components/navigation/NavBar";
+import { MenuBarNav } from "@/components/navigation/MenuBarNav";
 import "./globals.css";
 import { Providers } from "./provider";
 
@@ -13,7 +13,7 @@ export default function RootLayout({
       <body className="relative flex flex-col min-h-screen">
         <Providers>
           <main className="flex-grow md:pb-0">
-            <NavBar />
+            <MenuBarNav />
             <DynamicBreadcrumb />
             {children}
           </main>

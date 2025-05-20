@@ -65,17 +65,15 @@
   --card-foreground: oklch(0.11 0.002 238.64);
   --popover: oklch(0.96 0 360);
   --popover-foreground: oklch(0.11 0.002 238.64);
-  --primary: oklch(0.43 0.0735 181.88);
+  --primary: oklch(0.83 0.0347 48.28);
   --primary-foreground: oklch(0.96 0 360);
-  --secondary: oklch(0.24 0.0378 183.29);
+  --secondary: oklch(0.57 0.0874 283.25);
   --secondary-foreground: oklch(0.96 0 360);
-  --tertiary: oklch(0.2 0.0663 259.69);
+  --tertiary: oklch(0.63 0.0875 138.62);
   --tertiary-foreground: oklch(0.96 0 360);
-  --fancy: oklch(0.38 0.162 261.8);
-  --fancy-foreground: oklch(0.96 0 360);
   --muted: oklch(0.91 0.0044 17.24);
   --muted-foreground: oklch(0.11 0.002 238.64);
-  --accent: oklch(0.48 0.0713 184.72);
+  --accent: oklch(0.3 0.0589 230.65);
   --accent-foreground: oklch(0.96 0 360);
   --destructive: oklch(0.5 0.18 27);
   --destructive-foreground: oklch(0.96 0 360);
@@ -83,11 +81,11 @@
   --border: oklch(0.7 0.0031 128.51);
   --input: oklch(0.5 0.01 120);
   --ring: oklch(0.41 0 360);
-  --chart-1: oklch(0.79 0.0554 234.08);
-  --chart-2: oklch(0.68 0.0761 252.64);
-  --chart-3: oklch(0.66 0.1479 35.07);
-  --chart-4: oklch(0.53 0.1162 255.79);
-  --chart-5: oklch(0.68 0.0953 261.66);
+  --chart-1: oklch(0.78 0.1019 283.8);
+  --chart-2: oklch(0.75 0.0865 254.23);
+  --chart-3: oklch(0.83 0.0635 48.45);
+  --chart-4: oklch(0.82 0.0551 253.59);
+  --chart-5: oklch(0.66 0.1534 281.36);
   --sidebar: oklch(0.96 0 360);
   --sidebar-foreground: oklch(0.11 0.002 238.64);
   --sidebar-primary: oklch(0.35 0.02 143);
@@ -106,17 +104,15 @@
   --card-foreground: oklch(0.96 0 360);
   --popover: oklch(0.13 0 0);
   --popover-foreground: oklch(0.96 0 360);
-  --primary: oklch(0.58 0.1028 181.08);
+  --primary: oklch(0.81 0.0452 46.67);
   --primary-foreground: oklch(0.96 0 360);
-  --secondary: oklch(0.49 0.003 164.99);
+  --secondary: oklch(0.67 0.1587 281.2);
   --secondary-foreground: oklch(0.96 0 360);
-  --tertiary: oklch(0.79 0.0053 228.84);
-  --tertiary-foreground: oklch(0.13 0 0);
-  --fancy: oklch(0.65 0.1041 156.85);
-  --fancy-foreground: oklch(0.13 0 0);
-  --muted: oklch(0.95 0.0034 67.78);
-  --muted-foreground: oklch(0.13 0 0);
-  --accent: oklch(0.86 0.1266 157.42);
+  --tertiary: oklch(0.8 0.19 139.46);
+  --tertiary-foreground: oklch(0.96 0 360);
+  --muted: oklch(0.13 0 0);
+  --muted-foreground: oklch(0.11 0.002 238.64);
+  --accent: oklch(0.66 0.1385 234.83);
   --accent-foreground: oklch(0.13 0 0);
   --destructive: oklch(0.63 0.2359 26.67);
   --destructive-foreground: oklch(0.96 0 360);
@@ -125,10 +121,10 @@
   --input: oklch(0.5 0.01 120);
   --ring: oklch(0.57 0 360);
   --chart-1: oklch(0.9 0.0508 232.81);
-  --chart-2: oklch(0.72 0.1214 270.57);
-  --chart-3: oklch(0.76 0.103 40.28);
-  --chart-4: oklch(0.68 0.0761 252.64);
-  --chart-5: oklch(0.97 0.0281 199.41);
+  --chart-2: oklch(0.84 0.0857 138.79);
+  --chart-3: oklch(0.88 0.0688 45.59);
+  --chart-4: oklch(0.74 0.0949 283.83);
+  --chart-5: oklch(0.92 0.0502 199.41);
   --sidebar: oklch(0.13 0 0);
   --sidebar-foreground: oklch(0.96 0 360);
   --sidebar-primary: oklch(0.43 0.0735 181.88);
@@ -139,53 +135,27 @@
   --sidebar-ring: oklch(0.5 0.01 120);
 }
 
-/* 1) BarlowCondensed (from BarlowCondensed-Regular.ttf) */
 @font-face {
-  font-family: "BarlowCondensed";
-  src: url("/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+  font-family: "Sansita";
+  src: url("/fonts/Sansita-Black.ttf") format("truetype");
   font-weight: 100 200 300 400 500 600 700 800 900;
   font-style: normal;
 }
 
-/* 2) Cormorant (from Cormorant-VariableFont_wght.ttf) */
 @font-face {
-  font-family: "Cormorant";
-  src: url("/fonts/Cormorant-VariableFont_wght.ttf") format("truetype");
+  font-family: "Spectral";
+  src: url("/fonts/Spectral-ExtraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-/* 3) DMSerifDisplay (from DMSerifDisplay-Regular.ttf) */
 @font-face {
-  font-family: "DMSerifDisplay";
-  src: url("/fonts/DMSerifDisplay-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Yrsa";
+  src: url("/fonts/Yrsa-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   font-style: normal;
 }
 
-/* 4) IBMPlexSans (from IBMPlexSans-VariableFont_wdth,wght.ttf) */
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("/fonts/IBMPlexSans-VariableFont_wdth,wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* 5) Nunito (from Nunito-VariableFont_wght.ttf) */
-@font-face {
-  font-family: "Nunito";
-  src: url("/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* 6) Poppins (from Poppins-Bold.ttf) */
-@font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 @layer components {
   Card, AlertDialog, Dialog {
@@ -204,26 +174,30 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-[BarlowCondensed] cursor-default;
+    @apply bg-background text-foreground font-[Yrsa] cursor-default;
+  }
+
+  main {
+    @apply mx-auto w-10/12 md:w-12/13;
   }
 
   h1 {
-    @apply text-4xl lg:text-6xl text-primary font-[DMSerifDisplay];
+    @apply text-4xl lg:text-6xl text-primary font-[Sansita];
   }
 
   h2 {
-    @apply text-2xl lg:text-3xl text-fancy font-[Poppins];
+    @apply text-2xl lg:text-3xl font-[Spectral];
   }
 
   h3 {
-    @apply text-xl 2xl:text-2xl text-tertiary font-[Cormorant] font-semibold;
+    @apply text-xl 2xl:text-2xl text-secondary font-[Spectral] font-semibold;
   }
 
   h4 {
-    @apply text-base text-accent underline underline-offset-2 font-[Nunito] font-bold;
+    @apply text-base text-tertiary tracking-widest font-[Sansita] font-bold;
   }
   h5 {
-    @apply text-xs md:text-sm mb-3 text-tertiary font-[IBMPlexSans] font-bold;
+    @apply text-xs md:text-sm -mt-3 text-accent tracking-widest uppercase font-[Spectral] font-bold;
   }
   p {
     @apply py-1 text-pretty;
