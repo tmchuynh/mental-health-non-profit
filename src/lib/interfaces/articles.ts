@@ -1,7 +1,7 @@
 export interface ArticleCategory {
   id: string;
   title: string;
-  subtitle?: string;
+  subtitle: string;
   introduction?: string;
   overview?: string[];
   warningText: string;
