@@ -56,3 +56,11 @@ export interface PartnerCategory {
   category: string;
   partners: Partner[];
 }
+
+export interface HelplineEntry {
+  name: string;
+  phone: string;
+  website: string;
+  description: string;
+  availability: string;
+}
