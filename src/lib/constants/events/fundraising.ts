@@ -18,6 +18,12 @@ export const pastFundraisingEvents: PastFundraisingEvent[] = [
       { tierName: "Beacon", donorsCount: 85 },
       { tierName: "Luminary", donorsCount: 25 },
     ],
+    images: [
+      "https://images.unsplash.com/photo-1564682895970-0dbb72e18d97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1564682895970-0dbb72e18d97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1564682895970-0dbb72e18d97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1564682895970-0dbb72e18d97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
+    ],
   },
   {
     name: "Voices of Hope Charity Gala",
