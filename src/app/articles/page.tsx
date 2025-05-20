@@ -20,8 +20,7 @@ import {
 } from "@heroicons/react/16/solid";
 import { clsx } from "clsx";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import React from "react";
+import { notFound, useSearchParams } from "next/navigation";
 
 const postsPerPage = 5;
 
@@ -216,25 +215,24 @@ function Pagination({ page, category }: { page: number; category?: string }) {
   );
 }
 
-export default function Blog({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined };
-}) {
-  const unwrappedSearchParams = React.use(searchParams);
+export default function Blog() {
+  const searchParamsHook = useSearchParams();
 
-  const page =
-    "page" in unwrappedSearchParams
-      ? typeof unwrappedSearchParams.page === "string" &&
-        parseInt(unwrappedSearchParams.page) > 1
-        ? parseInt(unwrappedSearchParams.page)
-        : notFound()
-      : 1;
+  const pageString = searchParamsHook.get("page");
+  let page: number;
+  if (pageString !== null) {
+    const parsedPage = parseInt(pageString);
+    if (Number.isInteger(parsedPage) && parsedPage > 1) {
+      page = parsedPage;
+    } else {
+      notFound();
+    }
+  } else {
+    page = 1;
+  }
 
-  const category =
-    typeof unwrappedSearchParams.category === "string"
-      ? unwrappedSearchParams.category
-      : undefined;
+  const categoryString = searchParamsHook.get("category");
+  const category = categoryString !== null ? categoryString : undefined;
 
   return (
     <main className="overflow-hidden">
