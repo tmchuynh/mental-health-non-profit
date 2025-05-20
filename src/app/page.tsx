@@ -1,29 +1,99 @@
-export default function Home() {
+import { Container } from "@/components/Container";
+import {
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  XIcon,
+} from "@/components/SocialIcons";
+import image1 from "@/images/photos/image-1.jpg";
+import image2 from "@/images/photos/image-2.jpg";
+import image3 from "@/images/photos/image-3.jpg";
+import image4 from "@/images/photos/image-4.jpg";
+import image5 from "@/images/photos/image-5.jpg";
+import clsx from "clsx";
+import Image from "next/image";
+import Link from "next/link";
+
+export default async function Home() {
   return (
-    <main>
-      <div className="flex flex-col gap-4">
-        <h1>Test</h1>
-        <h5>Fifth Heading </h5>
+    <>
+      <Container className="pt-6 sm:pt-12 lg:pt-16">
+        <div className="max-w-2xl">
+          <h1>Software designer, founder, and amateur astronaut.</h1>
+          <p>
+            I’m Spencer, a software designer and entrepreneur based in New York
+            City. I’m the founder and CEO of Planetaria, where we develop
+            technologies that empower regular people to explore space on their
+            own terms.
+          </p>
+          <div className="flex gap-6 mt-6">
+            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
+            <SocialLink
+              href="#"
+              aria-label="Follow on Instagram"
+              icon={InstagramIcon}
+            />
+            <SocialLink
+              href="#"
+              aria-label="Follow on GitHub"
+              icon={GitHubIcon}
+            />
+            <SocialLink
+              href="#"
+              aria-label="Follow on LinkedIn"
+              icon={LinkedInIcon}
+            />
+          </div>
+        </div>
+      </Container>
+      <Photos />
+      <main className="mx-auto pb-24 lg:pb-32 w-10/12 md:w-11/12"></main>
+    </>
+  );
+}
 
-        <h2>This is a subheading</h2>
+function SocialLink({
+  icon: Icon,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof Link> & {
+  icon: React.ComponentType<{ className?: string }>;
+}) {
+  return (
+    <Link className="group -m-1 p-1" {...props}>
+      <Icon className="w-6 h-6 transition fill-secondary group-hover:fill-tertiary" />
+    </Link>
+  );
+}
 
-        <h3>This is a third heading </h3>
+function Photos() {
+  const rotations = [
+    "rotate-2",
+    "-rotate-2",
+    "rotate-2",
+    "rotate-2",
+    "-rotate-2",
+  ];
 
-        <h4>Fourth heading </h4>
-
-
-        <h6>sixth that'll never be used</h6>
-
-        <p>
-          Proident consequat nisi deserunt consectetur cillum qui elit
-          consectetur ad. Ipsum do pariatur consectetur sit ipsum. Quis id culpa
-          labore ullamco excepteur deserunt. Ea magna sit irure esse labore esse
-          reprehenderit ut reprehenderit esse. Excepteur officia fugiat laborum
-          ex reprehenderit consectetur ex nulla ea elit magna eiusmod ad
-          consequat. Anim amet aute cillum est elit nostrud minim aliquip
-          nostrud magna.
-        </p>
+  return (
+    <div className="mt-16 sm:mt-20">
+      <div className="flex justify-center gap-5 sm:gap-8 -my-4 py-4 overflow-hidden">
+        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+          <div
+            key={image.src}
+            className={clsx(
+              "relative flex-none rounded-xl sm:rounded-2xl w-44 sm:w-72 overflow-hidden aspect-9/10",
+              rotations[imageIndex % rotations.length]
+            )}
+          >
+            <Image
+              src={image}
+              alt=""
+              sizes="(min-width: 640px) 18rem, 11rem"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        ))}
       </div>
-    </main>
+    </div>
   );
 }
