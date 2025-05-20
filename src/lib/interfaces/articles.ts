@@ -3,17 +3,16 @@ export interface ArticleCategory {
   title: string;
   subtitle?: string;
   introduction?: string;
-  description: string[];
-  warningText?: string;
+  overview?: string[];
+  warningText: string;
   href?: string;
   image?: string;
 }
 
 export interface ArticleIntro {
-  id: string;
   title: string;
   description: string;
-  categoryId: string;
+  categoryId: ArticleCategory["id"];
   subtitle: string;
   introduction: string[];
 }
@@ -34,6 +33,7 @@ export interface ArticleContent {
   preface: string[];
   sections: Section[];
   conclusion: string[];
+  references?: ListDetail[];
 }
 
 export type Section = {
@@ -54,6 +54,6 @@ export type Paragraph = {
 
 export type ListDetail = {
   title?: string;
-  description: string;
-  src?: string;
+  description?: string;
+  url?: string;
 };
