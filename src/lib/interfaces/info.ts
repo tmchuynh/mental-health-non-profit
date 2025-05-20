@@ -38,11 +38,20 @@ export interface StaffMember {
   name: string;
   title: string;
   bio: string;
-  email: string;
   image: string;
 }
 
 export interface StaffCategory {
   category: string;
   team: StaffMember[];
+}
+
+export interface Partner {
+  name: string;
+  description: string;
+}
+
+export interface PartnerCategory {
+  category: string;
+  partners: Partner[];
 }
