@@ -6,6 +6,7 @@ export interface ServiceCategory {
 
 export interface ServiceMeeting {
   name: string;
+  date?: string;
   hostedBy: string;
   time: string;
   location: string;
