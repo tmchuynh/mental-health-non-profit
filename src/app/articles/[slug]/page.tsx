@@ -139,24 +139,12 @@ export default function BlogarticleData() {
                                       key={iIndex}
                                       className="flex items-start gap-3"
                                     >
-                                      <p>
-                                        {item.title &&
-                                          (item.src ? (
-                                            <strong
-                                              onClick={() => {
-                                                if (item.src) {
-                                                  router.push(item.src); // Now it's type-safe
-                                                }
-                                              }}
-                                              className="underline underline-offset-4 hover:no-underline cursor-pointer"
-                                            >
-                                              {item.title}:{" "}
-                                            </strong>
-                                          ) : (
-                                            <strong>{item.title}: </strong>
-                                          ))}
-                                        {item.description}
-                                      </p>
+                                      {item.title && (
+                                        <p>
+                                          <strong>{item.title}: </strong>{" "}
+                                          {item.description}
+                                        </p>
+                                      )}
                                     </li>
                                   ))}
                                 </ul>
