@@ -1,7 +1,7 @@
 "use client";
 
-import { FutureFundraisingEventCard } from "@/components/FutureFundraisingEventCard";
-import { PastFundraisingEventCard } from "@/components/PastFundraisingEventCard";
+import { FutureFundraisingEventCard } from "@/components/cards/FutureFundraisingEventCard";
+import { PastFundraisingEventCard } from "@/components/cards/PastFundraisingEventCard";
 import {
   futureFundraisingEvents,
   pastFundraisingEvents,

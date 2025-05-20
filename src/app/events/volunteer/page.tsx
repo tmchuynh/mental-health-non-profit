@@ -1,8 +1,8 @@
-import { FutureVolunteeringEventCard } from "@/components/FutureVolunteeringEventCard";
-import { PastVolunteeringEventCard } from "@/components/PastVolunteeringEventCard";
+import { FutureVolunteeringEventCard } from "@/components/cards/FutureVolunteeringEventCard";
+import { PastVolunteeringEventCard } from "@/components/cards/PastVolunteeringEventCard";
 import {
-  pastVolunteeringEvents,
   futureVolunteeringEvents,
+  pastVolunteeringEvents,
 } from "@/lib/constants/events/volunteering";
 import Image from "next/image";
 
