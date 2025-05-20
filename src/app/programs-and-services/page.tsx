@@ -1,4 +1,4 @@
-import { ServiceCategoryCard } from "@/components/ServiceCategoryCard";
+import { ServiceCategoryCard } from "@/components/cards/ServiceCategoryCard";
 import { serviceCategories } from "@/lib/constants/serviceCategories";
 import { highlights } from "@/lib/constants/services/highlights";
 
