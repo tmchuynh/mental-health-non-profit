@@ -21,11 +21,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   return (
     <ArticleProvider value={{ article, articleCategory, articleInfo }}>
-      <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
-        <h1>{capitalize(article)}</h1>
-        <h5>{articleInfo?.description}</h5>
-        {children}
-      </div>
+      {children}
     </ArticleProvider>
   );
 }
