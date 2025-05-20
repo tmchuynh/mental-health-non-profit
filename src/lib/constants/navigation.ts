@@ -1,67 +1,74 @@
 export const menuData = [
   {
-    label: "File",
+    label: "InnerLight Elevation",
     items: [
-      { type: "item", label: "New Tab" },
-      { type: "item", label: "New Window" },
-      { type: "item", label: "New Incognito Window" },
+      { type: "item", label: "About Us", href: "/about-us" },
+      { type: "item", label: "Our Staff", href: "/about-us/our-staff" },
+      { type: "item", label: "Our Partners", href: "/about-us/our-partners" },
       { type: "separator" },
+
       {
         type: "sub",
-        label: "Share",
+        label: "Statements",
         items: [
-          { type: "item", label: "Email link" },
-          { type: "item", label: "Messages" },
-          { type: "item", label: "Notes" },
+          {
+            type: "item",
+            label: "Mental Health Pledge",
+            href: "/about-us/mental-health-pledge",
+          },
+          {
+            type: "item",
+            label: "Diversity & Inclusion Statement",
+            href: "/about-us/diversity-and-inclusion-statement",
+          },
         ],
       },
-      { type: "separator" },
-      { type: "item", label: "Print..." },
     ],
   },
   {
-    label: "Edit",
+    label: "Get Involved",
     items: [
-      { type: "item", label: "Undo" },
-      { type: "item", label: "Redo" },
+      { type: "item", label: "Donations", href: "/donations" },
+      { type: "item", label: "Featured Donors", href: "/donations/donors" },
+      { type: "item", label: "Volunteer", href: "/volunteer" },
+      { type: "item", label: "Fundraising", href: "/donations/fundraising" },
       { type: "separator" },
       {
         type: "sub",
-        label: "Find",
+        label: "Events",
         items: [
-          { type: "item", label: "Search the web" },
-          { type: "separator" },
-          { type: "item", label: "Find..." },
-          { type: "item", label: "Find Next" },
-          { type: "item", label: "Find Previous" },
+          { type: "item", label: "View Future Events", href: "/events" },
+          {
+            type: "item",
+            label: "Read About Past Events",
+            href: "/events/stories",
+          },
         ],
       },
-      { type: "separator" },
-      { type: "item", label: "Cut" },
-      { type: "item", label: "Copy" },
-      { type: "item", label: "Paste" },
     ],
   },
   {
-    label: "View",
+    label: "Programs & Services",
     items: [
-      { type: "item", label: "Reload" },
+      { type: "item", label: "Overview", href: "/programs-and-services" },
       {
         type: "item",
-        label: "Force Reload",
+        label: "Testimonials",
+        href: "/programs-and-services/testimonials",
       },
-      { type: "separator" },
-      { type: "item", label: "Toggle Fullscreen" },
-      { type: "separator" },
-      { type: "item", label: "Hide Sidebar" },
     ],
   },
   {
-    label: "Profiles",
+    label: "More Information",
     items: [
-      { type: "item", label: "Edit..." },
+      { type: "item", label: "Articles", href: "/articles" },
+      {
+        type: "item",
+        label: "Learning Resources",
+        href: "/articles/learning-resources",
+      },
       { type: "separator" },
-      { type: "item", label: "Add Profile..." },
+      { type: "item", label: "Crisis Helplines", href: "/crisis-helplines" },
     ],
   },
 ];
