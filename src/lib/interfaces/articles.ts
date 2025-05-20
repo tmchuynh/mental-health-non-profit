@@ -1,4 +1,4 @@
-export interface ArticleCategory {
+export interface Category {
   id: string;
   title: string;
   subtitle: string;
@@ -12,7 +12,7 @@ export interface ArticleCategory {
 export interface ArticleIntro {
   title: string;
   description: string;
-  categoryId: ArticleCategory["id"];
+  categoryId: Category["id"];
   subtitle: string;
   introduction: string[];
 }
