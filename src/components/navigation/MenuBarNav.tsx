@@ -42,7 +42,7 @@ function renderMenuItems(items: any[]) {
 
 export function MenuBarNav() {
   return (
-    <Menubar className="flex justify-between items-center my-7 w-full">
+    <Menubar className="flex justify-between items-center mx-auto my-4 py-7 w-10/12 md:w-11/12">
       <div className="flex gap-2">
         {menuData.map((menu, idx) => (
           <MenubarMenu key={idx}>
