@@ -7,6 +7,8 @@ export const featuredDonors: FeaturedDonor[] = [
       "Supporting InnerLight Elevation aligns perfectly with our mission to uplift underserved communities. Their dedication to culturally responsive mental health services is truly inspiring.",
     representative: "Maria Lopez, Executive Director",
     type: "Foundation",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     name: "Lumina Capital Partners",
@@ -14,6 +16,8 @@ export const featuredDonors: FeaturedDonor[] = [
       "We believe technology can bridge gaps in mental health care. InnerLight Elevation’s innovative digital platforms are changing lives, and we’re proud to support their work.",
     representative: "Daniel Kim, CEO",
     type: "Corporate",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     name: "The Grace and Samuel Trust",
@@ -21,6 +25,8 @@ export const featuredDonors: FeaturedDonor[] = [
       "Investing in youth mental health is investing in our future. InnerLight Elevation’s education programs empower young people with the tools to thrive emotionally and socially.",
     representative: "Grace Patterson, Trustee",
     type: "Trust",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     name: "Individual Champions",
@@ -28,6 +34,8 @@ export const featuredDonors: FeaturedDonor[] = [
       "I’ve witnessed firsthand the transformative impact InnerLight Elevation has on lives. Giving back to this cause is a privilege and a joy.",
     representative: "Anonymous Donor",
     type: "Individual",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     name: "BrightPath Technologies",
@@ -35,6 +43,8 @@ export const featuredDonors: FeaturedDonor[] = [
       "We support InnerLight Elevation because they’re building not just programs, but real human connections. Their digital outreach empowers isolated individuals to seek help without fear.",
     representative: "Chloe Zhang, CTO",
     type: "Corporate",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     name: "The Everspring Family Fund",
@@ -42,6 +52,8 @@ export const featuredDonors: FeaturedDonor[] = [
       "Our family has been impacted by mental illness for generations. Partnering with InnerLight Elevation is our way of transforming pain into purpose.",
     representative: "James Everspring, Founder",
     type: "Trust",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     name: "Oak & Ember Philanthropy Group",
@@ -49,6 +61,8 @@ export const featuredDonors: FeaturedDonor[] = [
       "InnerLight Elevation doesn't just offer services—they offer hope, dignity, and belonging. That’s something we’ll always stand behind.",
     representative: "Devon Michaels, Program Officer",
     type: "Foundation",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     name: "Emily Soto",
@@ -56,6 +70,8 @@ export const featuredDonors: FeaturedDonor[] = [
       "As someone in long-term recovery, I know how vital support networks are. My monthly giving to InnerLight is a tribute to the people who never gave up on me.",
     representative: "Emily Soto, Survivor and Advocate",
     type: "Individual",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     name: "Unity Financial Group",
@@ -63,5 +79,7 @@ export const featuredDonors: FeaturedDonor[] = [
       "Mental health is foundational to workforce well-being. Our partnership with InnerLight Elevation strengthens our communities from the inside out.",
     representative: "Charles Bennett, VP of Community Engagement",
     type: "Corporate",
+    image:
+      "https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnRhbCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D",
   },
 ];

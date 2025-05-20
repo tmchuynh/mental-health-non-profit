@@ -9,6 +9,7 @@ export interface IconBullet {
 export interface FeaturedDonor {
   name: string;
   quote: string;
+  image: string;
   representative: string;
   type: "Foundation" | "Corporate" | "Trust" | "Individual";
 }

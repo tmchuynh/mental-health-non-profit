@@ -1,4 +1,9 @@
+import { featuredDonors } from "@/lib/constants/about/donors";
+import { groupAndSortByProperties } from "@/lib/utils/sort";
+import Image from "next/image";
+
 export default function Donors() {
+  const sortedDonors = groupAndSortByProperties(featuredDonors, "type", "name");
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>Our Valued Donors</h1>
@@ -33,7 +38,32 @@ export default function Donors() {
       </p>
 
       <section>
-        <h2>Featured Donors</h2>
+        <ul
+          role="list"
+          className="gap-x-4 grid lg:grid-cols-2 xl:col-span-3 divide-y divide-gray-200"
+        >
+          {sortedDonors.map((person) => (
+            <li
+              key={person.name}
+              className="flex sm:flex-row flex-col gap-10 py-12"
+            >
+              <Image
+                alt=""
+                src={person.image}
+                className="flex-none rounded-2xl w-52 aspect-4/5 object-cover"
+                width={208}
+                height={208}
+              />
+              <div className="flex-auto max-w-xl">
+                <h3>{person.name}</h3>
+                <h5>{person.type}</h5>
+                <blockquote className="mt-4 pl-3 border-l">
+                  {person.quote}
+                </blockquote>
+              </div>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );
