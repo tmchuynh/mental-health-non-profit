@@ -24,6 +24,15 @@ export function formatNumberToCurrency(
   }).format(value);
 }
 
+export function formatDate(dateString: string) {
+  return new Date(`${dateString}T00:00:00Z`).toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+}
+
 export const capitalize = (str: string) => {
   return str
     .replace(/-/g, " ")
@@ -40,4 +49,19 @@ export const generateRandomString = (length: number): string => {
     result += characters.charAt(randomIndex);
   }
   return result;
+};
+
+export const formatUrlToID = (url: string): string => {
+  const string = url
+    .replaceAll(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  return string.charAt(0).toLowerCase() + string.slice(1).replace(/\s+/g, "");
+};
+
+export const formatIDToUrl = (id: string): string => {
+  const string = id
+    .replace(/([a-z])([A-Z])/g, "$1-$2")
+    .replace(/_/g, "-")
+    .toLowerCase();
+  return string;
 };
