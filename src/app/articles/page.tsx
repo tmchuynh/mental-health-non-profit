@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import {
   Menubar,
   MenubarContent,
@@ -8,20 +7,30 @@ import {
   MenubarMenu,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import useSmallScreen from "@/hooks/useSmallScreen";
 import { articles } from "@/lib/constants/articles/articles";
 import { articlesMap } from "@/lib/constants/articleSectioned";
 import { formatIDToUrl } from "@/lib/utils/format";
 import {
   CheckIcon,
-  ChevronLeftIcon,
   ChevronRightIcon,
   ChevronUpDownIcon,
 } from "@heroicons/react/16/solid";
-import { clsx } from "clsx";
 import Link from "next/link";
-import { notFound, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 
-const postsPerPage = 5;
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  Pagination,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 
 function Categories({ selected }: { selected?: string }) {
   const allCategories = Object.values(articlesMap).flat();
@@ -77,8 +86,9 @@ function Categories({ selected }: { selected?: string }) {
   );
 }
 
-function Posts({ page, category }: { page: number; category?: string }) {
+function Posts({ category }: { category?: string }) {
   let filteredArticles = articles;
+  const isSmallDevice = useSmallScreen();
   if (category) {
     filteredArticles = articles.filter(
       (a) =>
@@ -87,17 +97,70 @@ function Posts({ page, category }: { page: number; category?: string }) {
     );
   }
 
-  const start = (page - 1) * postsPerPage;
-  const end = start + postsPerPage;
-  const paginatedArticles = filteredArticles.slice(start, end);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [articlesPerPage, setArticlesPerPage] = useState(5);
 
-  if (paginatedArticles.length === 0) {
+  // Calculate the indexes for pagination
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = articles.slice(
+    indexOfFirstArticle,
+    indexOfLastArticle
+  );
+
+  // Handle page change
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+  };
+
+  // Handle articles per page change
+  const handleArticlesPerPageChange = (value: number) => {
+    setArticlesPerPage(value);
+    setCurrentPage(1); // Reset to the first page when articles per page changes
+  };
+
+  // Calculate total pages
+  const totalPages = Math.ceil(articles.length / articlesPerPage);
+
+  if (filteredArticles.length === 0) {
     return <p className="mt-6 text-gray-500">No posts found.</p>;
   }
 
   return (
     <div className="mt-6">
-      {paginatedArticles.map((article) => (
+      <section className="flex flex-col md:justify-end items-center mt-4">
+        <label htmlFor="articlesPerPage" className="mr-2">
+          <p>Articles per page:</p>
+        </label>
+        <DropdownMenu>
+          <DropdownMenuTrigger className="w-full">
+            <div className="bg-muted px-5 p-2 rounded text-sm md:text-md lg:text-lg">
+              {articlesPerPage} articles per page
+            </div>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem
+              onClick={() => handleArticlesPerPageChange(5)}
+              className="px-3 md:text-md lg:text-lg"
+            >
+              15 articles per page
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => handleArticlesPerPageChange(10)}
+              className="px-3 md:text-md lg:text-lg"
+            >
+              25 articles per page
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => handleArticlesPerPageChange(15)}
+              className="px-3 md:text-md lg:text-lg"
+            >
+              50 articles per page
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </section>
+      {currentArticles.map((article) => (
         <div
           key={article.id}
           className="relative max-sm:gap-3 grid grid-cols-1 sm:grid-cols-3 py-10 first:border-t first:border-t-gray-200 border-b border-b-gray-100"
@@ -125,110 +188,58 @@ function Posts({ page, category }: { page: number; category?: string }) {
           </div>
         </div>
       ))}
-    </div>
-  );
-}
 
-function Pagination({ page, category }: { page: number; category?: string }) {
-  function url(page: number) {
-    const params = new URLSearchParams();
-
-    if (category) params.set("category", category);
-    if (page > 1) params.set("page", page.toString());
-
-    return params.size !== 0 ? `/articles?${params.toString()}` : "/articles";
-  }
-
-  let totalPosts = articles.length;
-  if (category) {
-    totalPosts = articles.filter(
-      (a) =>
-        a.categoryId === category ||
-        a.title.toLowerCase().includes(category.toLowerCase())
-    ).length;
-  }
-
-  const hasPreviousPage = page - 1;
-  const previousPageUrl = hasPreviousPage ? url(page - 1) : undefined;
-  const hasNextPage = page * postsPerPage < totalPosts;
-  const nextPageUrl = hasNextPage ? url(page + 1) : undefined;
-  const pageCount = Math.ceil(totalPosts / postsPerPage);
-
-  if (pageCount < 2) {
-    return null;
-  }
-
-  return (
-    <div className="flex justify-between items-center gap-2 mt-6">
-      {previousPageUrl ? (
-        <Link href={previousPageUrl}>
-          <Button variant="outline">
-            <ChevronLeftIcon className="size-4" />
-            Previous
-          </Button>
-        </Link>
-      ) : (
-        <Button variant="outline" disabled>
-          <ChevronLeftIcon className="size-4" />
-          Previous
-        </Button>
-      )}
-      <div className="flex gap-2 max-sm:hidden">
-        {Array.from({ length: pageCount }, (_, i) => (
-          <Link
-            key={i + 1}
-            href={url(i + 1)}
-            data-active={i + 1 === page ? true : undefined}
-            className={clsx(
-              "rounded-lg font-medium text-center text-sm/7 size-7",
-              "data-hover:bg-gray-100",
-              "data-active:shadow-sm data-active:ring-1 data-active:ring-black/10",
-              "data-active:data-hover:bg-gray-50"
+      {/* Pagination controls */}
+      <Pagination className="flex items-center gap-5">
+        <PaginationPrevious
+          onClick={() => {
+            if (currentPage > 1) {
+              handlePageChange(currentPage - 1);
+            }
+          }}
+          variant={currentPage === 1 ? "disabled" : "outline"}
+          className={
+            currentPage === 1 ? "cursor-not-allowed" : "cursor-default"
+          }
+        />
+        {!isSmallDevice && (
+          <section className="text-center">
+            {indexOfLastArticle >= articles.length && totalPages === 1 ? (
+              articles.length === articles.length ? (
+                <p>Showing all {articles.length} blogs</p>
+              ) : (
+                <p>Showing all {articles.length} filtered blogs</p>
+              )
+            ) : (
+              <p>
+                Showing {indexOfFirstArticle + 1} to{" "}
+                {indexOfLastArticle > articles.length
+                  ? articles.length
+                  : indexOfLastArticle}{" "}
+                of {articles.length} blogs
+              </p>
             )}
-          />
-        ))}
-
-        {nextPageUrl ? (
-          <Link href={nextPageUrl}>
-            <Button variant="outline">
-              Next
-              <ChevronRightIcon className="size-4" />
-            </Button>
-          </Link>
-        ) : (
-          <Button variant="outline" disabled>
-            Next
-            <ChevronRightIcon className="size-4" />
-          </Button>
+          </section>
         )}
-        <Button
-          variant="outline"
-          onClick={() => nextPageUrl && (window.location.href = nextPageUrl)}
-          disabled={!nextPageUrl}
-        >
-          Next
-          <ChevronRightIcon className="size-4" />
-        </Button>
-      </div>
+        <PaginationNext
+          onClick={() => {
+            if (currentPage < totalPages) {
+              handlePageChange(currentPage + 1);
+            }
+          }}
+          variant={currentPage === totalPages ? "disabled" : "outline"}
+          className={
+            currentPage === totalPages ? "cursor-not-allowed" : "cursor-default"
+          }
+          size={undefined}
+        />
+      </Pagination>
     </div>
   );
 }
 
 export default function Blog() {
   const searchParamsHook = useSearchParams();
-
-  const pageString = searchParamsHook.get("page");
-  let page: number;
-  if (pageString !== null) {
-    const parsedPage = parseInt(pageString);
-    if (Number.isInteger(parsedPage) && parsedPage > 1) {
-      page = parsedPage;
-    } else {
-      notFound();
-    }
-  } else {
-    page = 1;
-  }
 
   const categoryString = searchParamsHook.get("category");
   const category = categoryString !== null ? categoryString : undefined;
@@ -239,8 +250,7 @@ export default function Blog() {
       <h1>Learn More About Mental Health</h1>
       <section className="mt-9">
         <Categories selected={category} />
-        <Posts page={page} category={category} />
-        <Pagination page={page} category={category} />
+        <Posts category={category} />
       </section>
     </main>
   );
