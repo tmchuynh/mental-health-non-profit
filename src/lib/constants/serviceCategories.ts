@@ -12,7 +12,7 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
   {
-    name: "Workshops & Education",
+    name: "Workshops And Education Events",
     description:
       "Interactive educational events designed to equip participants with practical tools for emotional regulation, self-care, and stress management.",
     features: [
@@ -22,7 +22,7 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
   {
-    name: "1-on-1 Counseling",
+    name: "Individual Counseling",
     description:
       "Affordable, private sessions with licensed professionals or supervised trainees, offered virtually or in select locations.",
     features: [
