@@ -1,6 +1,6 @@
 import { ServiceMeeting } from "@/lib/interfaces/services";
 
-export const counselingSessions: ServiceMeeting[] = [
+export const individualCounseling: ServiceMeeting[] = [
   {
     name: "Intro Counseling Session (Virtual)",
     hostedBy: "Samantha Liu, LMFT",

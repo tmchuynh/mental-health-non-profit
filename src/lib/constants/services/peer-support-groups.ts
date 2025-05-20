@@ -1,6 +1,6 @@
 import { ServiceMeeting } from "@/lib/interfaces/services";
 
-export const peerSupportMeetings: ServiceMeeting[] = [
+export const peerSupportGroups: ServiceMeeting[] = [
   {
     name: "Evening Anxiety Circle",
     hostedBy: "Jordan Rivers, Peer Facilitator",

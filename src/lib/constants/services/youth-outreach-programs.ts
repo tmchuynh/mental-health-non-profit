@@ -1,6 +1,6 @@
 import { ServiceMeeting } from "@/lib/interfaces/services";
 
-export const youthPrograms: ServiceMeeting[] = [
+export const youthOutreachPrograms: ServiceMeeting[] = [
   {
     name: "Mindfulness for Teens",
     hostedBy: "Jessie Tran, Youth Program Director",

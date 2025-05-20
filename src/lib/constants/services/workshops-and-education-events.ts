@@ -1,6 +1,6 @@
 import { ServiceMeeting } from "@/lib/interfaces/services";
 
-export const educationWorkshops: ServiceMeeting[] = [
+export const workshopsAndEducationEvents: ServiceMeeting[] = [
   {
     name: "Mental Health First Aid Training",
     hostedBy: "Dr. Liana Choi",
