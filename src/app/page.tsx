@@ -10,21 +10,27 @@ import image2 from "@/images/photos/image-2.jpg";
 import image3 from "@/images/photos/image-3.jpg";
 import image4 from "@/images/photos/image-4.jpg";
 import image5 from "@/images/photos/image-5.jpg";
+import { articleCategories } from "@/lib/constants/articleCategories";
+import { sortByProperty } from "@/lib/utils/sort";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
+  const disorderCategories = sortByProperty(articleCategories, "title");
   return (
     <>
       <Container className="pt-6 sm:pt-12 lg:pt-16">
-        <div className="max-w-2xl">
-          <h1>Software designer, founder, and amateur astronaut.</h1>
+        <div className="max-w-5xl">
+          <h1>
+            Understanding Mental Health Starts with Access to the Right
+            Information
+          </h1>
           <p>
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            Whether you're seeking clarity about your own experiences,
+            supporting a loved one, or simply learning more, our curated
+            resources are designed to empower, educate, and reduce stigma—one
+            fact at a time.
           </p>
           <div className="flex gap-6 mt-6">
             <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
