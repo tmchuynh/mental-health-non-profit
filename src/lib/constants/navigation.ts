@@ -30,8 +30,8 @@ export const menuData = [
     items: [
       { type: "item", label: "Donations", href: "/donations" },
       { type: "item", label: "Featured Donors", href: "/donations/donors" },
-      { type: "item", label: "Volunteer", href: "/volunteer" },
-      { type: "item", label: "Fundraising", href: "/donations/fundraising" },
+      { type: "item", label: "Volunteer", href: "/events/volunteer" },
+      { type: "item", label: "Fundraising", href: "/events/fundraising" },
       { type: "separator" },
       {
         type: "sub",
