@@ -96,7 +96,7 @@
   --sidebar-ring: oklch(0.65 0.01 120);
   --radius: 0.625rem;
 }
- 
+
 .dark {
   --background: oklch(0.11 0.002 238.64);
   --foreground: oklch(0.96 0 360);
@@ -156,7 +156,6 @@
   font-style: normal;
 }
 
-
 @layer components {
   Card, AlertDialog, Dialog {
     @apply bg-card text-card-foreground border-border rounded-lg shadow-md;
@@ -197,5 +196,14 @@
   }
   p {
     @apply py-1 text-pretty;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
