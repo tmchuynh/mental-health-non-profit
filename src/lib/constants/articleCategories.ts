@@ -100,43 +100,44 @@ export const categories: Category[] = [
       "https://images.unsplash.com/photo-1610907569648-f751f26b4982?fit=crop&w=800&q=80",
   },
   {
-    id: "youthMentalHealth",
-    title: "Youth & Adolescent Mental Health",
+    id: "eatingDisorders",
+    title: "Eating Disorders",
     subtitle:
-      "Includes: School anxiety, self-harm, bullying, ADHD, identity confusion",
+      "Includes: Anorexia, Bulimia, Binge Eating Disorder, Avoidant Restrictive Food Intake Disorder (ARFID)",
     introduction:
-      "Mental health challenges often emerge during adolescence and can significantly impact development if not addressed early.",
+      "Eating disorders are complex mental health conditions that involve unhealthy relationships with food and body image.",
     overview: [
-      "Anxiety, depression, and self-harm behaviors are on the rise in youth populations due to social pressures and academic stress.",
-      "ADHD and conduct disorders also affect classroom behavior and social relationships.",
-      "Parents and educators often miss subtle signs like irritability, sleep changes, or withdrawal.",
-      "Peer-led groups and school-based mental health education can foster resilience.",
-      "InnerLight runs teen support programs, digital outreach campaigns, and workshops for parents.",
-      "Early support helps build a lifelong foundation for emotional health and self-esteem.",
+      "Anorexia nervosa is characterized by extreme restriction of food intake and an intense fear of gaining weight.",
+      "Bulimia nervosa involves cycles of binge eating followed by purging behaviors.",
+      "Binge eating disorder includes episodes of excessive eating without compensatory behaviors.",
+      "Avoidant Restrictive Food Intake Disorder (ARFID) is marked by extreme picky eating and avoidance of certain foods.",
+      "InnerLight provides educational resources and support groups for individuals and families affected by eating disorders.",
+      "Early intervention and a multidisciplinary approach are crucial for recovery.",
     ],
     warningText:
-      "If a child or teen expresses suicidal thoughts or engages in self-harm, contact a crisis line or pediatric mental health professional immediately.",
+      "If you or someone you know is exhibiting signs of an eating disorder, seek help from a qualified healthcare provider immediately.",
     image:
-      "https://images.unsplash.com/photo-1612631426615-15ce8f053ae3?fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1603574473239-3931a79b3d66?fit=crop&w=800&q=80",
   },
   {
-    id: "lgbtqMentalHealth",
-    title: "LGBTQ+ Mental Health",
+    id: "neurodevelopmentalDisorders",
+    title: "Neurodevelopmental Disorders",
     subtitle:
-      "Includes: Gender dysphoria, coming out anxiety, family rejection, intersectionality",
+      "Includes: Autism Spectrum Disorder, ADHD, Learning Disabilities, Intellectual Disabilities",
     introduction:
-      "Members of the LGBTQ+ community face unique mental health challenges due to societal stigma, discrimination, and rejection.",
+      "Neurodevelopmental disorders are a group of conditions that affect the development of the nervous system, leading to challenges in behavior, learning, and communication.",
     overview: [
-      "Coming out can be both liberating and traumatic depending on one’s environment.",
-      "Gender dysphoria often arises when gender identity and assigned sex at birth do not align.",
-      "Youth in the LGBTQ+ community are at higher risk for anxiety, depression, and suicidal ideation.",
-      "Affirming support networks and access to competent, inclusive care are protective factors.",
-      "InnerLight hosts queer empowerment circles and funds therapy grants for LGBTQ+ individuals.",
-      "Understanding intersectionality helps providers address complex identities and experiences.",
+      "Autism Spectrum Disorder (ASD) is characterized by challenges in social communication and restricted, repetitive behaviors.",
+      "Attention-Deficit/Hyperactivity Disorder (ADHD) involves persistent patterns of inattention and/or hyperactivity-impulsivity.",
+      "Learning disabilities affect the ability to read, write, or do math, despite having average or above-average intelligence.",
+      "Intellectual disabilities involve limitations in intellectual functioning and adaptive behavior.",
+      "InnerLight offers resources and support for individuals and families navigating these challenges.",
+      "Early diagnosis and intervention can significantly improve outcomes.",
+      "Supportive environments, individualized education plans (IEPs), and community resources are essential for success.",
     ],
     warningText:
-      "Discrimination, rejection, and isolation can have serious mental health consequences. Seek affirming and inclusive support services.",
+      "If you or someone you know is struggling with learning or developmental challenges, consult a healthcare provider for assessment and support.",
     image:
-      "https://images.unsplash.com/photo-1597011834383-bbd86954bd6c?fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1588702547920-4c1f2a3b5d7e?fit=crop&w=800&q=80",
   },
 ];

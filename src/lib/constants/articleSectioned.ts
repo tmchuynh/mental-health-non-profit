@@ -32,8 +32,87 @@ const anxietyDisorders: ArticleIntro[] = [
   },
 ];
 
+const personalityDisorders: ArticleIntro[] = [
+  {
+    categoryId: "personalityDisorders",
+    title: "Borderline Personality Disorder (BPD)",
+    subtitle: "",
+    description:
+      "Borderline Personality Disorder (BPD) is a mental health disorder characterized by unstable moods, behavior, and relationships.",
+    introduction: [
+      "Borderline Personality Disorder (BPD) is a mental health disorder characterized by unstable moods, behavior, and relationships. Individuals with BPD often experience intense emotional responses and have difficulty regulating their emotions.",
+      "Symptoms can include fear of abandonment, unstable self-image, impulsive behaviors, and difficulty maintaining relationships. These symptoms can lead to significant distress and impairment in daily functioning.",
+      "Treatment for BPD often includes psychotherapy, particularly dialectical behavior therapy (DBT), which focuses on teaching coping skills and emotional regulation. Medications may also be prescribed to help manage specific symptoms, such as mood swings or anxiety.",
+    ],
+  },
+];
+
+const traumaDisorders: ArticleIntro[] = [
+  {
+    categoryId: "traumaDisorders",
+    title: "Post-Traumatic Stress Disorder (PTSD)",
+    subtitle: "",
+    description:
+      "Post-Traumatic Stress Disorder (PTSD) is a mental health condition triggered by experiencing or witnessing a traumatic event.",
+    introduction: [
+      "Post-Traumatic Stress Disorder (PTSD) is a mental health condition triggered by experiencing or witnessing a traumatic event. Symptoms can include flashbacks, nightmares, severe anxiety, and uncontrollable thoughts about the event.",
+      "Individuals with PTSD may also experience emotional numbness, avoidance of reminders of the trauma, and heightened arousal, such as difficulty sleeping or concentrating.",
+      "Treatment for PTSD often includes psychotherapy, particularly cognitive-behavioral therapy (CBT) and exposure therapy, which help individuals process and cope with their trauma. Medications, such as antidepressants, may also be prescribed to help alleviate symptoms.",
+    ],
+  },
+];
+
+const psychoticDisorders: ArticleIntro[] = [
+  {
+    categoryId: "psychoticDisorders",
+    title: "Schizophrenia",
+    subtitle: "",
+    description:
+      "Schizophrenia is a severe mental disorder that affects how a person thinks, feels, and behaves.",
+    introduction: [
+      "Schizophrenia is a severe mental disorder that affects how a person thinks, feels, and behaves. It is characterized by delusions, hallucinations, disorganized thinking, and impaired functioning.",
+      "Individuals with schizophrenia may experience difficulty distinguishing between reality and their distorted perceptions. Symptoms can significantly impact daily life, relationships, and the ability to work.",
+      "Treatment for schizophrenia typically includes antipsychotic medications and psychotherapy. Early intervention and ongoing support are crucial for managing symptoms and improving quality of life.",
+    ],
+  },
+];
+
+const eatingDisorders: ArticleIntro[] = [
+  {
+    categoryId: "eatingDisorders",
+    title: "Anorexia Nervosa",
+    subtitle: "",
+    description:
+      "Anorexia nervosa is an eating disorder characterized by an intense fear of gaining weight and a distorted body image.",
+    introduction: [
+      "Anorexia nervosa is an eating disorder characterized by an intense fear of gaining weight and a distorted body image. Individuals with anorexia often see themselves as overweight, even when they are underweight.",
+      "Symptoms can include extreme restriction of food intake, excessive exercise, and preoccupation with food, weight, and body shape. This disorder can lead to severe health complications and requires comprehensive treatment.",
+      "Treatment for anorexia typically involves a multidisciplinary approach, including medical care, nutritional counseling, and psychotherapy. Cognitive-behavioral therapy (CBT) is commonly used to help individuals change their thought patterns and behaviors related to food and body image.",
+    ],
+  },
+];
+
+const neurodevelopmentalDisorders: ArticleIntro[] = [
+  {
+    categoryId: "neurodevelopmentalDisorders",
+    title: "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+    subtitle: "",
+    description:
+      "Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder characterized by persistent patterns of inattention and/or hyperactivity-impulsivity.",
+    introduction: [
+      "Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder characterized by persistent patterns of inattention and/or hyperactivity-impulsivity. Symptoms can include difficulty focusing, forgetfulness, fidgeting, and impulsive decision-making.",
+      "ADHD can significantly impact academic performance, relationships, and daily functioning. It is often diagnosed in childhood but can persist into adulthood.",
+      "Treatment for ADHD typically includes behavioral therapy, psychoeducation, and medication management. Stimulant medications are commonly prescribed to help improve focus and reduce impulsivity.",
+    ],
+  },
+];
+
 export const articlesMap = {
   moodDisorders: moodDisorders,
   anxietyDisorders: anxietyDisorders,
-  // Add more categories here as needed, matching the categoryId used in articles
+  personalityDisorders: personalityDisorders,
+  traumaDisorders: traumaDisorders,
+  psychoticDisorders: psychoticDisorders,
+  eatingDisorders: eatingDisorders,
+  neurodevelopmentalDisorders: neurodevelopmentalDisorders,
 };

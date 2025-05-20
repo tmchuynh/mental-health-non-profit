@@ -145,7 +145,7 @@ export const articles: Article[] = [
     id: "adhd-in-adults",
     title: "ADHD in Adults",
     subtitle: "Beyond the Stereotypes: What You Should Know",
-    categoryId: "youthMentalHealth",
+    categoryId: "neurodevelopmentalDisorders",
     description:
       "ADHD is not just a childhood disorder. Adults with ADHD often face misunderstood symptoms that affect their work and relationships.",
     introduction:
@@ -308,5 +308,245 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
     darkImage:
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "understanding-antisocial-personality-disorder",
+    title: "Understanding Antisocial Personality Disorder",
+    subtitle: "Recognizing Patterns of Manipulation and Deceit",
+    categoryId: "personalityDisorders",
+    description:
+      "Antisocial Personality Disorder is marked by a disregard for others' rights. Learn the signs, causes, and treatment options.",
+    introduction:
+      "Individuals with Antisocial Personality Disorder often exhibit manipulative, deceitful, and impulsive behaviors. This article discusses the diagnostic criteria, potential causes, and therapeutic approaches for managing ASPD, as well as how to support affected individuals.",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "shining-a-light-on-intellectual-disabilities",
+    title: "Shining a Light on Intellectual Disabilities",
+    subtitle: "Understanding the Spectrum of Cognitive Challenges",
+    categoryId: "neurodevelopmentalDisorders",
+    description:
+      "Intellectual disabilities affect cognitive functioning and adaptive behavior. Learn about the spectrum, causes, and support strategies.",
+    introduction:
+      "Intellectual disabilities encompass a range of cognitive challenges that affect learning, reasoning, and adaptive behavior. This article explores the spectrum of intellectual disabilities, their causes, and the importance of early intervention and tailored support. Discover how inclusive education and community resources can empower individuals with intellectual disabilities to thrive.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "understanding-communication-disorders-and-conduct-disorders",
+    title: "Understanding Communication Disorders and Conduct Disorders",
+    subtitle: "Recognizing the Signs and Seeking Help",
+    categoryId: "neurodevelopmentalDisorders",
+    description:
+      "Communication disorders and conduct disorders can significantly impact a child's development. Learn how to identify them and the available treatment options.",
+    introduction:
+      "Communication disorders affect a child's ability to understand and express language, while conduct disorders involve patterns of behavior that violate societal norms. This article discusses the signs of each disorder, their potential causes, and effective treatment strategies. It emphasizes the importance of early diagnosis and intervention for better outcomes.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "growing-up-with-learning-disabilities",
+    title: "Growing Up with Learning Disabilities",
+    subtitle: "Navigating the Challenges and Triumphs",
+    categoryId: "neurodevelopmentalDisorders",
+    description:
+      "Learning disabilities can present unique challenges for children and adolescents. This article explores the signs, coping strategies, and support systems available.",
+    introduction:
+      "Learning disabilities can affect a child's ability to read, write, or do math, despite having average or above-average intelligence. This article discusses the signs of learning disabilities, their impact on self-esteem and social interactions, and effective coping strategies. It also highlights the importance of individualized education plans (IEPs) and supportive environments for success.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-importance-of-early-intervention-in-neurodevelopmental-disorders",
+    title:
+      "The Importance of Early Intervention in Neurodevelopmental Disorders",
+    subtitle: "How Timely Support Can Change Lives",
+    categoryId: "neurodevelopmentalDisorders",
+    description:
+      "Early intervention is crucial for children with neurodevelopmental disorders. Learn how it can improve outcomes and quality of life.",
+    introduction:
+      "Early intervention can significantly improve the lives of children with neurodevelopmental disorders. This article discusses the benefits of timely support, including enhanced cognitive, social, and emotional development. It also covers various intervention strategies, such as speech therapy, occupational therapy, and behavioral therapy, and emphasizes the importance of family involvement.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-difference-between-autism-and-aspergers",
+    title: "The Difference Between Autism and Asperger's",
+    subtitle: "Understanding the Spectrum of Autism Disorders",
+    categoryId: "neurodevelopmentalDisorders",
+    description:
+      "Autism and Asperger's are often confused, but they have distinct features. Learn how to recognize and differentiate these conditions.",
+    introduction:
+      "Autism Spectrum Disorder (ASD) and Asperger's Syndrome are both part of the autism spectrum, but they differ in symptoms and severity. This article clarifies the distinctions between the two, including social communication challenges, repetitive behaviors, and cognitive abilities. It also discusses the importance of early diagnosis and tailored interventions for individuals on the spectrum.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "connecting-with-children-with-autism",
+    title: "Connecting with Children with Autism",
+    subtitle: "Building Bridges Through Understanding",
+    categoryId: "neurodevelopmentalDisorders",
+    description:
+      "Connecting with children on the autism spectrum requires patience and understanding. This article offers tips for effective communication and engagement.",
+    introduction:
+      "Building connections with children on the autism spectrum can be challenging but rewarding. This article provides practical tips for effective communication, understanding sensory sensitivities, and creating inclusive environments. It emphasizes the importance of patience, empathy, and individualized approaches to foster meaningful relationships.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "being-multi-diagnosed-with-personality-disorders",
+    title: "Being Multi-Diagnosed with Personality Disorders",
+    subtitle: "Navigating the Complexities of Co-occurring Conditions",
+    categoryId: "personalityDisorders",
+    description:
+      "Living with multiple personality disorders can be challenging. This article explores the complexities of co-occurring conditions and offers insights for managing them.",
+    introduction:
+      "Being multi-diagnosed with personality disorders can complicate treatment and self-understanding. This article discusses the challenges of co-occurring conditions, including overlapping symptoms and treatment approaches. It emphasizes the importance of individualized care, therapy, and support systems for effective management.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-importance-of-therapy-for-personality-disorders",
+    title: "The Importance of Therapy for Personality Disorders",
+    subtitle: "Finding the Right Path to Healing",
+    categoryId: "personalityDisorders",
+    description:
+      "Therapy is essential for managing personality disorders. This article explores different therapeutic approaches and their effectiveness.",
+    introduction:
+      "Therapy plays a crucial role in managing personality disorders, offering individuals tools for self-awareness and coping strategies. This article discusses various therapeutic approaches, including Dialectical Behavior Therapy (DBT), Cognitive Behavioral Therapy (CBT), and psychodynamic therapy. It emphasizes the importance of finding the right therapist and treatment plan for effective healing.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "when-mood-disorders-are-misdiagnosed",
+    title: "When Mood Disorders Are Misdiagnosed",
+    subtitle: "Understanding the Risks and Consequences",
+    categoryId: "moodDisorders",
+    description:
+      "Misdiagnosis of mood disorders can lead to ineffective treatment. This article explores the risks and how to advocate for accurate diagnosis.",
+    introduction:
+      "Misdiagnosis of mood disorders can have serious consequences, including ineffective treatment and worsening symptoms. This article discusses the common pitfalls in diagnosing mood disorders, the importance of comprehensive assessments, and how to advocate for accurate diagnosis. It also highlights the role of mental health professionals in ensuring proper care.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "when-mood-disorders-and-personality-disorders-collide",
+    title: "When Mood Disorders and Personality Disorders Collide",
+    subtitle: "Understanding the Complex Interplay",
+    categoryId: "moodDisorders",
+    description:
+      "The intersection of mood disorders and personality disorders can complicate diagnosis and treatment. This article explores the complexities and offers insights for effective management.",
+    introduction:
+      "The coexistence of mood disorders and personality disorders can create a complex clinical picture, making diagnosis and treatment challenging. This article discusses the overlapping symptoms, the importance of comprehensive assessments, and effective treatment strategies for individuals facing both conditions. It emphasizes the need for a holistic approach to care.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-consequences-of-a-late-diagnosed-mood-disorder",
+    title: "The Consequences of a Late-Diagnosed Mood Disorder",
+    subtitle: "Understanding the Impact on Life and Relationships",
+    categoryId: "moodDisorders",
+    description:
+      "Late diagnosis of mood disorders can lead to significant challenges. This article explores the consequences and the importance of early intervention.",
+    introduction:
+      "A late diagnosis of mood disorders can have profound effects on an individual's life, relationships, and overall well-being. This article discusses the potential consequences of delayed diagnosis, including worsening symptoms, strained relationships, and missed opportunities for effective treatment. It emphasizes the importance of early intervention and the role of mental health professionals in facilitating timely care.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-impact-of-personality-disorders-on-relationships",
+    title: "The Impact of Personality Disorders on Relationships",
+    subtitle: "Navigating the Challenges of Intimacy and Connection",
+    categoryId: "personalityDisorders",
+    description:
+      "Personality disorders can significantly affect relationships. This article explores the challenges and offers strategies for building healthy connections.",
+    introduction:
+      "Personality disorders can create unique challenges in relationships, affecting communication, intimacy, and emotional connection. This article discusses the impact of various personality disorders on relationships, including difficulties with trust, empathy, and conflict resolution. It also offers practical strategies for individuals and couples to navigate these challenges and build healthier connections.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-role-of-childhood-trauma-in-personality-disorders",
+    title: "The Role of Childhood Trauma in Personality Disorders",
+    subtitle:
+      "Understanding the Connection Between Early Experiences and Adult Behavior",
+    categoryId: "personalityDisorders",
+    description:
+      "Childhood trauma can play a significant role in the development of personality disorders. This article explores the connection and offers insights for healing.",
+    introduction:
+      "Childhood trauma can have lasting effects on emotional and psychological development, contributing to the emergence of personality disorders in adulthood. This article discusses the types of childhood trauma, their impact on personality development, and the importance of trauma-informed care in treatment. It also highlights therapeutic approaches that can help individuals heal from past experiences and build healthier relationships.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-role-of-relationships-in-tramua-disorders",
+    title: "The Role of Relationships in Trauma Disorders",
+    subtitle: "How Connections Can Heal or Hurt",
+    categoryId: "traumaDisorders",
+    description:
+      "Relationships play a crucial role in trauma recovery. This article explores how healthy connections can aid healing and the impact of toxic relationships.",
+    introduction:
+      "Healthy relationships can be a powerful source of support and healing for individuals with trauma disorders. This article discusses the importance of social connections in recovery, the impact of toxic or abusive relationships, and strategies for building supportive networks. It emphasizes the role of trust, communication, and empathy in fostering healing relationships.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-impact-of-solitude-on-mood-disorders",
+    title: "The Impact of Solitude on Mood Disorders",
+    subtitle: "Finding Balance Between Alone Time and Isolation",
+    categoryId: "moodDisorders",
+    description:
+      "Solitude can have both positive and negative effects on mood disorders. This article explores the balance between alone time and isolation.",
+    introduction:
+      "Solitude can provide a much-needed break for individuals with mood disorders, allowing for self-reflection and emotional processing. However, excessive solitude can lead to feelings of isolation and exacerbate symptoms. This article discusses the benefits and drawbacks of solitude, offering strategies for finding a healthy balance between alone time and social connection.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "how-solidarity-impacts-personality-disorders",
+    title: "How Solidarity Impacts Personality Disorders",
+    subtitle: "The Power of Connection in Healing",
+    categoryId: "personalityDisorders",
+    description:
+      "Solidarity can play a significant role in the lives of individuals with personality disorders. This article explores how connection and support can aid in healing.",
+    introduction:
+      "Solidarity and connection can be powerful tools for individuals with personality disorders, providing a sense of belonging and understanding. This article discusses the importance of supportive relationships, community involvement, and shared experiences in the healing process. It emphasizes the role of empathy, validation, and active listening in fostering solidarity and promoting mental well-being.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
   },
 ];
