@@ -15,7 +15,6 @@ export const articles: Article[] = [
     darkImage:
       "https://images.unsplash.com/photo-1625937286074-9ca519d5d9df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG51dHJpdGlvbnxlbnwwfDB8MHx8fDA%3D",
   },
-
   {
     id: "eating-disorders-uncovered",
     title: "Eating Disorders Uncovered",
@@ -29,20 +28,6 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1603574473239-3931a79b3d66?auto=format&fit=crop&w=600&q=60",
     darkImage:
       "https://images.unsplash.com/photo-1518131678255-bf1f93e837f0?auto=format&fit=crop&w=600&q=60",
-  },
-  {
-    id: "grief-and-loss",
-    title: "Grief and Loss",
-    subtitle: "Navigating Mental Health Through Bereavement",
-    categoryId: "traumaDisorders",
-    description:
-      "Grief isn't linear, and it's not something to 'get over.' Explore how loss affects mental health and how to process it with compassion.",
-    introduction:
-      "Loss can trigger depression, anxiety, PTSD, and existential crises. This article explores the stages of grief, cultural expectations, and the importance of creating space for sorrow. Therapeutic strategies like grief counseling, support groups, journaling, and ritual are examined. It also covers complicated grief and when to seek professional help.",
-    image:
-      "https://images.unsplash.com/photo-1484712401471-05c7215830eb?auto=format&fit=crop&w=600&q=60",
-    darkImage:
-      "https://images.unsplash.com/photo-1549921296-ded46f9f9e44?auto=format&fit=crop&w=600&q=60",
   },
   {
     id: "mental-health-in-lgbtq-youth",
@@ -169,5 +154,159 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=60",
     darkImage:
       "https://images.unsplash.com/photo-1581288880394-72473f35d101?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "understanding-bipolar",
+    title: "Understanding Bipolar",
+    subtitle: "Navigating the Highs and Lows of Mood Disorders",
+    categoryId: "moodDisorders",
+    description:
+      "Bipolar disorder is more than mood swings. Learn about its types, symptoms, and how treatment can help manage this complex condition.",
+    introduction:
+      "Bipolar disorder is a mental health condition marked by extreme shifts in mood, energy, and activity levels. These changes can range from manic highs to depressive lows, affecting daily life and relationships. This article explains the different types of bipolar disorder, common symptoms, and the importance of early diagnosis and ongoing treatment. It also covers medication, therapy, and lifestyle strategies for stability.",
+    image:
+      "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "understanding-anxiety-disorders",
+    title: "Understanding Anxiety Disorders",
+    subtitle: "Beyond Everyday Worry: Recognizing Anxiety Disorders",
+    categoryId: "anxietyDisorders",
+    description:
+      "Anxiety disorders are the most common mental health conditions. Discover the different types, symptoms, and effective treatments.",
+    introduction:
+      "Everyone feels anxious sometimes, but anxiety disorders involve persistent, excessive fear or worry that interferes with daily life. This article explores the spectrum of anxiety disorders—including generalized anxiety, panic disorder, phobias, and social anxiety—their causes, and how therapy and medication can help. Learn practical tips for managing anxiety and when to seek professional support.",
+    image:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "hypomania-vs-hypermania",
+    title: "The Difference Between Hypomania and Hypermania",
+    subtitle: "Understanding the Spectrum of Elevated Mood States",
+    categoryId: "moodDisorders",
+    description:
+      "Hypomania and hypermania are often confused, but they have distinct features. Learn how to recognize and differentiate these states.",
+    introduction:
+      "Both hypomania and hypermania involve periods of elevated mood, increased energy, and impulsivity, but they differ in intensity and impact. This article clarifies the clinical definitions, symptoms, and risks associated with each. It also discusses how these states fit into mood disorders like bipolar disorder and why accurate diagnosis is crucial for effective treatment.",
+    image:
+      "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "the-depression-after-the-mania",
+    title: "The Depression After The Mania",
+    subtitle: "Understanding the Crash Following Manic Episodes",
+    categoryId: "moodDisorders",
+    description:
+      "After the highs of mania, many people with bipolar disorder experience deep depression. Learn why this happens and how to cope.",
+    introduction:
+      "The transition from mania to depression can be abrupt and overwhelming. This article explores the biological and psychological reasons behind post-manic depression, common symptoms, and the importance of support and treatment. Discover strategies for managing the lows and preventing relapse.",
+    image:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "ptsd-vs-complex-ptsd",
+    title: "PTSD vs Complex PTSD",
+    subtitle: "Understanding the Differences in Trauma Responses",
+    categoryId: "traumaDisorders",
+    description:
+      "PTSD and Complex PTSD share similarities but have key differences. Learn how each develops, their symptoms, and treatment options.",
+    introduction:
+      "While both PTSD and Complex PTSD result from trauma, Complex PTSD often arises from prolonged or repeated trauma, such as childhood abuse or captivity. This article explains the distinctions in symptoms, emotional impact, and approaches to recovery, helping you recognize and seek the right support.",
+    image:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "understand-reactive-attachment-disorder",
+    title: "Understand Reactive Attachment Disorder",
+    subtitle: "Recognizing Attachment Challenges in Early Childhood",
+    categoryId: "traumaDisorders",
+    description:
+      "Reactive Attachment Disorder (RAD) affects children who struggle to form healthy attachments. Learn the signs, causes, and treatment approaches.",
+    introduction:
+      "RAD develops in young children who do not form secure bonds with caregivers, often due to neglect or inconsistent care. This article covers the symptoms of RAD, its impact on emotional and social development, and the importance of early intervention and supportive environments.",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "disinhibited-social-engagement-disorder-dsed",
+    title: "Disinhibited Social Engagement Disorder (DSED)",
+    subtitle: "When Children Struggle with Boundaries and Attachment",
+    categoryId: "traumaDisorders",
+    description:
+      "DSED is a childhood disorder marked by overly familiar behavior with strangers. Understand its causes, symptoms, and treatment.",
+    introduction:
+      "Disinhibited Social Engagement Disorder occurs in children who have experienced severe social neglect or deprivation. This article explains how DSED differs from other attachment disorders, its behavioral signs, and the importance of stable, nurturing care for recovery.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "understanding-narcissistic-personality-disorder-myths-and-facts",
+    title: "Understanding Narcissistic Personality Disorder: Myths and Facts",
+    subtitle: "Separating Stereotypes from Reality",
+    categoryId: "personalityDisorders",
+    description:
+      "Narcissistic Personality Disorder is more than self-absorption. This article dispels common myths and explains the real challenges of NPD.",
+    introduction:
+      "NPD is a complex mental health condition characterized by patterns of grandiosity, need for admiration, and lack of empathy. This article addresses misconceptions, explores the roots of narcissistic traits, and discusses evidence-based approaches for treatment and support.",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "identifying-paranoid-personality-disorder",
+    title: "Identifying-paranoid-personality-disorder",
+    subtitle: "Recognizing Patterns of Distrust and Suspicion",
+    categoryId: "personalityDisorders",
+    description:
+      "Paranoid Personality Disorder is marked by pervasive distrust and suspicion. Learn the signs and how to seek help.",
+    introduction:
+      "People with Paranoid Personality Disorder often interpret others’ motives as malevolent, leading to social isolation and conflict. This article outlines the symptoms, possible causes, and treatment options for PPD, as well as tips for supporting someone with this condition.",
+    image:
+      "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "myths-and-facts-about-disruptive-mood-dysregulation-disorder",
+    title: "Myths and Facts About Disruptive Mood Dysregulation Disorder",
+    subtitle: "Understanding DMDD in Children and Adolescents",
+    categoryId: "moodDisorders",
+    description:
+      "DMDD is a childhood mood disorder often confused with other conditions. Learn what sets it apart and how it can be treated.",
+    introduction:
+      "Disruptive Mood Dysregulation Disorder is characterized by severe temper outbursts and chronic irritability in children and teens. This article clarifies the diagnostic criteria, dispels myths, and discusses effective interventions for families and educators.",
+    image:
+      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=600&q=60",
+  },
+  {
+    id: "identifying-premenstrual-dysophoric-disorder",
+    title: "Identifying Premenstrual Dysphoric Disorder",
+    subtitle: "When PMS Becomes a Serious Mood Disorder",
+    categoryId: "moodDisorders",
+    description:
+      "PMDD is a severe form of premenstrual syndrome that can disrupt daily life. Learn to recognize its symptoms and explore treatment options.",
+    introduction:
+      "Premenstrual Dysphoric Disorder causes intense mood swings, irritability, and physical symptoms in the weeks before menstruation. This article explains how PMDD differs from PMS, its impact on mental health, and the latest approaches to management and support.",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+    darkImage:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=60",
   },
 ];
