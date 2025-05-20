@@ -20,7 +20,6 @@ const buttonVariants = cva(
         accent: "bg-accent text-accent-foreground shadow-xs hover:bg-accent/80",
         tertiary:
           "bg-tertiary text-tertiary-foreground shadow-xs hover:bg-tertiary/80",
-        fancy: "bg-fancy text-fancy-foreground shadow-xs hover:bg-fancy/80",
         disabled:
           "bg-disabled text-disabled-foreground shadow-xs hover:bg-disabled/80",
         ghost:
