@@ -177,10 +177,6 @@
     @apply bg-background text-foreground font-[Yrsa] cursor-default;
   }
 
-  main {
-    @apply mx-auto w-10/12 md:w-12/13;
-  }
-
   h1 {
     @apply text-4xl lg:text-6xl text-primary font-[Sansita];
   }
