@@ -11,6 +11,7 @@ export interface PastFundraisingEvent {
   statesInvolved: number;
   impact: string;
   donorTiers: DonorTierBreakdown[];
+  images?: string[];
 }
 
 export interface FutureFundraisingEvent {
