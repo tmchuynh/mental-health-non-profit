@@ -6,6 +6,7 @@ import {
   Menubar,
   MenubarContent,
   MenubarItem,
+  MenubarMenu,
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { articles } from "@/lib/constants/articles/articles";
@@ -18,15 +19,8 @@ import {
   ChevronUpDownIcon,
 } from "@heroicons/react/16/solid";
 import { clsx } from "clsx";
-import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
-export const metadata: Metadata = {
-  title: "Articles",
-  description:
-    "Stay informed with product updates, company news, and insights on how to sell smarter at your company.",
-};
 
 const postsPerPage = 5;
 
@@ -44,39 +38,41 @@ function Categories({ selected }: { selected?: string }) {
   return (
     <div className="flex flex-wrap justify-between items-center gap-2">
       <Menubar>
-        <MenubarTrigger className="flex justify-between items-center gap-2 font-medium">
-          {selected
-            ? categories.find(({ categoryId }) => categoryId === selected)
-                ?.title || "All categories"
-            : "All categories"}
-          <ChevronUpDownIcon className="size-4 fill-gray-900" />
-        </MenubarTrigger>
-        <MenubarContent className="bg-white shadow-lg p-1 rounded-lg ring-1 ring-gray-200 min-w-40 [--anchor-gap:6px] [--anchor-offset:-4px] [--anchor-padding:10px]">
-          <MenubarItem>
-            <Link
-              href="/articles"
-              data-selected={selected === undefined ? true : undefined}
-              className="group items-center gap-2 grid grid-cols-[1rem_1fr] data-focus:bg-gray-950/5 px-2 py-1 rounded-md"
-            >
-              <CheckIcon className="group-data-selected:block hidden size-4" />
-              <p className="col-start-2 text-sm/6">All categories</p>
-            </Link>
-          </MenubarItem>
-          {allCategories.map((category) => (
-            <MenubarItem key={category.categoryId}>
+        <MenubarMenu>
+          <MenubarTrigger className="flex justify-between items-center gap-2 font-medium">
+            {selected
+              ? categories.find(({ categoryId }) => categoryId === selected)
+                  ?.title || "All categories"
+              : "All categories"}
+            <ChevronUpDownIcon className="size-4 fill-gray-900" />
+          </MenubarTrigger>
+          <MenubarContent className="bg-white shadow-lg p-1 rounded-lg ring-1 ring-gray-200 min-w-40 [--anchor-gap:6px] [--anchor-offset:-4px] [--anchor-padding:10px]">
+            <MenubarItem>
               <Link
-                href={`/articles?category=${category.categoryId}`}
-                data-selected={
-                  category.categoryId === selected ? true : undefined
-                }
-                className="group items-center gap-2 grid grid-cols-[16px_1fr] data-focus:bg-gray-950/5 px-2 py-1 rounded-md"
+                href="/articles"
+                data-selected={selected === undefined ? true : undefined}
+                className="group items-center gap-2 grid grid-cols-[1rem_1fr] data-focus:bg-gray-950/5 px-2 py-1 rounded-md"
               >
                 <CheckIcon className="group-data-selected:block hidden size-4" />
-                <p className="col-start-2 text-sm/6">{category.title}</p>
+                <p className="col-start-2 text-sm/6">All categories</p>
               </Link>
             </MenubarItem>
-          ))}
-        </MenubarContent>
+            {allCategories.map((category) => (
+              <MenubarItem key={category.categoryId}>
+                <Link
+                  href={`/articles?category=${category.categoryId}`}
+                  data-selected={
+                    category.categoryId === selected ? true : undefined
+                  }
+                  className="group items-center gap-2 grid grid-cols-[16px_1fr] data-focus:bg-gray-950/5 px-2 py-1 rounded-md"
+                >
+                  <CheckIcon className="group-data-selected:block hidden size-4" />
+                  <p className="col-start-2 text-sm/6">{category.title}</p>
+                </Link>
+              </MenubarItem>
+            ))}
+          </MenubarContent>
+        </MenubarMenu>
       </Menubar>
     </div>
   );
@@ -134,13 +130,7 @@ function Posts({ page, category }: { page: number; category?: string }) {
   );
 }
 
-async function Pagination({
-  page,
-  category,
-}: {
-  page: number;
-  category?: string;
-}) {
+function Pagination({ page, category }: { page: number; category?: string }) {
   function url(page: number) {
     const params = new URLSearchParams();
 
