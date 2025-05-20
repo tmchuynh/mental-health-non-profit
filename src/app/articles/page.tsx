@@ -1,6 +1,5 @@
 "use client";
 
-import { Container } from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import {
   Menubar,
@@ -235,20 +234,14 @@ export default function Blog() {
   const category = categoryString !== null ? categoryString : undefined;
 
   return (
-    <main className="overflow-hidden">
-      <Container>
-        <h5 className="mt-16">Articles</h5>
-        <h1 className="mt-2">What’s happening at Radiant.</h1>
-        <p className="mt-6 max-w-3xl">
-          Stay informed with product updates, company news, and insights on how
-          to sell smarter at your company.
-        </p>
-      </Container>
-      <Container className="mt-16 pb-24">
+    <main className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
+      <h5>Articles</h5>
+      <h1>Learn More About Mental Health</h1>
+      <section className="mt-9">
         <Categories selected={category} />
         <Posts page={page} category={category} />
         <Pagination page={page} category={category} />
-      </Container>
+      </section>
     </main>
   );
 }
