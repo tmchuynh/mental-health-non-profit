@@ -1,4 +1,4 @@
-import { ImpactStoryCard } from "@/components/ImpactStoryCard";
+import { ImpactStoryCard } from "@/components/cards/ImpactStoryCard";
 import { impactStories } from "@/lib/constants/about/story";
 
 export default function Testimonials() {
