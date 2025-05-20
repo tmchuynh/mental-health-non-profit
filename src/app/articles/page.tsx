@@ -21,6 +21,7 @@ import {
 import { clsx } from "clsx";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import React from "react";
 
 const postsPerPage = 5;
 
@@ -220,16 +221,19 @@ export default function Blog({
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
+  const unwrappedSearchParams = React.use(searchParams);
+
   const page =
-    "page" in searchParams
-      ? typeof searchParams.page === "string" && parseInt(searchParams.page) > 1
-        ? parseInt(searchParams.page)
+    "page" in unwrappedSearchParams
+      ? typeof unwrappedSearchParams.page === "string" &&
+        parseInt(unwrappedSearchParams.page) > 1
+        ? parseInt(unwrappedSearchParams.page)
         : notFound()
       : 1;
 
   const category =
-    typeof searchParams.category === "string"
-      ? searchParams.category
+    typeof unwrappedSearchParams.category === "string"
+      ? unwrappedSearchParams.category
       : undefined;
 
   return (
