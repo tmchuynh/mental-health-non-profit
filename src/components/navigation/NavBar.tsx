@@ -52,7 +52,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavBar() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="mx-auto border w-full">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
