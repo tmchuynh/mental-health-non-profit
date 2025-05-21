@@ -189,7 +189,7 @@
   }
 
   h4 {
-    @apply text-base text-tertiary tracking-widest font-[Sansita] font-bold;
+    @apply text-base tracking-widest font-[Sansita] font-bold;
   }
   h5 {
     @apply text-xs md:text-sm text-accent tracking-widest uppercase font-[Spectral] font-bold;
