@@ -54,7 +54,7 @@ export const learningResources: Resource[] = [
     categoryId: "anxietyDisorders",
   },
   {
-    id: "ocd",
+    id: "ocdDisorder",
     title: "Obsessive-Compulsive Disorder (OCD)",
     subtitle: "Intrusive thoughts and repetitive behaviors",
     description:
@@ -132,19 +132,6 @@ export const learningResources: Resource[] = [
     categoryId: "anxietyDisorders",
   },
   {
-    id: "specificPhobia",
-    title: "Specific Phobias",
-    subtitle: "Intense, irrational fear of specific objects or situations",
-    description:
-      "Specific phobias are marked by excessive fear of a particular object or situation, such as heights, animals, or flying.",
-    introduction: [
-      "Exposure to the phobic stimulus almost always provokes immediate anxiety. People may go to great lengths to avoid the feared object or situation. Phobias can develop in childhood or adulthood and may persist if untreated. Gradual exposure therapy is the most effective intervention. InnerLight provides phobia-specific support groups and therapist referrals.",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?fit=crop&w=800&q=80",
-    categoryId: "anxietyDisorders",
-  },
-  {
     id: "autismSpectrum",
     title: "Autism Spectrum Disorder (ASD)",
     subtitle: "Differences in social communication and behavior",
@@ -182,5 +169,96 @@ export const learningResources: Resource[] = [
     image:
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
     categoryId: "moodDisorders",
+  },
+  {
+    id: "narcissisticPersonality",
+    title: "Narcissistic Personality Disorder (NPD)",
+    subtitle: "Grandiosity, need for admiration, and lack of empathy",
+    description:
+      "NPD is a personality disorder characterized by an inflated sense of self-importance, a deep need for admiration, and a lack of empathy.",
+    introduction: [
+      "Individuals with NPD may exploit relationships and have difficulty recognizing the feelings of others. Treatment often involves psychotherapy to address underlying issues and improve interpersonal skills. InnerLight promotes awareness and understanding of NPD through community education.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "personalityDisorders",
+  },
+  {
+    id: "schizoaffectiveDisorder",
+    title: "Schizoaffective Disorder",
+    subtitle: "Symptoms of schizophrenia and mood disorder",
+    description:
+      "Schizoaffective disorder is a mental health condition characterized by symptoms of both schizophrenia and mood disorders (depression or mania).",
+    introduction: [
+      "Individuals may experience hallucinations, delusions, and mood swings. Treatment typically includes antipsychotic medications, mood stabilizers, and therapy. InnerLight offers support groups for individuals with schizoaffective disorder and their families.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "psychoticDisorders",
+  },
+  {
+    id: "antisocialPersonality",
+    title: "Antisocial Personality Disorder (ASPD)",
+    subtitle: "Disregard for others' rights and social norms",
+    description:
+      "ASPD is a personality disorder characterized by a pervasive pattern of disregard for the rights of others, often leading to criminal behavior.",
+    introduction: [
+      "Individuals with ASPD may exhibit impulsivity, deceitfulness, and lack of remorse. Treatment is challenging but may include therapy focused on behavioral change. InnerLight provides resources for families affected by ASPD.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "personalityDisorders",
+  },
+  {
+    id: "avoidantPersonality",
+    title: "Avoidant Personality Disorder (AvPD)",
+    subtitle: "Extreme shyness and fear of social situations",
+    description:
+      "AvPD is characterized by a pervasive pattern of social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation.",
+    introduction: [
+      "Individuals may avoid social interactions and feel inadequate in relationships. Treatment often includes therapy focused on building self-esteem and social skills. InnerLight offers support groups for individuals with AvPD.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "personalityDisorders",
+  },
+  {
+    id: "dependentPersonality",
+    title: "Dependent Personality Disorder (DPD)",
+    subtitle: "Excessive need to be taken care of and fear of separation",
+    description:
+      "DPD is characterized by a pervasive and excessive need to be taken care of, leading to submissive and clinging behaviors.",
+    introduction: [
+      "Individuals may have difficulty making decisions without excessive advice and reassurance. Treatment often includes therapy focused on building independence and self-esteem. InnerLight provides resources for individuals with DPD.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "personalityDisorders",
+  },
+  {
+    id: "histrionicPersonality",
+    title: "Histrionic Personality Disorder (HPD)",
+    subtitle: "Excessive emotionality and attention-seeking behavior",
+    description:
+      "HPD is characterized by a pattern of excessive emotionality and attention-seeking behavior, often leading to superficial relationships.",
+    introduction: [
+      "Individuals may be uncomfortable when not the center of attention and may use physical appearance to draw attention. Treatment often includes therapy focused on understanding emotions and improving interpersonal relationships. InnerLight provides resources for individuals with HPD.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "personalityDisorders",
+  },
+  {
+    id: "paranoidPersonality",
+    title: "Paranoid Personality Disorder (PPD)",
+    subtitle: "Distrust and suspicion of others",
+    description:
+      "PPD is characterized by a pervasive distrust and suspiciousness of others, leading to a belief that others' motives are malevolent.",
+    introduction: [
+      "Individuals may interpret benign remarks as threatening and may hold grudges. Treatment often includes therapy focused on building trust and improving relationships. InnerLight provides resources for individuals with PPD.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=800&q=80",
+    categoryId: "personalityDisorders",
   },
 ];
