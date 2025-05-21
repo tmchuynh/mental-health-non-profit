@@ -13,14 +13,14 @@ import image2 from "@/images/photos/image-2.jpg";
 import image3 from "@/images/photos/image-3.jpg";
 import image4 from "@/images/photos/image-4.jpg";
 import image5 from "@/images/photos/image-5.jpg";
-import { articleCategories } from "@/lib/constants/articleCategories";
+import { categories } from "@/lib/constants/disorderCategories";
 import { sortByProperty } from "@/lib/utils/sort";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const disorderCategories = sortByProperty(articleCategories, "title");
+  const disorderCategories = sortByProperty(categories, "title");
   return (
     <>
       <Container className="pt-6 sm:pt-12 lg:pt-16">
