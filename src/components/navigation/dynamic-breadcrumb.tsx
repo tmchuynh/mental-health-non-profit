@@ -189,7 +189,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         aria-label="Breadcrumb"
         className="flex flex-row items-center gap-2 w-full text-xs lg:text-sm"
       >
-        <ul className="flex flex-row items-center gap-2 font-[Newsreader]">
+        <ul className="flex flex-row items-center gap-2 font-[Yrsa]">
           {breadcrumbItems}
         </ul>
       </nav>
