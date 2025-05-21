@@ -55,12 +55,19 @@ export const formatUrlToID = (url: string): string => {
   const string = url
     .replaceAll(/-/g, " ")
     .replace("%26", "")
+    .replace("'", "")
+    .replace(":", "")
     .replace(/\b\w/g, (char) => char.toUpperCase());
   return string.charAt(0).toLowerCase() + string.slice(1).replace(/\s+/g, "");
 };
 
 export const formatIDToUrl = (id: string): string => {
-  const string = id.replaceAll(" ", "-").replace("_", "-").toLowerCase();
+  const string = id
+    .replaceAll(" ", "-")
+    .replace("_", "-")
+    .replace("'", "")
+    .replace(":", "")
+    .toLowerCase();
   return string;
 };
 
