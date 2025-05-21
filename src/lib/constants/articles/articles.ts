@@ -240,8 +240,9 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=600&q=60",
   },
   {
-    id: "understanding-narcissistic-personality-disorder-myths-and-facts",
-    title: "Understanding Narcissistic Personality Disorder: Myths and Facts",
+    id: "understanding-the-myths-and-facts-around-narcissistic-personality-disorder",
+    title:
+      "Understanding The Myths and Facts Around Narcissistic Personality Disorder",
     subtitle: "Separating Stereotypes from Reality",
     categoryId: "personalityDisorders",
     description:
@@ -255,7 +256,7 @@ export const articles: Article[] = [
   },
   {
     id: "identifying-paranoid-personality-disorder",
-    title: "Identifying-paranoid-personality-disorder",
+    title: "Identifying Paranoid Personality Disorder",
     subtitle: "Recognizing Patterns of Distrust and Suspicion",
     categoryId: "personalityDisorders",
     description:
