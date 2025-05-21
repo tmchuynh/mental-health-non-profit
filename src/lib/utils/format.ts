@@ -63,3 +63,11 @@ export const formatIDToUrl = (id: string): string => {
   const string = id.replaceAll(" ", "-").replace("_", "-").toLowerCase();
   return string;
 };
+
+export function setSlug(title: string): string {
+  const slug = title
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9\s-]/g, "")
+    .replace(/[\s-]+/g, "-");
+  return slug;
+}
