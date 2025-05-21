@@ -17,15 +17,13 @@ export const volunteer2019ShelterMeal: ArticleContent = {
         {
           topic: "Meal Preparation",
           supporting: [
-            "Volunteers collaborated to prepare a variety of dishes, accommodating dietary needs and preferences.",
-            "The aroma of home-cooked food filled the shelter, creating a comforting atmosphere for all.",
+            "Volunteers collaborated to prepare a variety of dishes, accommodating dietary needs and preferences. The aroma of home-cooked food filled the shelter, creating a comforting atmosphere for all.",
           ],
         },
         {
           topic: "Connecting with Residents",
           supporting: [
-            "Beyond serving food, volunteers took time to chat with residents, offering kindness and a listening ear.",
-            "Many shared stories and laughter, building connections that extended beyond the meal.",
+            "Beyond serving food, volunteers took time to chat with residents, offering kindness and a listening ear. Many shared stories and laughter, building connections that extended beyond the meal.",
           ],
         },
       ],
@@ -37,15 +35,13 @@ export const volunteer2019ShelterMeal: ArticleContent = {
         {
           topic: "Community Impact",
           supporting: [
-            "The meal service provided nourishment and comfort to dozens of shelter residents.",
-            "Feedback from both volunteers and residents highlighted the importance of such events in fostering hope and dignity.",
+            "The meal service provided nourishment and comfort to dozens of shelter residents. Feedback from both volunteers and residents highlighted the importance of such events in fostering hope and dignity.",
           ],
         },
         {
           topic: "Ongoing Commitment",
           supporting: [
-            "Inspired by the experience, many volunteers pledged to return and continue supporting the shelter.",
-            "The event underscored the value of community involvement and the difference a simple act of service can make.",
+            "Inspired by the experience, many volunteers pledged to return and continue supporting the shelter. The event underscored the value of community involvement and the difference a simple act of service can make.",
           ],
         },
       ],
