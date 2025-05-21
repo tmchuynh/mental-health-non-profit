@@ -2,8 +2,7 @@ import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const understandingBipolar: ArticleContent = {
   preface: [
-    "Bipolar disorder is a complex mental health condition characterized by extreme mood swings that include emotional highs (mania or hypomania) and lows (depression). These shifts can affect sleep, energy, activity levels, behavior, and the ability to carry out day-to-day tasks.",
-    "This article provides a comprehensive understanding of the types, symptoms, diagnosis, and treatment of bipolar disorder, aiming to reduce stigma and promote early intervention.",
+    "Bipolar disorder is a complex mental health condition characterized by extreme mood swings that include emotional highs (mania or hypomania) and lows (depression). These shifts can affect sleep, energy, activity levels, behavior, and the ability to carry out day-to-day tasks. This article provides a comprehensive understanding of the types, symptoms, diagnosis, and treatment of bipolar disorder, aiming to reduce stigma and promote early intervention.",
   ],
   sections: [
     {
@@ -16,9 +15,7 @@ export const understandingBipolar: ArticleContent = {
         {
           topic: "Types of Bipolar Disorder",
           supporting: [
-            "Bipolar I Disorder: Characterized by manic episodes lasting at least seven days or requiring hospitalization. Depressive episodes are also common.",
-            "Bipolar II Disorder: Includes patterns of depressive and hypomanic episodes, without full-blown manic episodes.",
-            "Cyclothymic Disorder (Cyclothymia): Involves periods of hypomanic and depressive symptoms lasting at least two years (one year in children and adolescents), without meeting full criteria for a manic or depressive episode.",
+            "Bipolar I Disorder: Characterized by manic episodes lasting at least seven days or requiring hospitalization. Depressive episodes are also common. Bipolar II Disorder: Includes patterns of depressive and hypomanic episodes, without full-blown manic episodes. Cyclothymic Disorder (Cyclothymia): Involves periods of hypomanic and depressive symptoms lasting at least two years (one year in children and adolescents), without meeting full criteria for a manic or depressive episode.",
           ],
           concluding:
             "Each type requires a tailored treatment plan based on its severity and symptom patterns.",
@@ -26,8 +23,7 @@ export const understandingBipolar: ArticleContent = {
         {
           topic: "Recognizing Symptoms",
           supporting: [
-            "Mania: Includes heightened mood, increased activity or energy, inflated self-esteem, decreased need for sleep, and impulsive behavior.",
-            "Depression: Includes feelings of hopelessness, loss of interest in activities, fatigue, changes in appetite, and thoughts of death or suicide.",
+            "Mania: Includes heightened mood, increased activity or energy, inflated self-esteem, decreased need for sleep, and impulsive behavior. Depression: Includes feelings of hopelessness, loss of interest in activities, fatigue, changes in appetite, and thoughts of death or suicide.",
           ],
           concluding:
             "Understanding these symptoms is essential for timely diagnosis and treatment.",
@@ -44,15 +40,13 @@ export const understandingBipolar: ArticleContent = {
         {
           topic: "Genetic and Biological Factors",
           supporting: [
-            "Bipolar disorder tends to run in families, indicating a genetic component.",
-            "Imbalances in brain chemicals and differences in brain structure or function may play a role.",
+            "Bipolar disorder tends to run in families, indicating a genetic component. Imbalances in brain chemicals and differences in brain structure or function may play a role.",
           ],
         },
         {
           topic: "Environmental Triggers",
           supporting: [
-            "Major life events, trauma, or chronic stress can trigger or exacerbate bipolar symptoms.",
-            "Substance abuse can also interact with underlying mood disorders and complicate treatment.",
+            "Major life events, trauma, or chronic stress can trigger or exacerbate bipolar symptoms. Substance abuse can also interact with underlying mood disorders and complicate treatment.",
           ],
         },
       ],
@@ -73,9 +67,7 @@ export const understandingBipolar: ArticleContent = {
         {
           topic: "Treatment Approaches",
           supporting: [
-            "Mood stabilizers and antipsychotic medications are commonly used.",
-            "Psychotherapy, including CBT and interpersonal therapy, can help individuals manage symptoms and build coping strategies.",
-            "Lifestyle adjustments like regular sleep patterns, stress management, and avoiding substance use are crucial for stability.",
+            "Mood stabilizers and antipsychotic medications are commonly used. Psychotherapy, including CBT and interpersonal therapy, can help individuals manage symptoms and build coping strategies. Lifestyle adjustments like regular sleep patterns, stress management, and avoiding substance use are crucial for stability.",
           ],
           concluding:
             "Long-term treatment is necessary to manage symptoms and prevent relapse.",
@@ -84,9 +76,7 @@ export const understandingBipolar: ArticleContent = {
     },
   ],
   conclusion: [
-    "Bipolar disorder is a manageable condition with proper treatment and support. Education, awareness, and early intervention are key to improving outcomes.",
-    "If you or someone you know is struggling with symptoms of bipolar disorder, seek help from a qualified mental health professional. Support networks and resources are available to guide recovery.",
-    "Living with bipolar disorder presents challenges, but many individuals lead fulfilling lives with the right tools and support. It is not a personal failure, but a medical condition that deserves compassion and care.",
+    "Bipolar disorder is a manageable condition with proper treatment and support. Education, awareness, and early intervention are key to improving outcomes. If you or someone you know is struggling with symptoms of bipolar disorder, seek help from a qualified mental health professional. Support networks and resources are available to guide recovery. Living with bipolar disorder presents challenges, but many individuals lead fulfilling lives with the right tools and support. It is not a personal failure, but a medical condition that deserves compassion and care.",
   ],
   references: [
     {

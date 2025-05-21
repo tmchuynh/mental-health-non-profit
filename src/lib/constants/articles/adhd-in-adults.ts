@@ -2,8 +2,7 @@ import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const adhdInAdults: ArticleContent = {
   preface: [
-    "Attention-Deficit/Hyperactivity Disorder (ADHD) is often viewed as a childhood condition, but many adults live with undiagnosed or misdiagnosed ADHD well into adulthood. Unlike the stereotypical image of hyperactive children, adult ADHD manifests in more nuanced and often misunderstood ways.",
-    "For adults, ADHD can disrupt work, relationships, daily routines, and emotional regulation. It's not about being lazy or careless; it's a legitimate neurodevelopmental condition that affects executive function. Understanding adult ADHD is crucial for proper treatment and a better quality of life.",
+    "Attention-Deficit/Hyperactivity Disorder (ADHD) is often viewed as a childhood condition, but many adults live with undiagnosed or misdiagnosed ADHD well into adulthood. Unlike the stereotypical image of hyperactive children, adult ADHD manifests in more nuanced and often misunderstood ways. For adults, ADHD can disrupt work, relationships, daily routines, and emotional regulation. It's not about being lazy or careless; it's a legitimate neurodevelopmental condition that affects executive function. Understanding adult ADHD is crucial for proper treatment and a better quality of life.",
   ],
   sections: [
     {
@@ -100,9 +99,7 @@ export const adhdInAdults: ArticleContent = {
     },
   ],
   conclusion: [
-    "ADHD in adults is real, prevalent, and often misunderstood. By expanding the conversation beyond childhood and recognizing the nuanced ways ADHD shows up later in life, we can empower more individuals to seek accurate diagnoses and effective treatment.",
-    "Whether newly diagnosed or still searching for answers, adults with ADHD deserve compassionate, evidence-based care that addresses both their challenges and their strengths.",
-    "Living with ADHD may come with difficulties, but it can also foster creativity, innovation, and out-of-the-box thinking. With awareness, support, and the right tools, adults with ADHD can thrive.",
+    "ADHD in adults is real, prevalent, and often misunderstood. By expanding the conversation beyond childhood and recognizing the nuanced ways ADHD shows up later in life, we can empower more individuals to seek accurate diagnoses and effective treatment. Whether newly diagnosed or still searching for answers, adults with ADHD deserve compassionate, evidence-based care that addresses both their challenges and their strengths. Living with ADHD may come with difficulties, but it can also foster creativity, innovation, and out-of-the-box thinking. With awareness, support, and the right tools, adults with ADHD can thrive.",
   ],
   references: [
     {

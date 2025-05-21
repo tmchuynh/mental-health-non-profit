@@ -4,9 +4,7 @@ export const identifyingParanoidPersonalityDisorder: ArticleContent = {
   image:
     "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=600&q=60",
   preface: [
-    "Paranoid Personality Disorder (PPD) is a mental health condition characterized by pervasive distrust and suspiciousness of others.",
-    "This article aims to help readers recognize the signs of PPD, understand its possible causes, and explore treatment options.",
-    "Additionally, it offers practical advice for supporting individuals living with this challenging disorder.",
+    "Paranoid Personality Disorder (PPD) is a mental health condition characterized by pervasive distrust and suspiciousness of others. This article aims to help readers recognize the signs of PPD, understand its possible causes, and explore treatment options. Additionally, it offers practical advice for supporting individuals living with this challenging disorder.",
   ],
   sections: [
     {
@@ -16,12 +14,7 @@ export const identifyingParanoidPersonalityDisorder: ArticleContent = {
         {
           topic: "Symptoms and Behavioral Patterns",
           supporting: [
-            "Individuals with PPD frequently suspect, without sufficient basis, that others are exploiting, harming, or deceiving them.",
-            "They may be reluctant to confide in others due to unwarranted fears that the information will be used maliciously.",
-            "Persistent grudges, hypersensitivity to perceived insults, and quickness to anger are common.",
-            "This distrust often leads to social isolation and difficulties maintaining close relationships.",
-            "People with PPD tend to interpret benign actions as threatening or demeaning.",
-            "Their suspiciousness is generally consistent and pervasive across different contexts.",
+            "Individuals with PPD frequently suspect, without sufficient basis, that others are exploiting, harming, or deceiving them. They may be reluctant to confide in others due to unwarranted fears that the information will be used maliciously. Persistent grudges, hypersensitivity to perceived insults, and quickness to anger are common. This distrust often leads to social isolation and difficulties maintaining close relationships. People with PPD tend to interpret benign actions as threatening or demeaning. Their suspiciousness is generally consistent and pervasive across different contexts.",
           ],
           list: [
             {
@@ -49,11 +42,7 @@ export const identifyingParanoidPersonalityDisorder: ArticleContent = {
         {
           topic: "Genetic and Environmental Influences",
           supporting: [
-            "PPD may develop from a combination of genetic vulnerability and environmental stressors.",
-            "Early childhood experiences involving trauma, neglect, or abuse can increase risk.",
-            "Growing up in a distrustful or hostile environment may shape the development of paranoid thinking.",
-            "While exact causes remain unclear, a pattern of dysfunctional interpersonal experiences is often involved.",
-            "Biological factors affecting brain regions related to threat perception may also play a role.",
+            "PPD may develop from a combination of genetic vulnerability and environmental stressors. Early childhood experiences involving trauma, neglect, or abuse can increase risk. Growing up in a distrustful or hostile environment may shape the development of paranoid thinking. While exact causes remain unclear, a pattern of dysfunctional interpersonal experiences is often involved. Biological factors affecting brain regions related to threat perception may also play a role.",
           ],
         },
       ],
@@ -65,11 +54,7 @@ export const identifyingParanoidPersonalityDisorder: ArticleContent = {
         {
           topic: "Therapeutic Interventions",
           supporting: [
-            "Psychotherapy, particularly cognitive-behavioral therapy (CBT), can help individuals recognize and challenge paranoid thoughts.",
-            "Building trust with a therapist is crucial but can be difficult due to inherent suspicion.",
-            "Therapists work to develop coping strategies to reduce anxiety and improve social skills.",
-            "Medication may be used to address co-occurring symptoms such as anxiety or depression but is not the primary treatment.",
-            "Support from family and friends, when patient and non-judgmental, can aid recovery and reduce isolation.",
+            "Psychotherapy, particularly cognitive-behavioral therapy (CBT), can help individuals recognize and challenge paranoid thoughts. Building trust with a therapist is crucial but can be difficult due to inherent suspicion. Therapists work to develop coping strategies to reduce anxiety and improve social skills. Medication may be used to address co-occurring symptoms such as anxiety or depression but is not the primary treatment. Support from family and friends, when patient and non-judgmental, can aid recovery and reduce isolation.",
           ],
           list: [
             {
@@ -93,10 +78,7 @@ export const identifyingParanoidPersonalityDisorder: ArticleContent = {
     },
   ],
   conclusion: [
-    "Paranoid Personality Disorder significantly impacts social functioning due to pervasive mistrust and suspicion.",
-    "Understanding the disorder's symptoms and causes is essential for effective treatment and support.",
-    "Though challenging, therapeutic interventions can improve quality of life and interpersonal relationships.",
-    "Compassionate support from loved ones is critical in helping those with PPD navigate their condition.",
+    "Paranoid Personality Disorder significantly impacts social functioning due to pervasive mistrust and suspicion. Understanding the disorder's symptoms and causes is essential for effective treatment and support. Though challenging, therapeutic interventions can improve quality of life and interpersonal relationships. Compassionate support from loved ones is critical in helping those with PPD navigate their condition.",
   ],
   references: [
     {

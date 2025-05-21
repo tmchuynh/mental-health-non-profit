@@ -4,8 +4,7 @@ export const hypomaniaVsHypermania: ArticleContent = {
   image:
     "https://images.unsplash.com/photo-1557426272-fc759fdf7a8a?auto=format&fit=crop&w=1200&q=80",
   preface: [
-    "In the realm of mood disorders, particularly bipolar disorder, hypomania and hypermania are often confused. While both represent states of elevated mood and increased energy, they differ significantly in severity, duration, and impact on daily life.",
-    "This article aims to clarify the clinical differences between hypomania and hypermania, outline the associated risks, and offer insight into how each state is diagnosed and treated. Understanding these distinctions can empower individuals and caregivers to seek appropriate support and avoid potential crises.",
+    "In the realm of mood disorders, particularly bipolar disorder, hypomania and hypermania are often confused. While both represent states of elevated mood and increased energy, they differ significantly in severity, duration, and impact on daily life. This article aims to clarify the clinical differences between hypomania and hypermania, outline the associated risks, and offer insight into how each state is diagnosed and treated. Understanding these distinctions can empower individuals and caregivers to seek appropriate support and avoid potential crises.",
   ],
   sections: [
     {
@@ -15,11 +14,7 @@ export const hypomaniaVsHypermania: ArticleContent = {
         {
           topic: "Characteristics of Hypomania",
           supporting: [
-            "Hypomania is a state of elevated mood, increased energy, and heightened productivity that lasts for at least four consecutive days.",
-            "Unlike full mania, hypomania does not typically result in hospitalization or significant functional impairment.",
-            "Individuals experiencing hypomania may feel unusually confident, creative, talkative, or energetic.",
-            "They may sleep less without feeling tired, take on new projects, or become more socially outgoing.",
-            "Despite these seemingly positive traits, hypomania can be dangerous if it leads to poor decision-making or escalates into mania.",
+            "Hypomania is a state of elevated mood, increased energy, and heightened productivity that lasts for at least four consecutive days. Unlike full mania, hypomania does not typically result in hospitalization or significant functional impairment. Individuals experiencing hypomania may feel unusually confident, creative, talkative, or energetic. They may sleep less without feeling tired, take on new projects, or become more socially outgoing. Despite these seemingly positive traits, hypomania can be dangerous if it leads to poor decision-making or escalates into mania.",
           ],
           list: [
             {
@@ -50,11 +45,7 @@ export const hypomaniaVsHypermania: ArticleContent = {
         {
           topic: "Clinical Definition of Hypermania",
           supporting: [
-            "Hypermania is a term often used interchangeably with 'mania,' particularly in older or non-clinical contexts. Clinically, it refers to a full manic episode.",
-            "Mania is a severe condition characterized by elevated or irritable mood, inflated self-esteem, racing thoughts, distractibility, and impulsive behavior.",
-            "It lasts at least seven consecutive days or requires hospitalization to prevent harm.",
-            "Individuals in a manic state may engage in risky behavior such as spending sprees, reckless driving, or unsafe sexual activity.",
-            "Mania can also involve psychotic features such as delusions or hallucinations, particularly in severe cases.",
+            "Hypermania is a term often used interchangeably with 'mania,' particularly in older or non-clinical contexts. Clinically, it refers to a full manic episode. Mania is a severe condition characterized by elevated or irritable mood, inflated self-esteem, racing thoughts, distractibility, and impulsive behavior. It lasts at least seven consecutive days or requires hospitalization to prevent harm. Individuals in a manic state may engage in risky behavior such as spending sprees, reckless driving, or unsafe sexual activity. Mania can also involve psychotic features such as delusions or hallucinations, particularly in severe cases.",
           ],
           list: [
             {
@@ -85,11 +76,7 @@ export const hypomaniaVsHypermania: ArticleContent = {
         {
           topic: "How They Compare",
           supporting: [
-            "While hypomania and hypermania share some common symptoms, they diverge in intensity, duration, and impact on daily life.",
-            "Hypomania may enhance performance and creativity temporarily, while hypermania is disruptive and often dangerous.",
-            "Only hypermania involves symptoms like delusions, hallucinations, or severe cognitive disorganization.",
-            "People experiencing hypomania are usually aware of changes in their mood, while those in hypermania may lose touch with reality.",
-            "Hypomania rarely leads to hospitalization, whereas hypermania almost always does if untreated.",
+            "While hypomania and hypermania share some common symptoms, they diverge in intensity, duration, and impact on daily life. Hypomania may enhance performance and creativity temporarily, while hypermania is disruptive and often dangerous. Only hypermania involves symptoms like delusions, hallucinations, or severe cognitive disorganization. People experiencing hypomania are usually aware of changes in their mood, while those in hypermania may lose touch with reality. Hypomania rarely leads to hospitalization, whereas hypermania almost always does if untreated.",
           ],
           list: [
             {
@@ -120,11 +107,7 @@ export const hypomaniaVsHypermania: ArticleContent = {
         {
           topic: "Assessment and Clinical Tools",
           supporting: [
-            "Diagnosis involves structured clinical interviews and symptom tracking over time.",
-            "Psychiatrists look for patterns of mood elevation, duration, and impact on functioning.",
-            "Mood charting and collateral information from family members often help differentiate between hypomania and hypermania.",
-            "Bipolar I disorder is diagnosed when at least one manic (hypermanic) episode occurs; Bipolar II is defined by hypomanic episodes and depressive episodes without full mania.",
-            "Proper diagnosis is essential for choosing the right medication and therapeutic interventions.",
+            "Diagnosis involves structured clinical interviews and symptom tracking over time. Psychiatrists look for patterns of mood elevation, duration, and impact on functioning. Mood charting and collateral information from family members often help differentiate between hypomania and hypermania. Bipolar I disorder is diagnosed when at least one manic (hypermanic) episode occurs; Bipolar II is defined by hypomanic episodes and depressive episodes without full mania. Proper diagnosis is essential for choosing the right medication and therapeutic interventions.",
           ],
           list: [
             {
@@ -150,8 +133,7 @@ export const hypomaniaVsHypermania: ArticleContent = {
     },
   ],
   conclusion: [
-    "Hypomania and hypermania exist on the same spectrum of mood elevation, but the differences between them are clinically significant. Hypomania can be subtle and easy to overlook, while hypermania is often overwhelming and dangerous.",
-    "Recognizing these distinctions empowers patients, families, and providers to act swiftly, ensuring that the right support is offered at the right time. Accurate diagnosis, education, and ongoing treatment can prevent escalation and improve long-term outcomes for individuals living with bipolar disorder or other mood spectrum conditions.",
+    "Hypomania and hypermania exist on the same spectrum of mood elevation, but the differences between them are clinically significant. Hypomania can be subtle and easy to overlook, while hypermania is often overwhelming and dangerous. Recognizing these distinctions empowers patients, families, and providers to act swiftly, ensuring that the right support is offered at the right time. Accurate diagnosis, education, and ongoing treatment can prevent escalation and improve long-term outcomes for individuals living with bipolar disorder or other mood spectrum conditions.",
   ],
   references: [
     {
