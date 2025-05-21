@@ -1,26 +1,27 @@
 "use client";
 
+import { ArticleCard } from "@/components/cards/ArticleCard";
 import { Container } from "@/components/Container";
+import Photos from "@/components/HeroPhotos";
 import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
   XIcon,
 } from "@/components/SocialIcons";
+import SocialLink from "@/components/SocialLink";
+import { StaffHighlight } from "@/components/StaffHighlight";
+import { Button } from "@/components/ui/button";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import image1 from "@/images/photos/image-1.jpg";
-import image2 from "@/images/photos/image-2.jpg";
-import image3 from "@/images/photos/image-3.jpg";
-import image4 from "@/images/photos/image-4.jpg";
-import image5 from "@/images/photos/image-5.jpg";
+import { staffDirectory } from "@/lib/constants/about/staff";
+import { articles } from "@/lib/constants/articles/articles";
 import { categories } from "@/lib/constants/disorderCategories";
 import { sortByProperty } from "@/lib/utils/sort";
-import clsx from "clsx";
-import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const disorderCategories = sortByProperty(categories, "title");
+  const router = useRouter();
   return (
     <>
       <Container className="pt-6 sm:pt-12 lg:pt-16">
@@ -57,6 +58,40 @@ export default function Home() {
       </Container>
       <Photos />
       <main className="mx-auto pb-24 lg:pb-32 w-10/12 md:w-11/12">
+        <div className="gap-5 xl:gap-8 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-7 mt-20 h-full">
+          <section className="gap-6 grid lg:grid-cols-2 lg:col-span-2 2xl:col-span-5">
+            {articles.slice(0, 6).map((article, index) => (
+              <ArticleCard
+                key={index}
+                categoryId={article.categoryId}
+                title={article.title}
+                description={article.description}
+              />
+            ))}
+          </section>
+
+          <section className="space-y-6 2xl:col-span-2">
+            {staffDirectory.map((categories, index) => (
+              <div key={index}>
+                <h5>{categories.category}</h5>
+                <div className="my-3 xl:pl-3 xl:border-l">
+                  {categories.team.slice(0, 2).map((team, index) => (
+                    <StaffHighlight
+                      key={index}
+                      name={team.name}
+                      position={team.title}
+                      image={team.image}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+            <Button onClick={() => router.push("/about-us/our-staff")}>
+              Meet The Rest of Our Team
+            </Button>
+          </section>
+        </div>
+
         <section className="gap-6 grid md:grid-cols-2 lg:grid-cols-3 mt-16">
           {disorderCategories.map((category, index) => (
             <HoverEffect
@@ -70,51 +105,5 @@ export default function Home() {
         </section>
       </main>
     </>
-  );
-}
-
-function SocialLink({
-  icon: Icon,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Link> & {
-  icon: React.ComponentType<{ className?: string }>;
-}) {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="w-6 h-6 transition fill-secondary group-hover:fill-tertiary" />
-    </Link>
-  );
-}
-
-function Photos() {
-  const rotations = [
-    "rotate-2",
-    "-rotate-2",
-    "rotate-2",
-    "rotate-2",
-    "-rotate-2",
-  ];
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="flex justify-center gap-5 sm:gap-8 -my-4 py-4 overflow-hidden">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              "relative flex-none rounded-xl sm:rounded-2xl w-44 sm:w-72 overflow-hidden aspect-9/10",
-              rotations[imageIndex % rotations.length]
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
   );
 }
