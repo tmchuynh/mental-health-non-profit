@@ -111,8 +111,7 @@ export const adhdInAdults: ArticleContent = {
   ],
   conclusion: [
     "ADHD in adults is real, prevalent, and often misunderstood. By expanding the conversation beyond childhood and recognizing the nuanced ways ADHD shows up later in life, we can empower more individuals to seek accurate diagnoses and effective treatment. Whether newly diagnosed or still searching for answers, adults with ADHD deserve compassionate, evidence-based care that addresses both their challenges and their strengths. Living with ADHD may come with difficulties, but it can also foster creativity, innovation, and out-of-the-box thinking. With awareness, support, and the right tools, adults with ADHD can thrive.",
-    "If you suspect you may have ADHD, consider seeking an evaluation from a mental health professional with experience in adult ADHD. Remember, seeking help is a sign of strength, not weakness. With the right support, adults with ADHD can build meaningful relationships, succeed in their careers, and lead fulfilling lives.",
-    "Ongoing research continues to shed light on the unique experiences of adults with ADHD. By sharing stories, advocating for better resources, and supporting one another, we can reduce stigma and create a more inclusive world for neurodiverse individuals.",
+    "If you suspect you may have ADHD, consider seeking an evaluation from a mental health professional with experience in adult ADHD. Remember, seeking help is a sign of strength, not weakness. With the right support, adults with ADHD can build meaningful relationships, succeed in their careers, and lead fulfilling lives. Ongoing research continues to shed light on the unique experiences of adults with ADHD. By sharing stories, advocating for better resources, and supporting one another, we can reduce stigma and create a more inclusive world for neurodiverse individuals.",
   ],
   references: [
     {

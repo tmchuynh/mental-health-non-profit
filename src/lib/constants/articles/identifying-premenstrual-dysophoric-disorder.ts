@@ -1,8 +1,7 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const identifyingPremenstrualDysphoricDisorder: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
+
   preface: [
     "Premenstrual Dysphoric Disorder (PMDD) is a severe, often disabling condition that affects a small percentage of menstruating individuals. It goes beyond typical premenstrual syndrome (PMS) symptoms, causing significant emotional and physical distress. This article aims to clarify the symptoms, diagnosis criteria, and treatment options to help those affected seek proper care.",
   ],

@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const theImpactOfSolitudeOnMoodDisorders: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Solitude affects individuals with mood disorders in complex ways, offering both benefits and risks. Understanding how to balance alone time and social connection is crucial for emotional health. This article explores the dual nature of solitude and practical strategies for managing it.",
   ],

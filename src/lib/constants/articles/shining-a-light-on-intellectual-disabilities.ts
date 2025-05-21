@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const shiningALightOnIntellectualDisabilities: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Intellectual disabilities are a group of neurodevelopmental disorders that impact cognitive functioning and adaptive behavior. They can vary widely in severity and presentation, affecting how individuals learn, solve problems, and navigate daily life. This article outlines the spectrum of intellectual disabilities, identifies key causes, and presents support strategies that promote autonomy, inclusion, and lifelong growth. Understanding these disabilities is crucial for fostering empathy and creating supportive environments.",
   ],

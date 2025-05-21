@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const substanceAbuseAndDualDiagnosis: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Substance use disorders frequently coexist with mental health disorders, complicating diagnosis and treatment. This dual diagnosis requires a comprehensive approach to address both conditions simultaneously. Understanding the cycle of self-medication and trauma’s role is essential for effective recovery.",
   ],

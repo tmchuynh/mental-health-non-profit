@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const theRoleOfRelationshipsInTraumaDisorders: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Relationships are foundational in the recovery journey from trauma disorders. Supportive connections provide safety, understanding, and validation critical for healing. Conversely, toxic relationships can exacerbate trauma symptoms and impede recovery. ",
   ],

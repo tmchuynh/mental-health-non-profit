@@ -1,22 +1,18 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const recognizingOcd: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1610395214731-75033ac223ff?auto=format&fit=crop&w=600&q=60",
   preface: [
-    "Obsessive-Compulsive Disorder (OCD) is frequently misunderstood and stigmatized. This article aims to clarify the real symptoms and cognitive patterns involved in OCD. It also highlights effective treatments, especially evidence-based therapies like Exposure and Response Prevention (ERP).",
-    "OCD affects people of all ages and backgrounds, often beginning in childhood or adolescence. The disorder can be debilitating, interfering with daily life, relationships, and work. Raising awareness about the true nature of OCD is crucial for early intervention and reducing stigma.",
+    "Obsessive-Compulsive Disorder (OCD) is frequently misunderstood and stigmatized. This article aims to clarify the real symptoms and cognitive patterns involved in OCD. It also highlights effective treatments, especially evidence-based therapies like Exposure and Response Prevention (ERP). OCD affects people of all ages and backgrounds, often beginning in childhood or adolescence. The disorder can be debilitating, interfering with daily life, relationships, and work. Raising awareness about the true nature of OCD is crucial for early intervention and reducing stigma. ",
   ],
   sections: [
     {
       title: "Understanding OCD Beyond Stereotypes",
+      subtitle: "Common Misconceptions",
       paragraphs: [
         {
           topic: "What OCD really is",
           supporting: [
-            "OCD is characterized by intrusive, unwanted thoughts (obsessions) that cause significant anxiety or distress. These obsessions lead to repetitive behaviors or mental acts (compulsions) intended to reduce the distress or prevent feared outcomes. It is not just about cleanliness or perfectionism, which are common misconceptions. OCD symptoms can involve fears of harm, contamination, symmetry, taboo thoughts, or a need for certainty.",
-            "Obsessions can take many forms, such as fears of accidentally harming others, doubts about having completed a task (like locking a door), or distressing thoughts that go against one's values. Compulsions may include checking, washing, counting, repeating actions, or seeking reassurance. Some compulsions are visible, while others are mental rituals, such as silently repeating phrases or reviewing events in one's mind.",
-            "OCD can be chronic and fluctuate in severity over time. Stress, major life changes, or fatigue can worsen symptoms. Many people with OCD recognize that their thoughts and behaviors are irrational, but feel powerless to stop them. This awareness can lead to shame, secrecy, and avoidance of situations that trigger obsessions.",
+            "OCD is characterized by intrusive, unwanted thoughts (obsessions) that cause significant anxiety or distress. These obsessions lead to repetitive behaviors or mental acts (compulsions) intended to reduce the distress or prevent feared outcomes. It is not just about cleanliness or perfectionism, which are common misconceptions. OCD symptoms can involve fears of harm, contamination, symmetry, taboo thoughts, or a need for certainty. Obsessions can take many forms, such as fears of accidentally harming others, doubts about having completed a task (like locking a door), or distressing thoughts that go against one's values. Compulsions may include checking, washing, counting, repeating actions, or seeking reassurance. Some compulsions are visible, while others are mental rituals, such as silently repeating phrases or reviewing events in one's mind. OCD can be chronic and fluctuate in severity over time. Stress, major life changes, or fatigue can worsen symptoms. Many people with OCD recognize that their thoughts and behaviors are irrational, but feel powerless to stop them. This awareness can lead to shame, secrecy, and avoidance of situations that trigger obsessions.",
           ],
           list: [
             {
@@ -80,14 +76,12 @@ export const recognizingOcd: ArticleContent = {
     },
     {
       title: "The Neuroscience and Cognitive Patterns of OCD",
+      subtitle: "Understanding the Brain and Mind",
       paragraphs: [
         {
           topic: "Brain mechanisms involved",
           supporting: [
-            "OCD involves abnormal activity in brain circuits that regulate error detection, fear response, and habit formation, particularly in the cortico-striato-thalamo-cortical loop. Neurotransmitter imbalances, especially serotonin dysregulation, play a key role. Cognitive patterns include inflated responsibility, overestimation of threat, and intolerance of uncertainty. These factors drive the cycle of obsession and compulsion, making it difficult for individuals to break free without intervention.",
-            "Research using brain imaging has shown that people with OCD often have increased activity in the orbitofrontal cortex, anterior cingulate cortex, and caudate nucleus. These areas are involved in decision-making, emotional regulation, and the formation of habits.",
-            "Cognitive distortions common in OCD include catastrophizing (expecting the worst), magical thinking (believing thoughts can cause events), and perfectionism. These patterns reinforce the urge to perform compulsions as a way to neutralize anxiety or prevent imagined harm.",
-            "Understanding the biological and psychological underpinnings of OCD helps reduce self-blame and supports a more compassionate approach to treatment.",
+            "OCD involves abnormal activity in brain circuits that regulate error detection, fear response, and habit formation, particularly in the cortico-striato-thalamo-cortical loop. Neurotransmitter imbalances, especially serotonin dysregulation, play a key role. Cognitive patterns include inflated responsibility, overestimation of threat, and intolerance of uncertainty. These factors drive the cycle of obsession and compulsion, making it difficult for individuals to break free without intervention. Research using brain imaging has shown that people with OCD often have increased activity in the orbitofrontal cortex, anterior cingulate cortex, and caudate nucleus. These areas are involved in decision-making, emotional regulation, and the formation of habits. Cognitive distortions common in OCD include catastrophizing (expecting the worst), magical thinking (believing thoughts can cause events), and perfectionism. These patterns reinforce the urge to perform compulsions as a way to neutralize anxiety or prevent imagined harm. Understanding the biological and psychological underpinnings of OCD helps reduce self-blame and supports a more compassionate approach to treatment.",
           ],
           list: [
             {
@@ -132,6 +126,7 @@ export const recognizingOcd: ArticleContent = {
     {
       title:
         "Evidence-Based Treatments: Exposure and Response Prevention (ERP)",
+      subtitle: "Effective Therapy for OCD",
       paragraphs: [
         {
           topic: "How ERP works",
@@ -165,14 +160,36 @@ export const recognizingOcd: ArticleContent = {
     },
     {
       title: "Breaking the Stigma and Seeking Help",
+      subtitle: "The Importance of Awareness and Advocacy",
       paragraphs: [
         {
           topic: "Why stigma persists and how to combat it",
           supporting: [
-            "Misconceptions about OCD trivialize the disorder and discourage people from seeking help. Education about the true nature of OCD helps reduce shame and misunderstandings. Early diagnosis and treatment significantly improve outcomes. Support from family, friends, and mental health professionals is critical. Access to specialized care remains a challenge, highlighting the need for awareness and advocacy.",
+            "Misconceptions about OCD trivialize the disorder and discourage people from seeking help. Education about the true nature of OCD helps reduce shame and misunderstandings. Early diagnosis and treatment significantly improve outcomes. Support from family, friends, and mental health professionals is critical. Access to specialized care remains a challenge, highlighting the need for awareness and advocacy. ",
           ],
-          concluding:
-            "Breaking stigma and promoting understanding leads to better support and recovery. Encouraging open conversations about mental health can help individuals feel less isolated and more empowered to seek help. ",
+        },
+        {
+          topic: "Advocacy and Awareness",
+          supporting: [
+            "Raising awareness about OCD and its impact is essential for reducing stigma. Advocacy efforts can help improve access to treatment and support for individuals with OCD. Organizations like the International OCD Foundation provide resources, education, and support for those affected by OCD.",
+          ],
+          list: [
+            {
+              title: "Education and Awareness Campaigns",
+              description:
+                "Promoting accurate information about OCD through campaigns can help reduce stigma.",
+            },
+            {
+              title: "Support Groups",
+              description:
+                "Connecting individuals with OCD to support groups fosters understanding and reduces isolation.",
+            },
+            {
+              title: "Advocacy Organizations",
+              description:
+                "Organizations like the International OCD Foundation work to raise awareness and improve access to treatment.",
+            },
+          ],
         },
       ],
     },

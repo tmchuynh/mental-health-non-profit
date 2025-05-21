@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const whenMoodDisordersAreMisdiagnosed: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Misdiagnosing mood disorders is more common than most people realize—and it can have long-lasting consequences. Accurate diagnosis is critical for effective treatment and recovery, yet many individuals struggle under the weight of inappropriate care plans due to initial diagnostic errors. This article sheds light on how these misdiagnoses occur, what risks they carry, and what individuals and families can do to advocate for proper evaluation and support.",
   ],

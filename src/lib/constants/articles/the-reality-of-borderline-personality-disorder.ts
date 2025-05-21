@@ -1,10 +1,10 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
-export const theRealityOfBpd: ArticleContent = {
+export const theRealityOfBorderlinePersonalityDisorder: ArticleContent = {
   image:
-    "https://images.unsplash.com/photo-1578758889514-3866e5e9b3d0?auto=format&fit=crop&w=600&q=60",
+    "https://images.unsplash.com/photo-1493836512294-502baa1986e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRlcHJlc3Npb258ZW58MHx8MHx8fDA%3D",
   preface: [
-    "Borderline Personality Disorder (BPD) is widely misunderstood and stigmatized. This article provides a compassionate, factual look at BPD, its root causes, and hallmark symptoms. It also explains the science behind Dialectical Behavior Therapy (DBT) and offers hope through stories of coping and recovery.",
+    "Borderline Personality Disorder (BPD) is widely misunderstood and stigmatized. This article provides a compassionate, factual look at BPD, its root causes, and hallmark symptoms. It also explains the science behind Dialectical Behavior Therapy (DBT) and offers hope through stories of coping and recovery. Understanding BPD is crucial for reducing stigma and promoting empathy. By recognizing the complexities of this disorder, we can foster a more supportive environment for those affected. ",
   ],
   sections: [
     {
@@ -13,7 +13,8 @@ export const theRealityOfBpd: ArticleContent = {
         {
           topic: "What BPD really entails",
           supporting: [
-            "BPD involves intense emotional sensitivity, instability in moods, self-image, and relationships. It is often rooted in early trauma, neglect, or attachment disruptions. Common symptoms include fear of abandonment, impulsivity, self-harm behaviors, and rapid mood swings. It is not attention-seeking or manipulative behavior, but a deep struggle with emotional regulation and identity. Many people with BPD experience chronic feelings of emptiness and difficulties trusting others.",
+            "BPD involves intense emotional sensitivity, instability in moods, self-image, and relationships. It is often rooted in early trauma, neglect, or attachment disruptions. Common symptoms include fear of abandonment, impulsivity, self-harm behaviors, and rapid mood swings. It is not attention-seeking or manipulative behavior, but a deep struggle with emotional regulation and identity. Many people with BPD experience chronic feelings of emptiness and difficulties trusting others. These symptoms can lead to tumultuous relationships and self-destructive behaviors. Understanding BPD requires recognizing the emotional pain and turmoil that individuals experience. It is essential to approach BPD with empathy and compassion, acknowledging the challenges faced by those living with this disorder.",
+            "BPD is often mischaracterized as a personality disorder marked by manipulative behavior or emotional instability. However, it is a complex condition that affects how individuals perceive themselves and relate to others. The emotional dysregulation associated with BPD can lead to intense feelings of anger, sadness, and anxiety, often triggered by perceived rejection or abandonment. This emotional volatility can result in impulsive actions, self-harm, and difficulty maintaining stable relationships. Individuals with BPD may also struggle with identity issues, feeling uncertain about their sense of self and personal values. It is crucial to understand that these behaviors are not intentional but rather a response to overwhelming emotions and past trauma.",
           ],
           list: [
             {
@@ -71,10 +72,11 @@ export const theRealityOfBpd: ArticleContent = {
         {
           topic: "Dialectical Behavior Therapy explained",
           supporting: [
-            "DBT is specifically designed to help people with BPD manage intense emotions and reduce self-destructive behaviors. It combines cognitive-behavioral techniques with mindfulness and acceptance strategies. DBT teaches skills in four key areas: mindfulness, distress tolerance, emotion regulation, and interpersonal effectiveness. Clinical trials consistently show DBT reduces suicidal behavior, hospitalizations, and improves quality of life. Therapists work closely with patients to tailor DBT to individual challenges and progress.",
+            "DBT is specifically designed to help people with BPD manage intense emotions and reduce self-destructive behaviors. It combines cognitive-behavioral techniques with mindfulness and acceptance strategies. DBT teaches skills in four key areas: mindfulness, distress tolerance, emotion regulation, and interpersonal effectiveness. Clinical trials consistently show DBT reduces suicidal behavior, hospitalizations, and improves quality of life. Therapists work closely with patients to tailor DBT to individual challenges and progress. DBT emphasizes the importance of a strong therapeutic alliance, where the therapist provides validation and support while challenging unhelpful behaviors. This balance of acceptance and change is central to DBT's effectiveness.",
+            "DBT is structured around individual therapy sessions, group skills training, and phone coaching. The individual therapy focuses on addressing specific issues and applying DBT skills in real-life situations. Group skills training provides a supportive environment for learning and practicing new skills with peers. Phone coaching allows individuals to reach out to their therapist for support during crises or when they need help applying skills in the moment. This comprehensive approach helps individuals build a toolkit of coping strategies and fosters a sense of community and connection.",
           ],
           concluding:
-            "DBT offers a practical, science-backed path to emotional stability and recovery.",
+            "DBT offers a practical, science-backed path to emotional stability and recovery. It empowers individuals to take control of their lives and develop healthier relationships with themselves and others. DBT is not a quick fix but a commitment to long-term healing and growth. With the right support, individuals with BPD can learn to navigate their emotions and build fulfilling lives.",
         },
       ],
     },
@@ -84,7 +86,8 @@ export const theRealityOfBpd: ArticleContent = {
         {
           topic: "Real experiences and support",
           supporting: [
-            "Many individuals with BPD report feeling isolated and misunderstood but find hope through therapy and community support. Coping strategies include building a strong support network, practicing self-compassion, and learning emotional regulation skills. Family education and involvement improve outcomes by fostering understanding and reducing conflict. Peer support groups provide connection and validation for those living with BPD. Ongoing therapy and medication, where appropriate, support long-term healing.",
+            "Many individuals with BPD report feeling isolated and misunderstood but find hope through therapy and community support. Coping strategies include building a strong support network, practicing self-compassion, and learning emotional regulation skills. Family education and involvement improve outcomes by fostering understanding and reducing conflict. Peer support groups provide connection and validation for those living with BPD. Ongoing therapy and medication, where appropriate, support long-term healing. Sharing personal stories can help reduce stigma and promote understanding. Individuals with BPD often express a desire for connection and acceptance, and sharing their experiences can foster empathy and compassion in others. By highlighting the challenges and triumphs of living with BPD, we can create a more supportive environment for those affected by this disorder.",
+            "Many individuals with BPD report feeling isolated and misunderstood but find hope through therapy and community support. Coping strategies include building a strong support network, practicing self-compassion, and learning emotional regulation skills. Family education and involvement improve outcomes by fostering understanding and reducing conflict. Peer support groups provide connection and validation for those living with BPD. Ongoing therapy and medication, where appropriate, support long-term healing. Sharing personal stories can help reduce stigma and promote understanding. Individuals with BPD often express a desire for connection and acceptance, and sharing their experiences can foster empathy and compassion in others. By highlighting the challenges and triumphs of living with BPD, we can create a more supportive environment for those affected by this disorder.",
           ],
         },
       ],

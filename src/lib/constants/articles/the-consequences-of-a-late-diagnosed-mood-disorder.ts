@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const theConsequencesOfALateDiagnosedMoodDisorder: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Mood disorders, when diagnosed late, often lead to more severe clinical and personal consequences than if identified early. Delayed diagnosis can complicate treatment and prolong suffering, affecting many areas of an individual’s life. Understanding these consequences highlights the critical need for early detection and intervention.",
   ],

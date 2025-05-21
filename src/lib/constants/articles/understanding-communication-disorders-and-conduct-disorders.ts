@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const understandingCommunicationAndConductDisorders: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Communication disorders and conduct disorders are distinct but often co-occurring neurodevelopmental conditions affecting children and adolescents. Each presents challenges that interfere with learning, social development, and emotional well-being. This article explains the characteristics, causes, and treatment strategies for both disorders, emphasizing the importance of early detection and comprehensive support.",
   ],

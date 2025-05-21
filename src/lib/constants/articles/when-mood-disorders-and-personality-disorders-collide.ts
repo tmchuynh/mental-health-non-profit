@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const whenMoodDisordersAndPersonalityDisordersCollide: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Mood disorders and personality disorders frequently coexist, creating diagnostic and treatment complexities that demand nuanced understanding. This overlap can mask symptoms, delay accurate diagnosis, and complicate treatment planning, often leading to suboptimal outcomes. A holistic, individualized approach is essential to effectively manage co-occurring mood and personality disorders.",
   ],

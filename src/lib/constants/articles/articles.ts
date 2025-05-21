@@ -114,7 +114,7 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1610081542816-228197b6f9be?auto=format&fit=crop&w=600&q=60",
   },
   {
-    id: "the-reality-of-bpd",
+    id: "the-reality-of-borderline-personality-disorder",
     title: "The Reality of Borderline Personality Disorder",
     subtitle: "A Compassionate Look into a Misunderstood Disorder",
     categoryId: "personalityDisorders",

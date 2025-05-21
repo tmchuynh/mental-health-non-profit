@@ -1,8 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const theDifferenceBetweenAutismAndAspergers: ArticleContent = {
-  image:
-    "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   preface: [
     "Autism Spectrum Disorder (ASD) encompasses a range of neurodevelopmental conditions, including what was once known as Asperger's Syndrome. Though Asperger’s is no longer diagnosed as a separate condition under the DSM-5, many individuals still identify with the term due to its unique historical and social significance. Understanding the similarities and differences between Autism and Asperger’s can help clarify diagnostic approaches, inform support strategies, and promote more accurate awareness of the spectrum.",
   ],

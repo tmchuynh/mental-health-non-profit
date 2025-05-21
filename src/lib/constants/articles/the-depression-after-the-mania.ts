@@ -2,7 +2,7 @@ import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const theDepressionAfterTheMania: ArticleContent = {
   image:
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=60",
+    "https://plus.unsplash.com/premium_photo-1666299237090-a380aa4f71bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ymlwb2xhcnxlbnwwfHwwfHx8MA%3D%3D",
   preface: [
     "Bipolar disorder is marked by dramatic shifts in mood, ranging from the energetic highs of mania to the debilitating lows of depression. While manic episodes are often more recognizable, the depressive crash that follows can be equally, if not more, challenging. Understanding why this transition happens and how it affects individuals is critical for early intervention, support, and long-term recovery planning. This article delves into the psychological and physiological causes of post-manic depression, the symptoms that differentiate it from typical depression, and the coping strategies that offer relief and stability. Whether you live with bipolar disorder or care for someone who does, knowing what to expect and how to respond can be life-saving.",
   ],
@@ -218,6 +218,8 @@ export const theDepressionAfterTheMania: ArticleContent = {
           ],
         },
         {
+          image:
+            "https://images.unsplash.com/photo-1439902315629-cd882022cea0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGVwcmVzc2lvbnxlbnwwfHwwfHx8MA%3D%3D",
           topic: "Why the Crash Feels Worse Than Expected",
           supporting: [
             "The emotional high of mania often comes with a distorted sense of grandiosity, limitless potential, and invincibility. When that energy depletes, it leaves the brain and body in a state of exhaustion—physically and emotionally. There is often a sense of shame, embarrassment, or regret about actions taken during the manic phase, which can worsen depressive feelings. Some individuals experience a deep sense of loss—of the ‘productive’ or ‘invincible’ self they felt during mania. This emotional contrast can make the depressive episode feel more intense and unbearable.",
