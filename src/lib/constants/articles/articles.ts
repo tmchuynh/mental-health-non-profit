@@ -30,20 +30,6 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1518131678255-bf1f93e837f0?auto=format&fit=crop&w=600&q=60",
   },
   {
-    id: "mental-health-in-lgbtq-youth",
-    title: "Mental Health in LGBTQ+ Youth",
-    subtitle: "Affirming Care and Safe Spaces",
-    categoryId: "youthMentalHealth",
-    description:
-      "LGBTQ+ youth are disproportionately affected by mental health challenges. Discover how validation, safety, and access to affirming care can change lives.",
-    introduction:
-      "LGBTQ+ youth often face unique mental health risks due to discrimination, bullying, family rejection, and lack of inclusive support systems. This article addresses the elevated rates of depression, anxiety, and suicide in this population, and explores how schools, families, and therapists can provide affirming, life-saving support. Resources and actionable tips are included.",
-    image:
-      "https://images.unsplash.com/photo-1580584126903-c17d42ec2c3a?auto=format&fit=crop&w=600&q=60",
-    darkImage:
-      "https://images.unsplash.com/photo-1594824476964-3c66d1b06c0d?auto=format&fit=crop&w=600&q=60",
-  },
-  {
     id: "substance-abuse-and-dual-diagnosis",
     title: "Substance Abuse and Dual Diagnosis",
     subtitle: "When Mental Illness and Addiction Collide",
@@ -241,7 +227,7 @@ export const articles: Article[] = [
   },
   {
     id: "disinhibited-social-engagement-disorder-dsed",
-    title: "Disinhibited Social Engagement Disorder (DSED)",
+    title: "Disinhibited Social Engagement Disorder DSED",
     subtitle: "When Children Struggle with Boundaries and Attachment",
     categoryId: "traumaDisorders",
     description:
