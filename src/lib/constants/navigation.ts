@@ -64,15 +64,14 @@ export const menuData = [
       { type: "item", label: "Articles", href: "/articles" },
       {
         type: "item",
-        label: "Learning Resources",
-        href: "/articles/learning-resources",
+        label: "Resources",
+        href: "/resources",
       },
       { type: "separator" },
       { type: "item", label: "Crisis Helplines", href: "/crisis-helplines" },
     ],
   },
 ];
-
 
 export const menuDataMobile = [
   {
@@ -115,7 +114,7 @@ export const menuDataMobile = [
           {
             type: "item",
             label: "Learning Resources",
-            href: "/articles/learning-resources",
+            href: "/resources",
           },
           { type: "separator" },
           {
