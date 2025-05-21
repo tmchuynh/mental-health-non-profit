@@ -3,20 +3,59 @@
 import { articles } from "@/lib/constants/articles/articles";
 import { ArticleContent } from "@/lib/interfaces/articles";
 import { cn } from "@/lib/utils";
-import { capitalize, formatUrlToID } from "@/lib/utils/format";
+import { formatUrlToID } from "@/lib/utils/format";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export default function BlogarticleData() {
+const RecursiveList = ({
+  list,
+  depth = 3,
+}: {
+  list: any[];
+  depth?: number;
+}) => {
+  return (
+    <ul
+      className={cn("list-decimal", {
+        "list-none": depth === 4,
+        "list-[upper-roman] list-inside ml-3": depth === 5,
+        "ml-6": depth === 3,
+      })}
+    >
+      {list.map((item, index) => (
+        <li key={index} className={cn("text-balance", {})}>
+          {item.title && (
+            <>
+              <strong
+                className={cn("text-foreground", {
+                  "text-accent": depth === 3,
+                  "text-tertiary ": depth === 5,
+                })}
+              >
+                {item.title}
+              </strong>
+              :{" "}
+            </>
+          )}
+          {item.description && <span>{item.description}</span>}
+          {item.list && <RecursiveList list={item.list} depth={depth + 1} />}
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export default function BlogArticleData() {
   const segments = usePathname().split("/");
-  const router = useRouter();
   const article = segments[segments.length - 1];
 
   const articleID = formatUrlToID(article);
-  const articleInformation = articles.find(
-    (a) => a.title === capitalize(article)
-  );
+  const articleInformation = articles.find((a) => a.id === article);
+
+  console.log("articleInformation", articleInformation);
+  console.log("articleID", articleID);
+  console.log("article", article);
 
   const [articleData, setArticleData] = useState<ArticleContent>();
 
@@ -54,9 +93,7 @@ export default function BlogarticleData() {
               <h5>{articleInformation.subtitle}</h5>
 
               {articleData?.preface.map((p, pIndex) => (
-                <p key={pIndex} className="indent-5">
-                  {p}
-                </p>
+                <p key={pIndex}>{p}</p>
               ))}
             </div>
             {articleData?.image && (
@@ -100,9 +137,7 @@ export default function BlogarticleData() {
                         <h2>{section.title}</h2>
                         {section.preface &&
                           section.preface.map((content, sIndex) => (
-                            <p key={sIndex} className="indent-5">
-                              {content}
-                            </p>
+                            <p key={sIndex}>{content}</p>
                           ))}
                       </div>
                     </div>
@@ -128,22 +163,26 @@ export default function BlogarticleData() {
                             >
                               <h3>{paragraph.topic}</h3>
                               {paragraph.supporting.map((content, sIndex) => (
-                                <p key={sIndex} className="indent-5">
-                                  {content}
-                                </p>
+                                <p key={sIndex}>{content}</p>
                               ))}
                               {paragraph.list && (
-                                <ul className="list-[upper-roman] list-inside">
+                                <ul>
                                   {paragraph.list.map((item, iIndex) => (
                                     <li
                                       key={iIndex}
-                                      className="flex items-start gap-3"
+                                      className="flex items-start gap-1"
                                     >
                                       {item.title && (
-                                        <p>
-                                          <strong>{item.title}: </strong>{" "}
-                                          {item.description}
-                                        </p>
+                                        <div>
+                                          <p>
+                                            <strong>{item.title}: </strong>{" "}
+                                            {item.description}
+                                          </p>
+
+                                          {item.list && (
+                                            <RecursiveList list={item.list} />
+                                          )}
+                                        </div>
                                       )}
                                     </li>
                                   ))}
@@ -172,7 +211,7 @@ export default function BlogarticleData() {
                             )}
                           </div>
                           {paragraph.concluding && (
-                            <p className="indent-5">{paragraph.concluding}</p>
+                            <p>{paragraph.concluding}</p>
                           )}
                         </div>
                       ))}
@@ -184,9 +223,7 @@ export default function BlogarticleData() {
               <div>
                 <h2>Conclusion</h2>
                 {articleData.conclusion.map((conclusion, cIndex) => (
-                  <p key={cIndex} className="indent-5">
-                    {conclusion}
-                  </p>
+                  <p key={cIndex}>{conclusion}</p>
                 ))}
               </div>
             </section>
