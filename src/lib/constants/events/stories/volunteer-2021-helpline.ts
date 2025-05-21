@@ -22,37 +22,37 @@ export const volunteer2021Helpline: ArticleContent = {
             {
               title: "Active Listening",
               description:
-                "Volunteers learned techniques to listen without judgment and validate callers' feelings.",
+                "Volunteers learned techniques to listen without judgment and validate callers' feelings. Trainers emphasized the importance of creating a safe space for callers to share their experiences. Role-playing exercises allowed volunteers to practice reflective listening and paraphrasing, helping them develop the skills needed to respond effectively. Participants reported feeling more confident in their ability to connect with callers and provide meaningful support.",
             },
             {
               title: "Crisis Intervention",
               description:
-                "Trainers provided strategies for managing high-stress situations and ensuring caller safety.",
+                "Trainers provided strategies for managing high-stress situations and ensuring caller safety. Role-plays allowed volunteers to practice de-escalation techniques and develop confidence in their ability to handle emergencies. Volunteers learned how to assess risk, ask open-ended questions, and provide reassurance. The session included discussions on recognizing signs of distress and understanding the importance of remaining calm and composed during challenging calls.",
             },
             {
               title: "Resource Referral",
               description:
-                "Volunteers were trained to connect callers with local mental health resources and support services.",
+                "Volunteers were trained to connect callers with local mental health resources and support services. Trainers provided a comprehensive overview of available community resources, including counseling centers, crisis shelters, and support groups. Volunteers practiced identifying caller needs and matching them with the most appropriate services, learning how to navigate resource directories and make warm referrals when possible. Emphasis was placed on following up with callers to ensure they received the help they needed.",
             },
             {
               title: "Self-Care Practices",
               description:
-                "The importance of self-care for volunteers was emphasized, with tips on managing stress and preventing burnout.",
+                "The importance of self-care for volunteers was emphasized, with tips on managing stress and preventing burnout. Trainers introduced mindfulness exercises, stress reduction techniques, and the value of setting healthy boundaries. Volunteers were encouraged to recognize signs of compassion fatigue and to seek support from peers and supervisors when needed. The training included guided relaxation sessions and discussions on balancing volunteer responsibilities with personal well-being.",
             },
             {
               title: "Confidentiality and Ethics",
               description:
-                "Volunteers learned about the ethical responsibilities of helpline work, including maintaining caller confidentiality.",
+                "Volunteers learned about the ethical responsibilities of helpline work, including maintaining caller confidentiality. Trainers reviewed real-world scenarios involving privacy concerns, mandatory reporting, and ethical dilemmas. Volunteers discussed the importance of trust and the legal obligations related to safeguarding sensitive information. The session also covered best practices for documenting calls and handling situations where confidentiality may be challenged.",
             },
             {
               title: "Cultural Competency",
               description:
-                "Training included discussions on cultural sensitivity and understanding diverse backgrounds.",
+                "Training included discussions on cultural sensitivity and understanding diverse backgrounds. Volunteers explored topics such as language barriers, cultural stigma around mental health, and the impact of identity on help-seeking behaviors. Role-plays and case studies helped volunteers practice respectful communication and adapt their support to meet the unique needs of callers from various backgrounds. The session highlighted the importance of ongoing learning and humility in cross-cultural interactions.",
             },
             {
               title: "Team Building",
               description:
-                "Activities focused on building trust and collaboration among volunteers, fostering a supportive environment.",
+                "Activities focused on building trust and collaboration among volunteers, fostering a supportive environment. Icebreakers, group challenges, and collaborative problem-solving exercises helped participants get to know one another and develop a sense of unity. Volunteers shared personal stories and reflected on their motivations for joining the helpline, creating a foundation of empathy and mutual respect. The training concluded with a group commitment ceremony, where each volunteer pledged to uphold the values of compassion, confidentiality, and teamwork.",
             },
           ],
         },
@@ -60,6 +60,7 @@ export const volunteer2021Helpline: ArticleContent = {
           topic: "Team Building",
           supporting: [
             "Participants formed strong bonds, sharing their motivations for volunteering and supporting one another throughout the day. Many expressed gratitude for the opportunity to make a difference in the lives of others. During lunch, volunteers gathered in small groups to discuss their hopes and fears about taking calls. Several shared that they had once been on the receiving end of a helpline and wanted to pay that kindness forward. By the end of the day, the group felt like a family, united by a common purpose.",
+            "Team-building activities included trust exercises, collaborative games, and open discussions about the challenges and rewards of helpline work. Volunteers worked together to solve hypothetical scenarios, fostering creative problem-solving and reinforcing the importance of teamwork. The supportive atmosphere encouraged participants to be vulnerable and honest, laying the groundwork for lasting friendships and a strong support network. Many volunteers exchanged contact information and made plans to stay connected beyond the training, ensuring ongoing encouragement and camaraderie.",
           ],
         },
       ],

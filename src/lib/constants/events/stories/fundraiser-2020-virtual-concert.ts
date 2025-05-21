@@ -12,34 +12,37 @@ export const fundraiser2020VirtualConcert: ArticleContent = {
       subtitle: "Connecting Virtually",
       preface: [
         "The concert was streamed live, allowing attendees to join from the safety and comfort of their homes. Despite physical distance, the event created a sense of togetherness, with viewers tuning in from across the city and beyond. Screens lit up with families, friends, and individuals gathering to enjoy music, share stories, and support mental health. The event was hosted on a user-friendly platform, making it accessible to all. Viewers were encouraged to interact through live chat, sharing their thoughts and experiences, creating a vibrant online community.",
+        "Before the concert began, a virtual lobby allowed attendees to mingle, explore digital resource booths, and participate in a pre-show trivia game about mental health awareness. Organizers provided a downloadable concert program, featuring artist bios, mental health tips, and ways to get involved. Throughout the evening, hosts shared behind-the-scenes glimpses of performers preparing in their home studios, adding a personal touch to the virtual experience. The chat was filled with emojis, song requests, and heartfelt messages, making the event feel lively and interactive despite the distance.",
       ],
       paragraphs: [
         {
           topic: "Performances",
           supporting: [
             "A diverse lineup of musicians and performers donated their talents, sharing uplifting songs and personal stories. Audience members interacted via chat, sending messages of encouragement and gratitude. Highlights included a moving acoustic set by local favorite Jasmine Lee, who dedicated a song to her late brother and spoke about her own journey with depression. The chat filled with supportive messages and virtual applause. A youth choir performed an original piece about hope and resilience, bringing many viewers to tears. Several performers paused to share how music had helped them cope with isolation and anxiety during the pandemic.",
+            "The concert featured genres ranging from folk and pop to jazz and classical, ensuring there was something for everyone. Each artist introduced their set with a personal message about the importance of mental health, and some invited viewers to sing along or share their own stories in the chat. A highlight was the collaborative finale, where all performers joined together virtually for a rendition of 'Lean on Me,' with audience members encouraged to turn on their cameras and sing along from home. The sense of unity and shared purpose was evident, as viewers posted photos of their at-home watch parties and sent virtual applause after each performance.",
           ],
         },
         {
           topic: "Spreading Awareness",
           supporting: [
             "Between sets, mental health professionals shared tips for coping during difficult times and information about available resources. The event reached a wide audience, raising awareness about mental health challenges heightened by the pandemic. A panel discussion featured counselors and peer mentors answering live questions from the audience, covering topics like managing stress, supporting loved ones, and finding help. Attendees were encouraged to share their own stories in the chat, creating a powerful sense of solidarity and understanding. The event also included a segment on the importance of self-care, with practical tips shared by mental health advocates. Viewers were encouraged to take breaks, practice mindfulness, and reach out for support when needed.",
+            "Short video testimonials from individuals who had benefited from mental health services were interspersed throughout the program, putting a human face on the impact of the funds raised. The interactive Q&A allowed for real-time engagement, with questions ranging from how to support a friend in crisis to managing anxiety while working from home. Organizers also shared downloadable guides and links to virtual support groups, ensuring attendees left with practical tools and resources. The chat became a safe space for attendees to express their feelings, offer encouragement, and connect with others facing similar challenges.",
           ],
           list: [
             {
               title: "Mental Health Resources",
               description:
-                "Information about local support services and hotlines was shared throughout the event. ",
+                "Information about local support services and hotlines was shared throughout the event. Attendees could download a digital resource packet and access a directory of local and national helplines, counseling services, and online support communities.",
             },
             {
               title: "Interactive Q&A",
               description:
-                "A live Q&A session with mental health professionals answered audience questions.",
+                "A live Q&A session with mental health professionals answered audience questions. The panel addressed topics such as coping with grief, building resilience, and supporting children and teens during remote learning.",
             },
             {
               title: "Resource Sharing",
               description:
-                "Links to helpful articles, videos, and local resources were provided in the chat.",
+                "Links to helpful articles, videos, and local resources were provided in the chat. Moderators highlighted new resources as they became available, and a follow-up email after the event included a curated list of mental health tools and community contacts.",
             },
           ],
         },

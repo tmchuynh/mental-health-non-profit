@@ -1,7 +1,8 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const fundraiser2017CookOff: ArticleContent = {
-  image: "/images/events/community-cook-off-2017.jpg",
+  image:
+    "https://plus.unsplash.com/premium_photo-1680291971376-ccc54aacb22b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29va2luZ3xlbnwwfHwwfHx8MA%3D%3D",
   preface: [
     "October 2017 saw the City Park Pavilion transformed into a culinary arena for our Community Cook-Off. Local chefs and home cooks competed to create delicious dishes, all while raising funds for mental health services. The event was a flavorful celebration of community, creativity, and compassion.",
     "The event drew over 200 attendees, including families, local business owners, and volunteers. The aroma of home-cooked meals filled the air, and the sense of camaraderie was palpable as everyone gathered for a common cause.",
@@ -66,6 +67,8 @@ export const fundraiser2017CookOff: ArticleContent = {
           ],
         },
         {
+          image:
+            "https://plus.unsplash.com/premium_photo-1680291971278-acad3fe07a7f?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wxfHx8ZW58MHx8fHx8",
           topic: "Memorable Moments",
           supporting: [
             "A surprise flash-mob dance by volunteers delighted the crowd and brought everyone together for a group photo. The sense of unity and joy was evident as people from all walks of life celebrated their shared commitment to mental health.",
@@ -106,6 +109,8 @@ export const fundraiser2017CookOff: ArticleContent = {
       ],
     },
     {
+      image:
+        "https://plus.unsplash.com/premium_photo-1679090004444-ae771fe8b484?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8MA%3D%3D",
       title: "Cook-Off Day Highlights",
       subtitle: "A Community Feast",
       preface: [
@@ -252,6 +257,8 @@ export const fundraiser2017CookOff: ArticleContent = {
       ],
     },
     {
+      image:
+        "https://plus.unsplash.com/premium_photo-1679090005053-cd122d5241af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8",
       title: "Fundraising Results",
       preface: [
         "The Community Cook-Off exceeded fundraising goals, enabling the launch of new mental health initiatives. Organizers announced that proceeds would fund counseling, peer support groups, and educational workshops. A special recognition was given to the top fundraising team, 'Cooks for a Cause,' who raised over $3,000 through sponsorships and bake sales. Their efforts inspired others to get involved and support the cause.",

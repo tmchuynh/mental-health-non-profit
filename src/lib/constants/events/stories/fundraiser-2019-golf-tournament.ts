@@ -1,7 +1,8 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const fundraiser2019GolfTournament: ArticleContent = {
-  image: "/images/events/golf-tournament-2019.jpg",
+  image:
+    "https://plus.unsplash.com/premium_photo-1679713921306-9cdf45780ead?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZmluZ3xlbnwwfHwwfHx8MA%3D%3D",
   preface: [
     "On a sunny July morning in 2019, supporters teed off at the Sunnyvale Golf Club for our annual Charity Golf Tournament. The event brought together golf enthusiasts, sponsors, and community members to raise funds for vital mental health programs.",
     "The tournament was a blend of friendly competition, networking, and philanthropy, all in support of a great cause.",
@@ -41,27 +42,33 @@ export const fundraiser2019GolfTournament: ArticleContent = {
       subtitle: "Inspiration on the Course",
       paragraphs: [
         {
+          image:
+            "https://images.unsplash.com/photo-1632244112951-95b29c92eee1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvbGZpbmd8ZW58MHx8MHx8fDA%3D",
           topic: "Mark's Story",
           supporting: [
             "Mark Evans, the tournament chair, shared how his brother's struggle with depression inspired him to get involved. 'Golf was always our way to connect. Today, I play in his memory and to help others find hope,' he said. Mark's brother, Tom, was a passionate golfer who struggled with mental health issues for years. Tragically, he passed away in 2017. Mark's commitment to raising awareness and funds for mental health programs stems from his desire to honor Tom's memory and help others facing similar challenges. Mark's story resonated with many participants, who shared their own experiences and reasons for supporting the cause.",
+            "During his speech, Mark recounted fond memories of playing early morning rounds with Tom, describing how the golf course became a safe space for open conversations about life and struggles. He emphasized the importance of breaking the stigma around mental health and encouraged others to reach out for support when needed. Mark's openness inspired a moment of silence in Tom's honor, and several attendees approached him afterward to share their own stories of loss and hope. Mark continues to volunteer year-round, organizing support groups and advocating for better access to mental health care in the community.",
           ],
         },
         {
           topic: "Emily's Experience",
           supporting: [
             "Emily Chen, winner of the longest drive, spoke about her own journey with anxiety. 'Sports have helped me manage stress and build confidence. Being part of this event reminds me I'm not alone,' she shared. Emily, a college student and avid golfer, has faced anxiety and depression since her teenage years. She credits golf with helping her find balance and focus during difficult times. Winning the longest drive competition was a personal victory for Emily, symbolizing her growth and resilience. 'I hope my story inspires others to seek help and find their own passions,' she said.",
+            "Emily also described how joining her university's golf team provided her with a supportive community and lifelong friendships. She volunteers as a peer mentor for other students struggling with mental health challenges, using her own experiences to encourage others to seek help. At the tournament, Emily connected with several young participants, sharing tips for managing stress both on and off the course. Her story was featured in the event newsletter, and she has since become an advocate for youth mental health initiatives.",
           ],
         },
         {
           topic: "The Johnson Family",
           supporting: [
             "The Johnson family played as a team, dedicating their round to their late father, who was a mental health advocate. 'He believed in the power of community. We know he'd be proud to see so many people coming together for this cause,' said eldest son Michael. The Johnsons have participated in the tournament for several years, using it as an opportunity to honor their father's legacy and raise awareness about mental health. They shared stories of their father's dedication to helping others and how his work inspired them to continue advocating for mental health support in their community. 'This tournament is a way for us to keep his spirit alive and make a difference,' said Michael.",
+            "Throughout the day, the Johnsons wore custom shirts with their father's favorite quote: 'Be kind, for everyone you meet is fighting a battle you know nothing about.' They brought photo albums to share with friends and fellow golfers, reminiscing about past tournaments and the impact their father had on the community. After their round, the family led a group toast in his memory, inviting others to share stories of loved ones affected by mental health challenges. Their presence at the event served as a reminder of the lasting influence one person can have and the importance of family support.",
           ],
         },
         {
           topic: "Volunteer Perspective",
           supporting: [
             "Sophia, a college student volunteer, reflected: 'I received counseling through this organization in high school. Volunteering today is my way of giving back and showing gratitude.' Sophia's experience with mental health services inspired her to get involved with the tournament. She shared how the support she received helped her navigate challenges during her teenage years. 'I wanted to help others find the same support I did,' she said. Sophia's enthusiasm and dedication were evident as she assisted with registration and cheered on participants throughout the day. 'It's amazing to see so many people come together for such an important cause,' she added.",
+            "Sophia also helped organize the silent auction and coordinated a team of youth volunteers, ensuring everyone felt included and valued. She spoke with several parents about the importance of early intervention and the positive impact of counseling. After the event, Sophia joined the organization's youth advisory board, where she continues to advocate for accessible mental health resources for students. Her story was highlighted in a local newspaper, inspiring other young people to volunteer and share their own journeys.",
           ],
         },
       ],

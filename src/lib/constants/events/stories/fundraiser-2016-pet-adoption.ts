@@ -2,7 +2,7 @@ import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const fundraiser2016PetAdoption: ArticleContent = {
   image:
-    "https://images.unsplash.com/photo-1506201803590-8586d5a760e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVwcHklMjBhZG9wdGlvbiUyMGV2ZW50fGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1649608608383-391e563ecfc3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHB1cHxlbnwwfHwwfHx8MA%3D%3D",
   preface: [
     "August 2016 saw the City Animal Shelter host a lively Pet Adoption Fair, bringing together animal lovers and supporters of mental health programs. The event raised funds for both animal welfare and mental health initiatives, highlighting the positive impact pets can have on well-being. The fair was bustling with excitement as families, couples, and individuals gathered to meet adoptable pets, learn about animal care, and support a cause that touched both hearts and minds. Volunteers, many of whom had adopted pets from previous fairs, shared their own stories of how animals had changed their lives for the better.",
     "The fair featured a variety of activities, including pet care workshops, informational booths on mental health resources, and fun games for children. Local businesses donated supplies and services, creating a festive atmosphere filled with laughter and joy. The event was not just about finding homes for pets; it was also about fostering connections between people and animals, promoting mental health awareness, and building a stronger community.",
@@ -16,9 +16,13 @@ export const fundraiser2016PetAdoption: ArticleContent = {
       preface: [
         "Shelter staff and volunteers welcomed visitors, introducing them to adoptable pets and sharing information about animal care. The event featured a 'Meet Your Match' area, where families could spend time with pets in a relaxed setting, guided by experienced counselors. The goal was to ensure that each adoption was a good fit for both the pet and the family. 'We want to make sure that every pet goes to a loving home where they will be cared for and cherished,' said Ms. Nguyen, the shelter director. 'This event is about more than just finding homes; it's about building lasting relationships between pets and people.'",
         "The fair also included booths from local mental health organizations, providing resources and information on the benefits of pet ownership for mental well-being. Attendees learned about the therapeutic effects of animals and how they can help reduce stress, anxiety, and loneliness. 'Pets can be incredible companions, offering unconditional love and support,' said Dr. Patel, a local psychologist who spoke at the event. 'They can help us feel less isolated and more connected to the world around us.'",
+        "The event was a family affair, with children participating in games and activities designed to teach them about responsible pet ownership. Many families left with new furry friends, while others signed up to volunteer at the shelter or donate supplies. The sense of community was palpable, with everyone coming together to support a cause that touched their hearts.",
+        "As the day progressed, the fair transformed into a celebration of love and companionship. Families shared stories of their pets, and many attendees expressed gratitude for the opportunity to learn more about animal welfare and mental health. The event was a reminder that pets are not just animals; they are family members who enrich our lives in countless ways.",
       ],
       paragraphs: [
         {
+          image:
+            "https://images.unsplash.com/photo-1577685844918-88dbd9e11f27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHB1cHB5JTIwYWRvcHRpb24lMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D",
           topic: "Adoption Success",
           supporting: [
             "Many families found new furry friends, with dozens of pets finding loving homes by the end of the day. Adoption counselors provided guidance to ensure successful matches and smooth transitions. One memorable adoption was that of Max, a senior Labrador who had spent months at the shelter. The Johnson family, who had recently lost their own dog, instantly connected with Max. 'He just curled up at our feet and looked at us with those gentle eyes,' Mrs. Johnson recalled. 'We knew he was meant to be part of our family.' Another touching story was that of Bella, a shy tabby cat who found her forever home with Emily, a college student struggling with anxiety. Emily shared, 'Bella gave me a reason to get up in the morning. Her quiet companionship has helped me through some of my toughest days.' Children were especially excited to meet the puppies and kittens, and many learned about the responsibilities of pet ownership through interactive workshops. 'We want to teach kids that pets are not just cute; they are family members who need love and care,' said Ms. Nguyen, the shelter director.",
@@ -52,8 +56,6 @@ export const fundraiser2016PetAdoption: ArticleContent = {
       ],
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1577685844918-88dbd9e11f27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHB1cHB5JTIwYWRvcHRpb24lMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D",
       title: "Community Engagement",
       subtitle: "Fun for All Ages",
       paragraphs: [
@@ -78,8 +80,6 @@ export const fundraiser2016PetAdoption: ArticleContent = {
       ],
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1583885627072-4823ed115094?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHB1cHB5JTIwYWRvcHRpb24lMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D",
       title: "Stories from the Heart",
       subtitle: "Personal Journeys",
       paragraphs: [
@@ -91,6 +91,8 @@ export const fundraiser2016PetAdoption: ArticleContent = {
           ],
         },
         {
+          image:
+            "https://images.unsplash.com/photo-1583885627072-4823ed115094?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHB1cHB5JTIwYWRvcHRpb24lMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D",
           topic: "A Community United",
           supporting: [
             "The fair brought together people from all walks of life, united by their love for animals and belief in the healing power of companionship. Volunteers, adopters, and supporters exchanged stories, hugs, and laughter, creating lasting memories and friendships. As the sun set on the fairgrounds, shelter director Ms. Nguyen reflected, 'Every adoption is a new beginning—not just for the animals, but for the people who welcome them home. This event shows what we can achieve when we come together with compassion.' ",

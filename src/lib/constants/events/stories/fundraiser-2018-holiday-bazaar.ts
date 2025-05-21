@@ -1,7 +1,8 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
 export const fundraiser2018HolidayBazaar: ArticleContent = {
-  image: "/images/events/holiday-bazaar-2018.jpg",
+  image:
+    "https://plus.unsplash.com/premium_photo-1701454740269-633e9e0a3912?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9saWRheSUyMGJhemFhcnxlbnwwfHwwfHx8MA%3D%3D",
   preface: [
     "December 2018 brought festive cheer to the Community Center Auditorium with our annual Holiday Bazaar. Local artisans, volunteers, and supporters gathered to celebrate the season and raise funds for mental health initiatives. The event was filled with holiday spirit, unique gifts, and a shared commitment to making a difference. It was a day of joy, connection, and community support.",
     "The Holiday Bazaar featured over 30 local vendors, live music, and family-friendly activities. Attendees enjoyed shopping for handmade crafts, baked goods, and holiday decorations while supporting mental health programs in our community.",
@@ -22,6 +23,8 @@ export const fundraiser2018HolidayBazaar: ArticleContent = {
           ],
         },
         {
+          image:
+            "https://images.unsplash.com/photo-1638157233351-f0eadd9912b2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG9saWRheSUyMGJhemFhcnxlbnwwfHwwfHx8MA%3D%3D",
           topic: "Family Fun",
           supporting: [
             "Children enjoyed craft activities and a visit from Santa, while adults found unique gifts for loved ones. Live music and refreshments added to the festive atmosphere. Families gathered to enjoy the holiday spirit, with children participating in craft activities and a special visit from Santa. The event was designed to be inclusive and welcoming, with something for everyone. ",
