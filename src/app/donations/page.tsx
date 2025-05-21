@@ -1,13 +1,18 @@
 "use client";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   donationMetrics,
   mentalHealthCharities,
 } from "@/lib/constants/charities";
+import { formatNumberToCurrency } from "@/lib/utils/format";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const PRESET_AMOUNTS = [1, 5, 10, 25, 100];
 
 export default function Donations() {
+  const router = useRouter();
   // Map metrics by organization for quick lookup
   const metricsMap = Object.fromEntries(
     donationMetrics.map((m) => [m.organization, { ...m }])
@@ -50,97 +55,87 @@ export default function Donations() {
 
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
-      <h1 className="mb-4 font-bold text-2xl">
-        Supported Mental Health Charities
-      </h1>
-      <ul className="space-y-6">
+      <h1>Supported Mental Health Charities</h1>
+      <h5>Make a difference with your donation</h5>
+      <p>
+        Your contributions help us support various mental health charities.
+        Below are the organizations we support, along with their current
+        donation metrics. You can choose to donate any amount, and we have
+        preset amounts for your convenience. Every donation counts, and together
+        we can make a significant impact on mental health awareness and support.
+      </p>
+      <p>
+        Please note that the donation metrics are simulated for demonstration
+        purposes. In a real-world application, these values would be fetched
+        from a backend service or API.
+      </p>
+
+      <section className="space-y-6 mt-8">
         {mentalHealthCharities.map((charity) => {
           const m = metrics[charity.title];
           const yearlyGoal = m?.yearlyGoal || 1;
           const progress = Math.min((m?.yearlyDonations || 0) / yearlyGoal, 1);
           return (
-            <li
+            <div
               key={charity.title}
               className="flex md:flex-row flex-col md:justify-between md:items-center gap-4 p-4 border rounded-lg"
             >
               <div className="flex-1">
-                <h2 className="font-semibold text-lg">{charity.title}</h2>
-                <p className="mb-2 text-gray-700 text-sm">
-                  {charity.description}
-                </p>
-                <a
-                  href={charity.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 text-sm underline"
+                <h2
+                  className="underline-offset-2 hover:underline"
+                  onClick={() => router.push(charity.url)}
                 >
-                  Visit Website
-                </a>
+                  {charity.title}
+                </h2>
+                <p>{charity.description}</p>
                 {m && (
                   <div className="mt-4">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-gray-700 text-xs">
-                        Yearly Goal: ${m.yearlyGoal.toLocaleString()}
+                      <span>
+                        Year Goal: {formatNumberToCurrency(m.yearlyGoal, 2, 2)}
                       </span>
-                      <span className="font-medium text-gray-700 text-xs">
-                        {Math.round(progress * 100)}%
-                      </span>
+                      <span>{Math.round(progress * 100)}%</span>
                     </div>
                     {/* Progress Bar */}
                     <div className="bg-gray-200 mb-2 rounded w-full h-3">
                       <div
-                        className="bg-green-500 rounded h-3"
+                        className="bg-secondary rounded h-3"
                         style={{
                           width: `${progress * 100}%`,
                           transition: "width 0.3s",
                         }}
                       />
                     </div>
-                    <div className="mb-2 text-gray-600 text-xs">
-                      <span className="font-semibold">Yearly Donations:</span> $
-                      {m.yearlyDonations.toLocaleString()}
-                    </div>
                   </div>
                 )}
-              </div>
-              {m && (
-                <div className="flex flex-col items-start md:items-end gap-2 min-w-[220px]">
-                  <div className="gap-x-4 gap-y-1 grid grid-cols-2 text-xs">
+                <div className="grid grid-cols-2 mt-3">
+                  <div className="gap-x-4 gap-y-1 grid grid-cols-2">
                     <span className="font-medium">Today:</span>
-                    <span>${m.todayDonations.toLocaleString()}</span>
+                    <span>
+                      {formatNumberToCurrency(m.todayDonations, 2, 2)}
+                    </span>
                     <span className="font-medium">This Month:</span>
-                    <span>${m.monthlyDonations.toLocaleString()}</span>
+                    <span>
+                      {formatNumberToCurrency(m.monthlyDonations, 2, 2)}
+                    </span>
                     <span className="font-medium">6 Months:</span>
-                    <span>${m.sixMonthDonations.toLocaleString()}</span>
+                    <span>
+                      {formatNumberToCurrency(m.sixMonthDonations, 2, 2)}
+                    </span>
                   </div>
-                  {/* Donation input and preset buttons */}
-                  <div className="flex flex-col gap-1 mt-2 w-full">
-                    <div className="flex flex-wrap gap-1">
-                      {PRESET_AMOUNTS.map((amt) => (
-                        <button
-                          key={amt}
-                          type="button"
-                          className="px-2 py-1 border rounded text-xs"
-                          onClick={() => handlePreset(charity.title, amt)}
-                        >
-                          ${amt}
-                        </button>
-                      ))}
-                    </div>
-                    <div className="flex gap-2 mt-1">
-                      <input
+                  <div className="flex flex-col justify-center items-center gap-1 w-fit">
+                    <div className="flex gap-2">
+                      <Input
                         type="text"
                         inputMode="numeric"
                         pattern="[0-9]*"
-                        className="px-2 py-1 border rounded w-20 text-sm"
                         placeholder="Amount"
                         value={inputs[charity.title] || ""}
                         onChange={(e) =>
                           handleInputChange(charity.title, e.target.value)
                         }
                       />
-                      <button
-                        className="bg-green-600 hover:bg-green-700 px-4 py-1 rounded text-sm text-white transition"
+                      <Button
                         onClick={() => handleDonate(charity.title)}
                         disabled={
                           !inputs[charity.title] ||
@@ -148,15 +143,28 @@ export default function Donations() {
                         }
                       >
                         Donate
-                      </button>
+                      </Button>
+                    </div>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {PRESET_AMOUNTS.map((amt) => (
+                        <Button
+                          key={amt}
+                          type="button"
+                          size={"sm"}
+                          variant="outline"
+                          onClick={() => handlePreset(charity.title, amt)}
+                        >
+                          ${amt}
+                        </Button>
+                      ))}
                     </div>
                   </div>
                 </div>
-              )}
-            </li>
+              </div>
+            </div>
           );
         })}
-      </ul>
+      </section>
     </div>
   );
 }
