@@ -19,7 +19,11 @@ import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.share
 import { useRouter } from "next/navigation";
 import { ThemeToggle } from "../buttons/ThemeToggle";
 
-function renderMenuItems(items: any[], router: any[] | AppRouterInstance) {
+function renderMenuItems(
+  items: any[],
+  router: any[] | AppRouterInstance,
+  isSmallScreen: boolean
+) {
   return items.map((item, idx) => {
     if (item.type === "separator") return <MenubarSeparator key={idx} />;
     if (item.type === "checkbox")
@@ -32,8 +36,14 @@ function renderMenuItems(items: any[], router: any[] | AppRouterInstance) {
       return (
         <MenubarSub key={idx}>
           <MenubarSubTrigger>{item.label}</MenubarSubTrigger>
-          <MenubarSubContent>
-            {renderMenuItems(item.items, router)}
+          <MenubarSubContent
+            className={
+              isSmallScreen
+                ? "flex flex-col min-w-[180px] absolute top-10 right-18"
+                : undefined
+            }
+          >
+            {renderMenuItems(item.items, router, isSmallScreen)}
           </MenubarSubContent>
         </MenubarSub>
       );
@@ -72,15 +82,18 @@ export function MenuBarNav() {
   const homeMenu = menus.find((m: any) => m.type === "home");
   const otherMenus = menus.filter((m: any) => m.type !== "home");
 
+  console.log("isSmallScreen", isSmallScreen);
+  console.log("menus", menus);
+
   return (
-    <Menubar className="flex justify-between items-center mx-auto my-4 w-10/12 md:w-11/12">
+    <Menubar className="relative flex justify-between items-center mx-auto my-4 w-10/12 md:w-11/12">
       <div className="flex gap-2">
         {homeMenu && renderHomeButton(homeMenu)}
         {otherMenus.map((menu, idx) => (
           <MenubarMenu key={menu.label || idx}>
             <MenubarTrigger>{menu.label}</MenubarTrigger>
             <MenubarContent>
-              {renderMenuItems(menu.items || [], router)}
+              {renderMenuItems(menu.items || [], router, isSmallScreen)}
             </MenubarContent>
           </MenubarMenu>
         ))}

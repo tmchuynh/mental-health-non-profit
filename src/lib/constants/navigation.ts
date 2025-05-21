@@ -137,7 +137,7 @@ export const menuDataMobile = [
     ],
   },
   {
-    label: "Programs & Services",
+    label: "Programs",
     items: [
       { type: "item", label: "Overview", href: "/programs-and-services" },
       {
