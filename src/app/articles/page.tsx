@@ -1,6 +1,5 @@
 "use client";
 
-import useSmallScreen from "@/hooks/useSmallScreen";
 import { articles } from "@/lib/constants/articles/articles";
 import { articlesMap } from "@/lib/constants/articleSectioned";
 import {
@@ -29,6 +28,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { cn } from "@/lib/utils";
+import { sortByProperty } from "@/lib/utils/sort";
 
 // Categories component: use buttons, allow multiple selection
 function Categories({
@@ -46,6 +46,8 @@ function Categories({
         articlesMap[categoryId as keyof typeof articlesMap][0]?.categoryId
       ) ?? categoryId.charAt(0).toUpperCase() + categoryId.slice(1),
   }));
+
+  const allCategoriesSorted = sortByProperty(allCategories, "title");
 
   if (allCategories.length === 0) {
     return null;
@@ -78,7 +80,7 @@ function Categories({
       >
         All categories
       </button>
-      {allCategories.map((category) => (
+      {allCategoriesSorted.map((category) => (
         <button
           key={category.categoryId}
           type="button"
@@ -113,7 +115,6 @@ function Posts({
 }) {
   // Filter articles by selected categories (if any)
   let filteredArticles = articles;
-  const isSmallDevice = useSmallScreen();
   if (categories.length > 0) {
     filteredArticles = articles.filter((a) =>
       categories.includes(a.categoryId)
@@ -232,10 +233,10 @@ function Posts({
       {currentArticles.map((article) => (
         <div
           key={article.id}
-          className="relative max-sm:gap-3 grid grid-cols-1 sm:grid-cols-3 py-10 first:border-t first:border-t-gray-200 border-b border-b-gray-100"
+          className="relative gap-4 max-sm:gap-3 grid grid-cols-1 sm:grid-cols-3 py-10 first:border-t first:border-t-gray-200 border-b border-b-gray-100"
         >
-          <div>
-            <div className="sm:font-medium text-sm/5">{article.subtitle}</div>
+          <div className="flex justify-end text-end">
+            <h5 className="w-3/5">{article.subtitle}</h5>
           </div>
           <div className="sm:col-span-2 sm:max-w-2xl">
             <h2 className="font-medium text-sm/5">{article.title}</h2>
