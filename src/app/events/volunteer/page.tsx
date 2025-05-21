@@ -11,6 +11,7 @@ export default function Volunteer() {
     <div>
       <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
         <h1>Volunteer With Us</h1>
+        <h5>Join us in making a difference in mental health care.</h5>
         <p>
           At InnerLight Elevation, we believe that everyone has the power to
           make a difference. Our volunteer program is designed to empower

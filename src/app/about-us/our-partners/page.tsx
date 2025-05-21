@@ -5,6 +5,7 @@ export default function OurPartners() {
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>Our Partners</h1>
+      <h5>Working together for a brighter future.</h5>
       <p>
         We are proud to collaborate with a variety of organizations and
         individuals who share our commitment to making a positive impact in the
@@ -13,10 +14,11 @@ export default function OurPartners() {
         care to our clients and to make a positive impact in the community.
       </p>
 
-      <section>
+      <section className="flex flex-col gap-5 mt-7">
         {categorizedPartners.map((category, index) => (
           <div key={index}>
             <h2>{category.category}</h2>
+            <p>{category.description}</p>
             <div className="gap-4 grid md:grid-cols-2 lg:grid-cols-3 my-5">
               {category.partners.map((partner) => (
                 <Card key={partner.name}>

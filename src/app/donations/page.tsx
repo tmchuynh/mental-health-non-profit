@@ -74,93 +74,111 @@ export default function Donations() {
         {mentalHealthCharities.map((charity) => {
           const m = metrics[charity.title];
           const yearlyGoal = m?.yearlyGoal || 1;
-          const progress = Math.min((m?.yearlyDonations || 0) / yearlyGoal, 1);
+          // Allow percent to go over 100%
+          const percent = ((m?.yearlyDonations || 0) / yearlyGoal) * 100;
+          const progress = percent > 100 ? 100 : percent;
+          const overGoal = (m?.yearlyDonations || 0) > yearlyGoal;
           return (
             <div
               key={charity.title}
-              className="flex md:flex-row flex-col md:justify-between md:items-center gap-4 p-4 border rounded-lg"
+              className="flex md:flex-row flex-col md:justify-between md:items-center p-4 border rounded-2xl h-full"
             >
-              <div className="flex-1">
-                <h2
-                  className="underline-offset-2 hover:underline"
-                  onClick={() => router.push(charity.url)}
-                >
-                  {charity.title}
-                </h2>
-                <p>{charity.description}</p>
-                {m && (
-                  <div className="mt-4">
-                    <div className="flex justify-between items-center mb-2">
+              <div className="flex flex-col justify-between py-2 h-full">
+                <div className="place-self-start">
+                  <h2
+                    className="underline-offset-2 hover:underline"
+                    onClick={() => router.push(charity.url)}
+                  >
+                    {charity.title}
+                  </h2>
+                  <p>{charity.description}</p>
+                </div>
+                <div>
+                  {m && (
+                    <div className="mt-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <span>
+                          Year Goal:{" "}
+                          {formatNumberToCurrency(m.yearlyGoal, 2, 2)}
+                        </span>
+                        <span
+                          className={
+                            overGoal ? "text-tertiary text-xl -mb-2" : undefined
+                          }
+                        >
+                          {Math.round(percent)}%
+                        </span>
+                      </div>
+                      {/* Progress Bar */}
+                      <div className="bg-gray-200 mb-2 rounded w-full h-3">
+                        <div
+                          className="bg-tertiary rounded h-3"
+                          style={{
+                            width: `${progress}%`,
+                            transition: "width 0.3s",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  )}
+                  <div className="gap-7 grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 mt-9">
+                    <div className="gap-x-4 gap-y-1 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-2">
+                      <h5>Today:</h5>
                       <span>
-                        Year Goal: {formatNumberToCurrency(m.yearlyGoal, 2, 2)}
+                        {formatNumberToCurrency(m.todayDonations, 2, 2)}
                       </span>
-                      <span>{Math.round(progress * 100)}%</span>
-                    </div>
-                    {/* Progress Bar */}
-                    <div className="bg-gray-200 mb-2 rounded w-full h-3">
-                      <div
-                        className="bg-secondary rounded h-3"
-                        style={{
-                          width: `${progress * 100}%`,
-                          transition: "width 0.3s",
-                        }}
-                      />
-                    </div>
-                  </div>
-                )}
-                <div className="gap-7 grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 mt-9">
-                  <div className="gap-x-4 gap-y-1 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-2">
-                    <h5>Today:</h5>
-                    <span>
-                      {formatNumberToCurrency(m.todayDonations, 2, 2)}
-                    </span>
-                    <h5>This Month:</h5>
-                    <span>
-                      {formatNumberToCurrency(m.monthlyDonations, 2, 2)}
-                    </span>
-                    <h5>6 Months:</h5>
-                    <span>
-                      {formatNumberToCurrency(m.sixMonthDonations, 2, 2)}
-                    </span>
-                    <h5>This Year:</h5>
-                    <span>
-                      {formatNumberToCurrency(m.yearlyDonations, 2, 2)}
-                    </span>
-                  </div>
-                  <div className="flex flex-col md:justify-center gap-1 xl:mx-6 w-full xl:w-fit">
-                    <div className="flex gap-2">
-                      <Input
-                        type="text"
-                        inputMode="numeric"
-                        pattern="[0-9]*"
-                        placeholder="Amount"
-                        value={inputs[charity.title] || ""}
-                        onChange={(e) =>
-                          handleInputChange(charity.title, e.target.value)
-                        }
-                      />
-                      <Button
-                        onClick={() => handleDonate(charity.title)}
-                        disabled={
-                          !inputs[charity.title] ||
-                          parseInt(inputs[charity.title], 10) <= 0
+                      <h5>This Month:</h5>
+                      <span>
+                        {formatNumberToCurrency(m.monthlyDonations, 2, 2)}
+                      </span>
+                      <h5>6 Months:</h5>
+                      <span>
+                        {formatNumberToCurrency(m.sixMonthDonations, 2, 2)}
+                      </span>
+                      <h5>This Year:</h5>
+                      <span
+                        className={
+                          overGoal ? "text-tertiary text-xl -mt-1" : undefined
                         }
                       >
-                        Donate
-                      </Button>
+                        {formatNumberToCurrency(m.yearlyDonations, 2, 2)}
+                      </span>
                     </div>
-                    <div className="flex flex-wrap gap-1 mt-1">
-                      {PRESET_AMOUNTS.map((amt) => (
+                    <div className="flex flex-col md:justify-center gap-1 xl:mx-6 w-full xl:w-fit">
+                      <div className="flex gap-2">
+                        <Input
+                          type="text"
+                          inputMode="numeric"
+                          pattern="[0-9]*"
+                          placeholder="Amount"
+                          value={inputs[charity.title] || ""}
+                          onChange={(e) =>
+                            handleInputChange(charity.title, e.target.value)
+                          }
+                        />
                         <Button
-                          key={amt}
-                          type="button"
-                          size={"sm"}
-                          variant="outline"
-                          onClick={() => handlePreset(charity.title, amt)}
+                          onClick={() => handleDonate(charity.title)}
+                          disabled={
+                            !inputs[charity.title] ||
+                            parseInt(inputs[charity.title], 10) <= 0
+                          }
                         >
-                          ${amt}
+                          Donate
                         </Button>
-                      ))}
+                      </div>
+                      <div className="flex flex-wrap gap-1 mt-1">
+                        {PRESET_AMOUNTS.map((amt) => (
+                          <Button
+                            key={amt}
+                            type="button"
+                            size={"sm"}
+                            variant="outline"
+                            onClick={() => handlePreset(charity.title, amt)}
+                          >
+                            ${amt}
+                          </Button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>

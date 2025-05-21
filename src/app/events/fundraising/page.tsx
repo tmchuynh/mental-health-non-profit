@@ -11,6 +11,7 @@ export default function Fundraising() {
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>Fundraising Is The Heart of Our Organization</h1>
+      <h5>Join us in our mission to elevate mental health care and support.</h5>
       <div className="gap-5 grid lg:grid-cols-2">
         <p>
           Fundraising is the lifeblood of our organization, enabling us to

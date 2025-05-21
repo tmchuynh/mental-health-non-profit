@@ -2,6 +2,7 @@ export default function AboutUs() {
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>About InnerLight Elevation</h1>
+      <h5>Who we are and what we stand for.</h5>
       <div className="gap-5 grid lg:grid-cols-2">
         <div>
           <p>
@@ -48,16 +49,13 @@ export default function AboutUs() {
           experience and foster genuine human connection. We are dedicated to
           delivering culturally aware outreach that recognizes and respects the
           unique backgrounds, identities, and challenges of every individual we
-          serve.
-        </p>
-        <p>
-          Our commitment extends to creating and disseminating accessible,
-          stigma-free education—designed not only to inform but also to empower
-          people with the tools, language, and confidence needed to embrace
-          their healing journey with dignity and agency. Through these efforts,
-          we aim to dismantle the systemic barriers that prevent marginalized
-          and underserved populations from accessing effective mental health
-          care.
+          serve. Our commitment extends to creating and disseminating
+          accessible, stigma-free education—designed not only to inform but also
+          to empower people with the tools, language, and confidence needed to
+          embrace their healing journey with dignity and agency. Through these
+          efforts, we aim to dismantle the systemic barriers that prevent
+          marginalized and underserved populations from accessing effective
+          mental health care.
         </p>
         <p>
           We believe that mental wellness is a collective responsibility, and by
@@ -82,13 +80,11 @@ export default function AboutUs() {
           inherent light within them—a source of strength, resilience, and hope.
           By fostering environments that nurture this inner light, we aim to
           cultivate a society where mental health is prioritized, stigma is
-          dismantled, and collective healing becomes a shared reality.
-        </p>
-        <p>
-          We strive to be a catalyst for systemic transformation—advocating for
-          policy changes, building partnerships, and empowering individuals to
-          become advocates themselves. Our vision is one of collective healing,
-          where communities thrive through compassion, education, and unwavering
+          dismantled, and collective healing becomes a shared reality. We strive
+          to be a catalyst for systemic transformation—advocating for policy
+          changes, building partnerships, and empowering individuals to become
+          advocates themselves. Our vision is one of collective healing, where
+          communities thrive through compassion, education, and unwavering
           support, illuminating the path toward mental wellness for generations
           to come.
         </p>

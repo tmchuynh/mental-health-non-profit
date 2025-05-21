@@ -1,12 +1,5 @@
 "use client";
 
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
 import useSmallScreen from "@/hooks/useSmallScreen";
 import { articles } from "@/lib/constants/articles/articles";
 import { articlesMap } from "@/lib/constants/articleSectioned";
@@ -15,14 +8,10 @@ import {
   formatIDToUrl,
   generateRandomString,
 } from "@/lib/utils/format";
-import {
-  CheckIcon,
-  ChevronRightIcon,
-  ChevronUpDownIcon,
-} from "@heroicons/react/16/solid";
+import { CheckIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -41,7 +30,14 @@ import {
 } from "@/components/ui/pagination";
 import { cn } from "@/lib/utils";
 
-function Categories({ selected }: { selected?: string }) {
+// Categories component: use buttons, allow multiple selection
+function Categories({
+  selected,
+  onChange,
+}: {
+  selected: string[];
+  onChange: (categories: string[]) => void;
+}) {
   // Get all categories from articlesMap
   const allCategories = Object.keys(articlesMap).map((categoryId) => ({
     categoryId,
@@ -55,59 +51,82 @@ function Categories({ selected }: { selected?: string }) {
     return null;
   }
 
+  const handleToggle = (categoryId: string) => {
+    if (selected.includes(categoryId)) {
+      onChange(selected.filter((id) => id !== categoryId));
+    } else {
+      onChange([...selected, categoryId]);
+    }
+  };
+
+  const handleAll = () => {
+    onChange([]);
+  };
+
   return (
-    <div className="flex flex-wrap justify-between items-center gap-2">
-      <Menubar>
-        <MenubarMenu>
-          <MenubarTrigger className="flex justify-between items-center gap-2 font-medium">
-            {selected
-              ? allCategories.find(({ categoryId }) => categoryId === selected)
-                  ?.title || "All categories"
-              : "All categories"}
-            <ChevronUpDownIcon className="size-4 fill-gray-900" />
-          </MenubarTrigger>
-          <MenubarContent className="bg-white shadow-lg p-1 rounded-lg ring-1 ring-gray-200 min-w-40 [--anchor-gap:6px] [--anchor-offset:-4px] [--anchor-padding:10px]">
-            <MenubarItem>
-              <Link
-                href="/articles"
-                data-selected={selected === undefined ? true : undefined}
-                className="group items-center gap-2 grid grid-cols-[1rem_1fr] data-focus:bg-gray-950/5 px-2 py-1 rounded-md"
-              >
-                <CheckIcon className="group-data-selected:block hidden size-4" />
-                <p className="col-start-2 text-sm/6">All categories</p>
-              </Link>
-            </MenubarItem>
-            {allCategories.map((category) => (
-              <MenubarItem key={category.categoryId}>
-                <Link
-                  href={`/articles?category=${category.categoryId}`}
-                  data-selected={
-                    category.categoryId === selected ? true : undefined
-                  }
-                  className="group items-center gap-2 grid grid-cols-[16px_1fr] data-focus:bg-gray-950/5 px-2 py-1 rounded-md"
-                >
-                  <CheckIcon className="group-data-selected:block hidden size-4" />
-                  <p className="col-start-2 text-sm/6">{category.title}</p>
-                </Link>
-              </MenubarItem>
-            ))}
-          </MenubarContent>
-        </MenubarMenu>
-      </Menubar>
+    <div className="flex flex-wrap gap-2 mb-4">
+      <button
+        type="button"
+        onClick={handleAll}
+        className={cn(
+          "px-3 py-1 rounded border font-medium",
+          buttonVariants({
+            variant: selected.length === 0 ? "secondary" : "outline",
+          })
+        )}
+        aria-pressed={selected.length === 0}
+      >
+        All categories
+      </button>
+      {allCategories.map((category) => (
+        <button
+          key={category.categoryId}
+          type="button"
+          onClick={() => handleToggle(category.categoryId)}
+          className={cn(
+            "px-3 py-1 rounded border font-medium flex items-center gap-2",
+            buttonVariants({
+              variant: selected.includes(category.categoryId)
+                ? "secondary"
+                : "outline",
+            })
+          )}
+          aria-pressed={selected.includes(category.categoryId)}
+        >
+          {selected.includes(category.categoryId) && (
+            <CheckIcon className="size-4" />
+          )}
+          {category.title}
+        </button>
+      ))}
     </div>
   );
 }
 
-function Posts({ category }: { category?: string }) {
-  // Filter articles by categoryId only
+// Posts: filter by all selected categories
+function Posts({
+  categories,
+  resetPageSignal,
+}: {
+  categories: string[];
+  resetPageSignal: number;
+}) {
+  // Filter articles by selected categories (if any)
   let filteredArticles = articles;
   const isSmallDevice = useSmallScreen();
-  if (category) {
-    filteredArticles = articles.filter((a) => a.categoryId === category);
+  if (categories.length > 0) {
+    filteredArticles = articles.filter((a) =>
+      categories.includes(a.categoryId)
+    );
   }
 
   const [currentPage, setCurrentPage] = useState(1);
   const [articlesPerPage, setArticlesPerPage] = useState(5);
+
+  // Reset to first page when resetPageSignal changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [resetPageSignal]);
 
   // Calculate the indexes for pagination
   const indexOfLastArticle = currentPage * articlesPerPage;
@@ -175,13 +194,13 @@ function Posts({ category }: { category?: string }) {
 
   return (
     <div className="mt-6">
-      <section className="flex flex-col md:justify-end items-center mt-4">
+      <section className="flex items-center mt-4">
         <label htmlFor="articlesPerPage" className="mr-2">
           <p>Articles per page:</p>
         </label>
         <DropdownMenu>
-          <DropdownMenuTrigger className="w-full">
-            <div className="bg-muted px-5 p-2 rounded text-sm md:text-md lg:text-lg">
+          <DropdownMenuTrigger aria-label="Articles per page">
+            <div className="flex items-center gap-2 bg-muted px-5 p-2 rounded text-sm md:text-md lg:text-lg">
               {articlesPerPage} articles per page
             </div>
           </DropdownMenuTrigger>
@@ -190,13 +209,25 @@ function Posts({ category }: { category?: string }) {
               <DropdownMenuItem
                 key={size}
                 onClick={() => handleArticlesPerPageChange(size)}
-                className="px-3 md:text-md lg:text-lg"
+                className={cn(
+                  "px-3 md:text-md lg:text-lg flex items-center gap-2",
+                  articlesPerPage === size ? "font-semibold" : ""
+                )}
+                aria-checked={articlesPerPage === size}
+                role="menuitemradio"
               >
+                {articlesPerPage === size && (
+                  <CheckIcon className="text-primary size-4" />
+                )}
                 {size} articles per page
               </DropdownMenuItem>
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
+        <span className="ml-4 text-sm">
+          Showing {indexOfFirstArticle + 1} - {indexOfLastArticle} of{" "}
+          {filteredArticles.length} articles
+        </span>
       </section>
       {currentArticles.map((article) => (
         <div
@@ -279,17 +310,54 @@ function Posts({ category }: { category?: string }) {
 
 export default function Blog() {
   const searchParamsHook = useSearchParams();
+  const router = useRouter();
 
+  // Parse selected categories from query string (comma-separated)
   const categoryString = searchParamsHook.get("category");
-  const category = categoryString !== null ? categoryString : undefined;
+  const selectedCategories =
+    categoryString && categoryString.length > 0
+      ? categoryString.split(",")
+      : [];
+
+  // Track a signal to reset page in Posts when categories change
+  const [resetPageSignal, setResetPageSignal] = useState(0);
+
+  // Keep selected categories in state and sync with URL
+  const [categories, setCategories] = useState<string[]>(selectedCategories);
+
+  // Sync state to URL when categories change and reset page
+  useEffect(() => {
+    const params = new URLSearchParams(searchParamsHook.toString());
+    if (categories.length > 0) {
+      params.set("category", categories.join(","));
+    } else {
+      params.delete("category");
+    }
+    router.replace(`/articles?${params.toString()}`);
+    setResetPageSignal((s) => s + 1);
+  }, [categories]);
 
   return (
     <main className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
-      <h5>Articles</h5>
-      <h1>Learn More About Mental Health</h1>
+      <h1 className="max-w-3xl">
+        Understanding the Mind, One Article at a Time
+      </h1>
+      <h5>Mental health, explained with clarity and care</h5>
+      <p>
+        Mental health is personal, complex, and deeply human. That’s why we’ve
+        created a space where clarity, empathy, and science come together.
+        Whether you're seeking to understand your own experiences, support
+        someone you care about, or deepen your knowledge as a professional, our
+        library of thoughtfully written articles offers guidance grounded in
+        research and real-world relevance. From anxiety and trauma to
+        neurodivergence and mood disorders, each piece is crafted to inform
+        without overwhelm—and to remind you that healing begins with
+        understanding.
+      </p>
+
       <section className="mt-9">
-        <Categories selected={category} />
-        <Posts category={category} />
+        <Categories selected={categories} onChange={setCategories} />
+        <Posts categories={categories} resetPageSignal={resetPageSignal} />
       </section>
     </main>
   );
