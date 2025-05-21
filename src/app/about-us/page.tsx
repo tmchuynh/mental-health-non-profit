@@ -41,7 +41,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <section>
+      <section className="mt-5">
         <h2>Our Mission</h2>
         <p>
           At InnerLight Elevation, our mission is to elevate mental wellness by
@@ -65,7 +65,7 @@ export default function AboutUs() {
         </p>
       </section>
 
-      <section>
+      <section className="mt-5">
         <h2>Our Vision</h2>
         <p>
           InnerLight Elevation envisions a world where mental wellness is
@@ -88,6 +88,55 @@ export default function AboutUs() {
           support, illuminating the path toward mental wellness for generations
           to come.
         </p>
+      </section>
+
+      <section className="gap-6 grid lg:grid-cols-8 my-12">
+        <h2 className="lg:col-span-2 mb-6">What Makes Us Different</h2>
+        <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:col-span-6">
+          <div className="flex flex-col gap-6">
+            <div>
+              <strong>Built by experts</strong> — our team consists of
+              experienced mental health professionals, peer supporters, and
+              advocates dedicated to best practices and compassionate care.
+            </div>
+            <div>
+              <strong>Easy to join</strong> — our services are open to all, with
+              simple sign-up and no unnecessary barriers to participation.
+            </div>
+            <div>
+              <strong>Peer-driven support</strong> — we offer peer-led groups
+              and mentorship, empowering individuals through shared lived
+              experience and mutual understanding.
+            </div>
+            <div>
+              <strong>Accessible education</strong> — we provide free,
+              stigma-free resources and workshops to help everyone understand
+              and prioritize their mental wellness.
+            </div>
+          </div>
+          <div className="flex flex-col gap-6">
+            <div>
+              <strong>Community-centered</strong> — our programs are designed
+              with and for the communities we serve, ensuring cultural
+              responsiveness and inclusivity at every step.
+            </div>
+
+            <div>
+              <strong>Digital & local reach</strong> — we connect people both
+              online and in-person, making support available wherever you are.
+            </div>
+            <div>
+              <strong>Advocacy & outreach</strong> — we work to break down
+              stigma, influence policy, and build partnerships that expand
+              access to care.
+            </div>
+            <div>
+              <strong>Safe & inclusive</strong> — our spaces are designed to be
+              welcoming, trauma-informed, and accessible for all backgrounds and
+              identities.
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
