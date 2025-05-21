@@ -15,6 +15,20 @@ const moodDisorders: ArticleIntro[] = [
       "Treatment for depression often includes a combination of psychotherapy, medication, and lifestyle changes. Cognitive-behavioral therapy (CBT) is a common therapeutic approach that helps individuals identify and change negative thought patterns. Antidepressant medications may also be prescribed to help balance chemicals in the brain that affect mood.",
     ],
   },
+  {
+    categoryId: "moodDisorders",
+    title: "The Stages of Depression",
+    subtitle: "Understanding the Phases of Depression",
+    description:
+      "Depression can manifest in various stages, each with its own set of symptoms and challenges. Understanding these stages can help individuals recognize their experiences and seek appropriate support.",
+    introduction: [
+      "Depression can manifest in various stages, each with its own set of symptoms and challenges. Understanding these stages can help individuals recognize their experiences and seek appropriate support.",
+      "The stages of depression can include: 1) Initial onset, where individuals may experience mild symptoms that gradually worsen. 2) Acute phase, characterized by more severe symptoms that significantly impact daily life. 3) Recovery phase, where symptoms begin to improve with treatment and support. 4) Maintenance phase, focusing on preventing relapse and managing ongoing challenges.",
+      "Recognizing these stages can empower individuals to seek help and develop coping strategies tailored to their current experience. Early intervention and ongoing support are crucial for effective management of depression.",
+      "Treatment options may include therapy, medication, lifestyle changes, and support groups. It's essential to work with a mental health professional to create a personalized treatment plan that addresses individual needs and goals.",
+      "Support from friends, family, and mental health professionals can play a vital role in navigating the stages of depression. Open communication and understanding can foster a supportive environment for healing and recovery.",
+    ],
+  },
 ];
 
 const anxietyDisorders: ArticleIntro[] = [
