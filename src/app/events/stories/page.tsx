@@ -12,13 +12,26 @@ const EVENT_TYPES = [
   { label: "Volunteering", value: "volunteering" },
 ];
 
+const SORT_OPTIONS = [
+  { label: "Date ↓", value: "desc" },
+  { label: "Date ↑", value: "asc" },
+];
+
 export default function EventStoriesOverview() {
   const [filter, setFilter] = useState<string>("all");
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
 
   const filteredEvents =
     filter === "all"
       ? pastEvents
       : pastEvents.filter((event) => event.type === filter);
+
+  const sortedEvents = [...filteredEvents].sort((a, b) => {
+    // Assumes event.date is a string in ISO or comparable format
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return sortOrder === "asc" ? dateA - dateB : dateB - dateA;
+  });
 
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
@@ -44,10 +57,26 @@ export default function EventStoriesOverview() {
             {t.label}
           </button>
         ))}
+        <div className="flex gap-2 ml-auto">
+          {SORT_OPTIONS.map((opt) => (
+            <button
+              key={opt.value}
+              className={cn(
+                "px-2 py-1 rounded border font-medium",
+                buttonVariants({
+                  variant: sortOrder === opt.value ? "secondary" : "outline",
+                })
+              )}
+              onClick={() => setSortOrder(opt.value as "asc" | "desc")}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <section className="gap-5 grid lg:grid-cols-2 mt-7">
-        {filteredEvents.map((event, index) => (
+        {sortedEvents.map((event, index) => (
           <EventStoryCard key={index} story={event} />
         ))}
       </section>
