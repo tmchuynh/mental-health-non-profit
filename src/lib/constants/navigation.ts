@@ -1,5 +1,10 @@
 export const menuData = [
   {
+    type: "home",
+    label: "Home",
+    href: "/",
+  },
+  {
     label: "InnerLight Elevation",
     items: [
       { type: "item", label: "About Us", href: "/about-us" },
@@ -74,6 +79,11 @@ export const menuData = [
 ];
 
 export const menuDataMobile = [
+  {
+    type: "home",
+    label: "Home",
+    href: "/",
+  },
   {
     label: "About",
     items: [
