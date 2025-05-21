@@ -27,9 +27,10 @@ export const substanceAbuseAndDualDiagnosis: ArticleContent = {
           topic: "How addiction masks mental illness",
           supporting: [
             "Individuals may use drugs or alcohol to temporarily relieve symptoms such as anxiety, depression, or trauma. This relief is short-lived and often exacerbates underlying issues over time. Self-medication perpetuates a harmful cycle where substance use worsens mental health symptoms.",
+            "Over time, the brain and body become reliant on substances to manage distress, leading to increased tolerance and dependence. As substance use escalates, it can mask the true severity of underlying mental health conditions, making diagnosis more difficult. Withdrawal symptoms and cravings can further intensify anxiety, depression, or psychosis, creating a feedback loop that is hard to break without professional help. The stigma around both addiction and mental illness can discourage individuals from seeking support, prolonging the cycle. Recognizing the signs of self-medication—such as using substances to cope with stress, sleep, or emotional pain—is a crucial step toward intervention and recovery.",
           ],
           concluding:
-            "Breaking this cycle requires integrated treatment that addresses both conditions.",
+            "Breaking this cycle requires integrated treatment that addresses both conditions. Early intervention and supportive environments can help individuals regain control and build healthier coping mechanisms.",
         },
       ],
     },
@@ -40,9 +41,11 @@ export const substanceAbuseAndDualDiagnosis: ArticleContent = {
           topic: "Effective strategies for dual diagnosis",
           supporting: [
             "Integrated treatment combines mental health and addiction therapies in a coordinated plan. Cognitive Behavioral Therapy (CBT) and Medication-Assisted Treatment (MAT) are common components. Harm reduction strategies help manage use while encouraging safer behaviors. Relapse prevention plans and trauma-informed care are essential elements.",
+            "CBT helps individuals identify and change unhelpful thoughts and behaviors related to both substance use and mental health symptoms. It teaches practical coping skills and strategies for managing triggers. MAT uses medications such as buprenorphine, methadone, or naltrexone to reduce cravings and withdrawal symptoms, making it easier to engage in therapy and recovery activities.",
+            "Harm reduction approaches, such as needle exchange programs or supervised consumption sites, prioritize safety and health even if abstinence is not immediately achievable. These strategies can reduce the risk of overdose, infection, and other complications. Relapse prevention involves identifying high-risk situations, developing coping plans, and building a strong support network. Ongoing monitoring and flexibility in treatment plans are important for long-term success. Trauma-informed care ensures that treatment environments are safe, respectful, and empowering, recognizing the impact of trauma on both substance use and mental health.",
           ],
           concluding:
-            "Integrated treatment improves engagement, reduces relapse, and supports holistic healing.",
+            "Integrated treatment improves engagement, reduces relapse, and supports holistic healing. Collaboration among healthcare providers, family, and community resources is key to sustained recovery.",
         },
       ],
     },
@@ -53,9 +56,10 @@ export const substanceAbuseAndDualDiagnosis: ArticleContent = {
           topic: "Trauma as an underlying factor",
           supporting: [
             "Many individuals with dual diagnosis have histories of trauma or adverse childhood experiences. Trauma can intensify mental illness symptoms and increase vulnerability to addiction. Trauma-informed care emphasizes safety, trust, and empowerment during treatment.",
+            "Traumatic experiences—such as abuse, neglect, violence, or loss—can disrupt emotional development and coping skills, making substances an appealing escape from pain. Unresolved trauma may manifest as flashbacks, nightmares, or emotional numbness, which individuals may attempt to manage through substance use. This can delay healing and complicate recovery. Effective treatment for dual diagnosis often includes trauma-specific therapies, such as EMDR (Eye Movement Desensitization and Reprocessing), trauma-focused CBT, or somatic therapies, to address the root causes of distress.",
           ],
           concluding:
-            "Addressing trauma is vital to breaking the cycle of addiction and promoting recovery.",
+            "Addressing trauma is vital to breaking the cycle of addiction and promoting recovery. Healing from trauma can reduce the urge to self-medicate and improve overall mental health outcomes.",
         },
       ],
     },

@@ -15,8 +15,18 @@ export const understandingAntisocialPersonalityDisorder: ArticleContent = {
           supporting: [
             "ASPD is categorized by persistent patterns of behavior that violate the rights of others, including lying, impulsivity, and a lack of remorse. The condition typically begins in childhood or early adolescence and continues into adulthood. While the behaviors may be mistaken for rebelliousness or defiance, ASPD involves a deeper disregard for societal norms and empathy. The DSM-5 requires a diagnosis of Conduct Disorder before age 15 for a valid ASPD diagnosis in adulthood.",
           ],
-          concluding:
-            "Understanding the diagnostic criteria helps differentiate ASPD from other behavioral or personality disorders.",
+          list: [
+            {
+              title: "Diagnostic Criteria",
+              description:
+                "The DSM-5 outlines specific criteria for diagnosing ASPD, including a history of conduct disorder, deceitfulness, impulsivity, irritability, and lack of remorse.",
+            },
+            {
+              title: "Prevalence",
+              description:
+                "ASPD is more common than many other personality disorders, affecting approximately 1% of the general population.",
+            },
+          ],
         },
       ],
     },
@@ -59,8 +69,23 @@ export const understandingAntisocialPersonalityDisorder: ArticleContent = {
           supporting: [
             "There is evidence of genetic contributions, particularly involving temperament and impulse control. Early childhood trauma, including abuse, neglect, or unstable family environments, significantly increases risk. Environmental factors such as poverty, exposure to violence, and peer influence may exacerbate symptoms. Neurological studies indicate abnormalities in brain regions related to empathy, impulse regulation, and moral reasoning. A history of Conduct Disorder in youth is a strong predictor of adult ASPD.",
           ],
-          concluding:
-            "Understanding the multifactorial causes of ASPD can inform more comprehensive treatment approaches.",
+          list: [
+            {
+              title: "Genetic predisposition",
+              description:
+                "Family history of antisocial behavior or other personality disorders.",
+            },
+            {
+              title: "Childhood trauma",
+              description:
+                "Experiences of abuse, neglect, or inconsistent parenting.",
+            },
+            {
+              title: "Environmental stressors",
+              description:
+                "Living in high-crime areas or exposure to violence can increase risk.",
+            },
+          ],
         },
       ],
     },
@@ -102,8 +127,23 @@ export const understandingAntisocialPersonalityDisorder: ArticleContent = {
           supporting: [
             "Supporting someone with ASPD requires clear boundaries, realistic expectations, and prioritization of personal safety. Family members and partners may experience emotional manipulation, abuse, or financial exploitation. Therapeutic support for loved ones is crucial to maintain emotional resilience and prevent enabling behavior. Legal professionals, therapists, and social workers may play a role in managing crises and structuring accountability.",
           ],
-          concluding:
-            "Understanding the disorder helps reduce stigma while promoting healthier coping and relational boundaries.",
+          list: [
+            {
+              title: "Establishing boundaries",
+              description:
+                "Setting clear limits on acceptable behavior and consequences for violations.",
+            },
+            {
+              title: "Seeking professional guidance",
+              description:
+                "Therapists can provide strategies for coping and maintaining emotional health.",
+            },
+            {
+              title: "Educating oneself about ASPD",
+              description:
+                "Understanding the disorder can help in managing expectations and responses.",
+            },
+          ],
         },
       ],
     },

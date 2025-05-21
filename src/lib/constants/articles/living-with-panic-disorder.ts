@@ -15,8 +15,28 @@ export const livingWithPanicDisorder: ArticleContent = {
           supporting: [
             "Panic disorder is marked by recurrent, unexpected panic attacks—sudden surges of overwhelming fear or discomfort. These attacks can include symptoms such as heart palpitations, shortness of breath, dizziness, and a fear of losing control. The persistent worry about future attacks often leads to avoidance behaviors that impact quality of life. It is distinct from generalized anxiety disorder, which involves more constant and less intense worry.",
           ],
-          concluding:
-            "Recognition of these patterns is crucial for diagnosis and treatment.",
+          list: [
+            {
+              title: "Panic Attacks",
+              description:
+                "Intense episodes of fear or discomfort, often with physical symptoms.",
+            },
+            {
+              title: "Agoraphobia",
+              description:
+                "Fear of situations where escape might be difficult, often leading to avoidance.",
+            },
+            {
+              title: "Avoidance Behaviors",
+              description:
+                "Avoiding places or situations where panic attacks have occurred.",
+            },
+            {
+              title: "Physical Symptoms",
+              description:
+                "Rapid heartbeat, sweating, trembling, shortness of breath.",
+            },
+          ],
         },
       ],
     },
@@ -28,8 +48,23 @@ export const livingWithPanicDisorder: ArticleContent = {
           supporting: [
             "Panic attacks trigger the body's fight-or-flight response, releasing stress hormones like adrenaline. This leads to physical symptoms including rapid heartbeat, sweating, trembling, and shortness of breath. The brain misinterprets harmless bodily sensations as threats, escalating the fear. Understanding this cycle helps reduce fear of the symptoms themselves.",
           ],
-          concluding:
-            "Awareness is the first step toward breaking the panic cycle.",
+          list: [
+            {
+              title: "Fight-or-Flight Response",
+              description:
+                "The body's natural reaction to perceived danger, causing physical symptoms.",
+            },
+            {
+              title: "Adrenaline Release",
+              description:
+                "Increased heart rate and blood flow to prepare for action.",
+            },
+            {
+              title: "Misinterpretation of Sensations",
+              description:
+                "Normal bodily sensations are perceived as dangerous, leading to panic.",
+            },
+          ],
         },
       ],
     },
@@ -41,8 +76,30 @@ export const livingWithPanicDisorder: ArticleContent = {
           supporting: [
             "Cognitive-behavioral therapy (CBT), especially exposure therapy, is effective in reducing panic symptoms. Interoceptive exposure involves controlled exposure to feared bodily sensations to reduce sensitivity. Medications such as SSRIs or benzodiazepines may be prescribed to manage symptoms. A combination of therapy and medication often yields the best outcomes.",
           ],
+          list: [
+            {
+              title: "Cognitive-Behavioral Therapy (CBT)",
+              description:
+                "Focuses on changing negative thought patterns and behaviors.",
+            },
+            {
+              title: "Exposure Therapy",
+              description:
+                "Gradual exposure to feared situations or sensations to reduce anxiety.",
+            },
+            {
+              title: "Interoceptive Exposure",
+              description:
+                "Controlled exposure to bodily sensations associated with panic.",
+            },
+            {
+              title: "Medications",
+              description:
+                "SSRIs or benzodiazepines may be prescribed for symptom management.",
+            },
+          ],
           concluding:
-            "Early and consistent treatment significantly improves prognosis.",
+            "Therapy and medication can be tailored to individual needs, enhancing effectiveness. Regular follow-ups with healthcare providers ensure optimal treatment. Therapists can help individuals develop personalized coping strategies and monitor progress. Medication may be adjusted based on response and side effects. Support groups can also provide valuable resources and encouragement. ",
         },
       ],
     },
@@ -54,8 +111,33 @@ export const livingWithPanicDisorder: ArticleContent = {
           supporting: [
             "Breathing exercises and mindfulness help calm the nervous system during panic episodes. Developing a panic action plan reduces fear by preparing for attacks. Regular physical activity and sleep hygiene support overall mental health. Seeking social support and avoiding substance use can also mitigate symptoms.",
           ],
-          concluding:
-            "Empowering oneself with tools and knowledge builds resilience.",
+          list: [
+            {
+              title: "Breathing Exercises",
+              description:
+                "Deep, slow breathing to calm the nervous system during panic.",
+            },
+            {
+              title: "Mindfulness and Grounding Techniques",
+              description:
+                "Focusing on the present moment to reduce anxiety and panic.",
+            },
+            {
+              title: "Panic Action Plan",
+              description:
+                "A personalized plan outlining steps to take during a panic attack.",
+            },
+            {
+              title: "Physical Activity",
+              description:
+                "Regular exercise to improve mood and reduce anxiety symptoms.",
+            },
+            {
+              title: "Sleep Hygiene",
+              description:
+                "Establishing a regular sleep routine to support mental health.",
+            },
+          ],
         },
       ],
     },

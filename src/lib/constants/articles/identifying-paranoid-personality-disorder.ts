@@ -4,7 +4,7 @@ export const identifyingParanoidPersonalityDisorder: ArticleContent = {
   image:
     "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=600&q=60",
   preface: [
-    "Paranoid Personality Disorder (PPD) is a mental health condition characterized by pervasive distrust and suspiciousness of others. This article aims to help readers recognize the signs of PPD, understand its possible causes, and explore treatment options. Additionally, it offers practical advice for supporting individuals living with this challenging disorder.",
+    "Paranoid Personality Disorder (PPD) is a mental health condition characterized by pervasive distrust and suspiciousness of others. This article aims to help readers recognize the signs of PPD, understand its possible causes, and explore treatment options. Additionally, it offers practical advice for supporting individuals living with this challenging disorder. ",
   ],
   sections: [
     {
@@ -14,13 +14,13 @@ export const identifyingParanoidPersonalityDisorder: ArticleContent = {
         {
           topic: "Symptoms and Behavioral Patterns",
           supporting: [
-            "Individuals with PPD frequently suspect, without sufficient basis, that others are exploiting, harming, or deceiving them. They may be reluctant to confide in others due to unwarranted fears that the information will be used maliciously. Persistent grudges, hypersensitivity to perceived insults, and quickness to anger are common. This distrust often leads to social isolation and difficulties maintaining close relationships. People with PPD tend to interpret benign actions as threatening or demeaning. Their suspiciousness is generally consistent and pervasive across different contexts.",
+            "Individuals with PPD frequently suspect, without sufficient basis, that others are exploiting, harming, or deceiving them. They may be reluctant to confide in others due to unwarranted fears that the information will be used maliciously. Persistent grudges, hypersensitivity to perceived insults, and quickness to anger are common. This distrust often leads to social isolation and difficulties maintaining close relationships. People with PPD tend to interpret benign actions as threatening or demeaning. Their suspiciousness is generally consistent and pervasive across different contexts. ",
           ],
           list: [
             {
               title: "Distrust of Others",
               description:
-                "Believing that others have hidden malicious intentions.",
+                "Believing that others have hidden malicious intentions. ",
             },
             {
               title: "Reluctance to Confide",
@@ -42,7 +42,7 @@ export const identifyingParanoidPersonalityDisorder: ArticleContent = {
         {
           topic: "Genetic and Environmental Influences",
           supporting: [
-            "PPD may develop from a combination of genetic vulnerability and environmental stressors. Early childhood experiences involving trauma, neglect, or abuse can increase risk. Growing up in a distrustful or hostile environment may shape the development of paranoid thinking. While exact causes remain unclear, a pattern of dysfunctional interpersonal experiences is often involved. Biological factors affecting brain regions related to threat perception may also play a role.",
+            "PPD may develop from a combination of genetic vulnerability and environmental stressors. Early childhood experiences involving trauma, neglect, or abuse can increase risk. Growing up in a distrustful or hostile environment may shape the development of paranoid thinking. While exact causes remain unclear, a pattern of dysfunctional interpersonal experiences is often involved. Biological factors affecting brain regions related to threat perception may also play a role. Genetic predisposition to anxiety or mood disorders can further complicate the picture.",
           ],
         },
       ],
