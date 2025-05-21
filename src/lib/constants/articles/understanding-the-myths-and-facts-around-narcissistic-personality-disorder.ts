@@ -1,6 +1,6 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
-export const understandingNarcissisticPersonalityDisorderMythsAndFacts: ArticleContent =
+export const understandingTheMythsAndFactsAroundNarcissisticPersonalityDisorder: ArticleContent =
   {
     image:
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60",
