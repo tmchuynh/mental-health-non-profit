@@ -1,10 +1,9 @@
 "use client";
 
 import { LearningResourceCard } from "@/components/cards/LearningResourceCard";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Pagination,
-  PaginationContent,
   PaginationEllipsis,
   PaginationItem,
   PaginationLink,
@@ -103,27 +102,23 @@ export default function LearningResourceOverview() {
       <div className="flex flex-wrap items-center gap-2 my-4">
         <span className="mr-2 font-medium">Filter by Category:</span>
         {categories.map(([id, name]) => (
-          <button
+          <Button
             key={id}
             type="button"
-            className={`px-3 py-1 rounded border transition ${
-              selectedCategories.includes(id)
-                ? "bg-indigo-600 text-white border-indigo-600"
-                : "bg-white text-gray-800 border-gray-300 hover:bg-indigo-50"
-            }`}
+            variant={selectedCategories.includes(id) ? "default" : "outline"}
+            className="px-3 py-1 border rounded transition"
             onClick={() => toggleCategory(id)}
           >
             {name}
-          </button>
+          </Button>
         ))}
-        <button
-          type="button"
-          className="bg-gray-100 hover:bg-gray-200 ml-2 px-3 py-1 border border-gray-400 rounded text-gray-700"
+        <Button
+          variant={"destructive"}
           onClick={clearCategories}
           disabled={selectedCategories.length === 0}
         >
           Clear
-        </button>
+        </Button>
       </div>
 
       <div className="flex items-center gap-2 mb-4">
@@ -145,61 +140,57 @@ export default function LearningResourceOverview() {
             </option>
           ))}
         </select>
-        <span className="ml-4 text-gray-500 text-sm">
+        <span className="ml-4 text-sm">
           Showing {paginatedResources.length} of {filteredResources.length}{" "}
           resources
         </span>
       </div>
 
-      <section className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6">
+      <section className="justify-around gap-6 grid grid-cols-1 lg:grid-cols-2 mt-6">
         {paginatedResources.map((resource, index) => (
           <LearningResourceCard key={index} resource={resource} />
         ))}
       </section>
 
       {totalPages > 1 && (
-        <Pagination className="mt-8">
-          <PaginationContent>
-            <PaginationItem>
-              <PaginationPrevious
-                variant={page === 1 ? "disabled" : "outline"}
-                className={page === 1 ? "cursor-not-allowed" : "cursor-default"}
-                onClick={() => handlePageChange(Math.max(1, page - 1))}
-              />
-            </PaginationItem>
-            {renderPageNumbers().map((p, idx) =>
-              p === "..." ? (
-                <PaginationItem key={idx}>
-                  <PaginationEllipsis />
-                </PaginationItem>
-              ) : (
-                <PaginationItem key={p}>
-                  <PaginationLink
-                    isActive={p === page}
-                    className={cn(
-                      "px-3 py-1 rounded border",
-                      buttonVariants({
-                        variant: p === page ? "secondary" : "outline",
-                      })
-                    )}
-                    variant={p === page ? "secondary" : "outline"}
-                    onClick={() => handlePageChange(Number(p))}
-                  >
-                    {p}
-                  </PaginationLink>
-                </PaginationItem>
-              )
-            )}
-            <PaginationItem>
-              <PaginationNext
-                variant={page === totalPages ? "disabled" : "outline"}
-                className={
-                  page === totalPages ? "cursor-not-allowed" : "cursor-default"
-                }
-                onClick={() => handlePageChange(Math.min(totalPages, page + 1))}
-              />
-            </PaginationItem>
-          </PaginationContent>
+        <Pagination className="flex items-center gap-5 mt-6">
+          <PaginationPrevious
+            variant={page === 1 ? "disabled" : "outline"}
+            className={page === 1 ? "cursor-not-allowed" : "cursor-default"}
+            onClick={() => handlePageChange(Math.max(1, page - 1))}
+          />
+          {renderPageNumbers().map((p, idx) =>
+            p === "..." ? (
+              <PaginationItem
+                key={idx}
+                className="px-2 text-gray-400 select-none"
+              >
+                <PaginationEllipsis />
+              </PaginationItem>
+            ) : (
+              <PaginationLink
+                key={p}
+                isActive={p === page}
+                className={cn(
+                  "px-3 py-1 rounded border",
+                  buttonVariants({
+                    variant: p === page ? "secondary" : "outline",
+                  })
+                )}
+                variant={p === page ? "secondary" : "outline"}
+                onClick={() => handlePageChange(Number(p))}
+              >
+                {p}
+              </PaginationLink>
+            )
+          )}
+          <PaginationNext
+            variant={page === totalPages ? "disabled" : "outline"}
+            className={
+              page === totalPages ? "cursor-not-allowed" : "cursor-default"
+            }
+            onClick={() => handlePageChange(Math.min(totalPages, page + 1))}
+          />
         </Pagination>
       )}
     </div>
