@@ -70,7 +70,7 @@ export default function Donations() {
         from a backend service or API.
       </p>
 
-      <section className="space-y-6 mt-8">
+      <section className="gap-5 space-y-6 grid lg:grid-cols-2 mt-8">
         {mentalHealthCharities.map((charity) => {
           const m = metrics[charity.title];
           const yearlyGoal = m?.yearlyGoal || 1;
@@ -108,22 +108,26 @@ export default function Donations() {
                     </div>
                   </div>
                 )}
-                <div className="grid grid-cols-2 mt-3">
-                  <div className="gap-x-4 gap-y-1 grid grid-cols-2">
-                    <span className="font-medium">Today:</span>
+                <div className="gap-7 grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 mt-9">
+                  <div className="gap-x-4 gap-y-1 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-2">
+                    <h5>Today:</h5>
                     <span>
                       {formatNumberToCurrency(m.todayDonations, 2, 2)}
                     </span>
-                    <span className="font-medium">This Month:</span>
+                    <h5>This Month:</h5>
                     <span>
                       {formatNumberToCurrency(m.monthlyDonations, 2, 2)}
                     </span>
-                    <span className="font-medium">6 Months:</span>
+                    <h5>6 Months:</h5>
                     <span>
                       {formatNumberToCurrency(m.sixMonthDonations, 2, 2)}
                     </span>
+                    <h5>This Year:</h5>
+                    <span>
+                      {formatNumberToCurrency(m.yearlyDonations, 2, 2)}
+                    </span>
                   </div>
-                  <div className="flex flex-col justify-center items-center gap-1 w-fit">
+                  <div className="flex flex-col md:justify-center gap-1 xl:mx-6 w-full xl:w-fit">
                     <div className="flex gap-2">
                       <Input
                         type="text"
