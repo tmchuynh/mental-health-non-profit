@@ -10,7 +10,11 @@ import {
 import useSmallScreen from "@/hooks/useSmallScreen";
 import { articles } from "@/lib/constants/articles/articles";
 import { articlesMap } from "@/lib/constants/articleSectioned";
-import { formatCamelCaseToTitle, formatIDToUrl } from "@/lib/utils/format";
+import {
+  formatCamelCaseToTitle,
+  formatIDToUrl,
+  generateRandomString,
+} from "@/lib/utils/format";
 import {
   CheckIcon,
   ChevronRightIcon,
@@ -20,6 +24,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
+import { buttonVariants } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -28,9 +33,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 import {
   Pagination,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { cn } from "@/lib/utils";
 
 function Categories({ selected }: { selected?: string }) {
   // Get all categories from articlesMap
@@ -108,9 +117,16 @@ function Posts({ category }: { category?: string }) {
     indexOfLastArticle
   );
 
+  // Calculate total pages
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filteredArticles.length / articlesPerPage)
+  );
+
   // Handle page change
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // Handle articles per page change
@@ -119,8 +135,39 @@ function Posts({ category }: { category?: string }) {
     setCurrentPage(1); // Reset to the first page when articles per page changes
   };
 
-  // Calculate total pages
-  const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+  // Helper to render page numbers (with ellipsis if needed)
+  const renderPageNumbers = () => {
+    const pages: (number | string)[] = [];
+    if (totalPages <= 5) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      if (currentPage <= 3) {
+        pages.push(1, 2, 3, 4, "...", totalPages);
+      } else if (currentPage >= totalPages - 2) {
+        pages.push(
+          1,
+          "...",
+          totalPages - 3,
+          totalPages - 2,
+          totalPages - 1,
+          totalPages
+        );
+      } else {
+        pages.push(
+          1,
+          "...",
+          currentPage - 1,
+          currentPage,
+          currentPage + 1,
+          "...",
+          totalPages
+        );
+      }
+    }
+    return pages;
+  };
 
   if (filteredArticles.length === 0) {
     return <p className="mt-6 text-gray-500">No posts found.</p>;
@@ -139,24 +186,15 @@ function Posts({ category }: { category?: string }) {
             </div>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem
-              onClick={() => handleArticlesPerPageChange(5)}
-              className="px-3 md:text-md lg:text-lg"
-            >
-              5 articles per page
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => handleArticlesPerPageChange(10)}
-              className="px-3 md:text-md lg:text-lg"
-            >
-              10 articles per page
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => handleArticlesPerPageChange(15)}
-              className="px-3 md:text-md lg:text-lg"
-            >
-              15 articles per page
-            </DropdownMenuItem>
+            {[5, 10, 15].map((size) => (
+              <DropdownMenuItem
+                key={size}
+                onClick={() => handleArticlesPerPageChange(size)}
+                className="px-3 md:text-md lg:text-lg"
+              >
+                {size} articles per page
+              </DropdownMenuItem>
+            ))}
           </DropdownMenuContent>
         </DropdownMenu>
       </section>
@@ -190,7 +228,7 @@ function Posts({ category }: { category?: string }) {
       ))}
 
       {/* Pagination controls */}
-      <Pagination className="flex items-center gap-5">
+      <Pagination className="flex items-center gap-5 mt-6">
         <PaginationPrevious
           onClick={() => {
             if (currentPage > 1) {
@@ -202,25 +240,30 @@ function Posts({ category }: { category?: string }) {
             currentPage === 1 ? "cursor-not-allowed" : "cursor-default"
           }
         />
-        {!isSmallDevice && (
-          <section className="text-center">
-            {indexOfLastArticle >= filteredArticles.length &&
-            totalPages === 1 ? (
-              filteredArticles.length === filteredArticles.length ? (
-                <p>Showing all {filteredArticles.length} blogs</p>
-              ) : (
-                <p>Showing all {filteredArticles.length} filtered blogs</p>
-              )
-            ) : (
-              <p>
-                Showing {indexOfFirstArticle + 1} to{" "}
-                {indexOfLastArticle > filteredArticles.length
-                  ? filteredArticles.length
-                  : indexOfLastArticle}{" "}
-                of {filteredArticles.length} blogs
-              </p>
-            )}
-          </section>
+        {renderPageNumbers().map((p, idx) =>
+          p === "..." ? (
+            <PaginationItem
+              key={`${idx}-${generateRandomString}`}
+              className="px-2 text-gray-400 select-none"
+            >
+              <PaginationEllipsis />
+            </PaginationItem>
+          ) : (
+            <PaginationLink
+              key={p}
+              isActive={p === currentPage}
+              className={cn(
+                "px-3 py-1 rounded border",
+                buttonVariants({
+                  variant: p === currentPage ? "secondary" : "outline",
+                })
+              )}
+              variant={p === currentPage ? "secondary" : "outline"}
+              onClick={() => handlePageChange(Number(p))}
+            >
+              {p}
+            </PaginationLink>
+          )
         )}
         <PaginationNext
           onClick={() => {
@@ -232,7 +275,6 @@ function Posts({ category }: { category?: string }) {
           className={
             currentPage === totalPages ? "cursor-not-allowed" : "cursor-default"
           }
-          size={undefined}
         />
       </Pagination>
     </div>
