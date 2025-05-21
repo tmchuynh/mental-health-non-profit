@@ -56,4 +56,5 @@ export type ListDetail = {
   title?: string;
   description?: string;
   url?: string;
+  list?: ListDetail[];
 };
