@@ -161,10 +161,7 @@ export default function LearningResourceOverview() {
           />
           {renderPageNumbers().map((p, idx) =>
             p === "..." ? (
-              <PaginationItem
-                key={idx}
-                className="px-2 text-gray-400 select-none"
-              >
+              <PaginationItem key={idx} className="px-2 select-none">
                 <PaginationEllipsis />
               </PaginationItem>
             ) : (

@@ -6,12 +6,12 @@ export function FutureVolunteeringEventCard({
   event: FutureVolunteeringEvent;
 }) {
   return (
-    <div className="bg-white shadow-md mb-6 p-6 border rounded-xl max-w-2xl">
+    <div className="shadow-md mb-6 p-6 border rounded-xl max-w-2xl">
       <h2 className="mb-1 font-bold text-xl">{event.name}</h2>
-      <div className="mb-2 text-gray-600 text-sm">
+      <div className="mb-2 text-sm">
         <span className="font-medium">Date:</span> {event.dateRange}
       </div>
-      <div className="mb-2 text-gray-600 text-sm">
+      <div className="mb-2 text-sm">
         <span className="font-medium">Open Spots:</span> {event.openSpots}
       </div>
       <div className="mb-2">

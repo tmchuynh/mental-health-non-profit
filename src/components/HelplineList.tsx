@@ -2,9 +2,9 @@ import { helplineDirectory } from "@/lib/constants/crisisHelplines";
 
 export function HelplineList() {
   return (
-    <ul className="mt-6 space-y-6">
+    <ul className="space-y-6 mt-6">
       {helplineDirectory.map((helpline) => (
-        <li key={helpline.name} className="border rounded p-4 shadow-sm">
+        <li key={helpline.name} className="shadow-sm p-4 border rounded">
           <div className="font-semibold text-base">{helpline.name}</div>
           <div>
             <span className="font-medium">Phone:</span> {helpline.phone}
@@ -20,10 +20,8 @@ export function HelplineList() {
               {helpline.website}
             </a>
           </div>
-          <div className="text-gray-700">{helpline.description}</div>
-          <div className="text-gray-500 text-sm">
-            Availability: {helpline.availability}
-          </div>
+          <div className="">{helpline.description}</div>
+          <div className="text-sm">Availability: {helpline.availability}</div>
         </li>
       ))}
     </ul>

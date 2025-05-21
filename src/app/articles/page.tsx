@@ -170,7 +170,7 @@ function Posts({ category }: { category?: string }) {
   };
 
   if (filteredArticles.length === 0) {
-    return <p className="mt-6 text-gray-500">No posts found.</p>;
+    return <p className="mt-6 title">No posts found.</p>;
   }
 
   return (
@@ -204,15 +204,11 @@ function Posts({ category }: { category?: string }) {
           className="relative max-sm:gap-3 grid grid-cols-1 sm:grid-cols-3 py-10 first:border-t first:border-t-gray-200 border-b border-b-gray-100"
         >
           <div>
-            <div className="sm:font-medium text-sm/5 max-sm:text-gray-700">
-              {article.subtitle}
-            </div>
+            <div className="sm:font-medium text-sm/5">{article.subtitle}</div>
           </div>
           <div className="sm:col-span-2 sm:max-w-2xl">
             <h2 className="font-medium text-sm/5">{article.title}</h2>
-            <p className="mt-3 text-gray-500 text-sm/6">
-              {article.description}
-            </p>
+            <p className="mt-3 text-sm/6 title">{article.description}</p>
             <div className="mt-4">
               <Link
                 href={`/articles/${formatIDToUrl(article.title)}`}
@@ -220,7 +216,7 @@ function Posts({ category }: { category?: string }) {
               >
                 <span className="absolute inset-0" />
                 Read more
-                <ChevronRightIcon className="size-4 fill-gray-400" />
+                <ChevronRightIcon className="size-4 fill-primary" />
               </Link>
             </div>
           </div>
@@ -244,7 +240,7 @@ function Posts({ category }: { category?: string }) {
           p === "..." ? (
             <PaginationItem
               key={`${idx}-${generateRandomString}`}
-              className="px-2 text-gray-400 select-none"
+              className="px-2 titleselect-none"
             >
               <PaginationEllipsis />
             </PaginationItem>

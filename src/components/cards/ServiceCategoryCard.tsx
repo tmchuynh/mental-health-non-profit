@@ -11,7 +11,7 @@ export function ServiceCategoryCard({
 }) {
   const router = useRouter();
   return (
-    <div className="bg-white shadow-md mb-6 p-6 border rounded-xl max-w-2xl">
+    <div className="shadow-md mb-6 p-6 border rounded-xl max-w-2xl">
       <h2
         className="mb-2 font-bold text-xl underline-offset-2 hover:underline cursor-pointer"
         onClick={() =>
@@ -20,7 +20,7 @@ export function ServiceCategoryCard({
       >
         {category.name}
       </h2>
-      <div className="mb-2 text-gray-700">{category.description}</div>
+      <div className="mb-2">{category.description}</div>
       <div>
         <span className="font-medium">Features:</span>
         <ul className="ml-4 list-disc list-inside">

@@ -6,12 +6,12 @@ export function FutureFundraisingEventCard({
   event: FutureFundraisingEvent;
 }) {
   return (
-    <div className="bg-white shadow-md mb-6 p-6 border rounded-xl max-w-2xl">
+    <div className="shadow-md mb-6 p-6 border rounded-xl max-w-2xl">
       <h2 className="mb-1 font-bold text-xl">{event.name}</h2>
-      <div className="mb-2 text-gray-600 text-sm">
+      <div className="mb-2 text-sm">
         <span className="font-medium">Date:</span> {event.dateRange}
       </div>
-      <div className="mb-2 text-gray-600 text-sm">
+      <div className="mb-2 text-sm">
         <span className="font-medium">Target:</span> $
         {event.targetAmount.toLocaleString()}
       </div>
@@ -47,14 +47,12 @@ export function FutureFundraisingEventCard({
         <span className="font-medium">Donor Tiers:</span>
         <div className="gap-3 grid mt-2">
           {event.donorTiers.map((tier, i) => (
-            <div key={i} className="bg-gray-50 p-3 border rounded-lg">
+            <div key={i} className="p-3 border rounded-lg">
               <div className="flex justify-between items-center">
                 <span className="font-semibold">{tier.tierName}</span>
-                <span className="text-gray-500 text-xs">
-                  {tier.recognitionLevel}
-                </span>
+                <span className="text-xs">{tier.recognitionLevel}</span>
               </div>
-              <div className="mb-1 text-gray-700 text-sm">
+              <div className="mb-1 text-sm">
                 Minimum Donation: ${tier.minDonation}
               </div>
               <div>

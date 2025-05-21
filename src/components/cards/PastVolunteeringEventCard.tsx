@@ -6,9 +6,9 @@ export function PastVolunteeringEventCard({
   event: PastVolunteeringEvent;
 }) {
   return (
-    <div className="bg-white shadow-md mb-6 p-6 border rounded-xl max-w-2xl">
+    <div className="shadow-md mb-6 p-6 border rounded-xl max-w-2xl">
       <h2 className="mb-1 font-bold text-xl">{event.name}</h2>
-      <div className="mb-2 text-gray-600 text-sm">
+      <div className="mb-2 text-sm">
         <span className="font-medium">Date:</span>{" "}
         {new Date(event.date).toLocaleDateString("en-US", {
           year: "numeric",
@@ -16,15 +16,15 @@ export function PastVolunteeringEventCard({
           day: "numeric",
         })}
       </div>
-      <div className="mb-2 text-gray-600 text-sm">
+      <div className="mb-2 text-sm">
         <span className="font-medium">Total Volunteers:</span>{" "}
         {event.totalVolunteers}
       </div>
-      <div className="mb-2 text-gray-600 text-sm">
+      <div className="mb-2 text-sm">
         <span className="font-medium">Hours Contributed:</span>{" "}
         {event.hoursContributed}
       </div>
-      <div className="mb-2 text-gray-600 text-sm">
+      <div className="mb-2 text-sm">
         <span className="font-medium">Cities Involved:</span>{" "}
         {event.citiesInvolved}
       </div>

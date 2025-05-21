@@ -83,28 +83,20 @@ export default function Footer() {
           className="flex flex-wrap justify-center gap-x-12 gap-y-3 -mb-6 text-sm/6"
         >
           {navigation.main.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-600 hover:text-gray-900"
-            >
+            <a key={item.name} href={item.href} className="">
               {item.name}
             </a>
           ))}
         </nav>
         <div className="flex justify-center gap-x-10 mt-16">
           {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-600 hover:text-gray-800"
-            >
+            <a key={item.name} href={item.href} className="">
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="size-6" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-gray-600 text-sm/6">
+        <p className="mt-10 text-center text-sm/6">
           &copy; 2025 InnerLight Elevation, Inc. All rights reserved.
         </p>
       </div>

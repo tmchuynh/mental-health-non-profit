@@ -40,14 +40,14 @@ export default function ProgramsAndServices() {
         <dl className="gap-x-8 gap-y-16 grid grid-cols-1 lg:grid-cols-3 max-w-xl lg:max-w-none">
           {highlights.map((feature) => (
             <div key={feature.name} className="flex flex-col">
-              <dt className="flex items-center gap-x-3 font-semibold text-base/7 text-gray-900">
+              <dt className="flex items-center gap-x-3 font-semibold">
                 <feature.icon
                   aria-hidden="true"
                   className="flex-none text-accent size-5"
                 />
                 {feature.name}
               </dt>
-              <dd className="flex flex-col flex-auto mt-4 text-base/7 text-gray-600">
+              <dd className="flex flex-col flex-auto mt-4">
                 <p className="flex-auto">{feature.description}</p>
               </dd>
             </div>

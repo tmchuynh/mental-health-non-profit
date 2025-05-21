@@ -32,9 +32,9 @@ export default function OurStaff() {
                   />
                   <div className="flex flex-col items-center">
                     <h3>{person.name}</h3>
-                    <p className="text-gray-400 text-sm/6">{person.title}</p>
+                    <p>{person.title}</p>
 
-                    <p className="text-gray-400">{person.bio}</p>
+                    <p>{person.bio}</p>
                   </div>
                 </Card>
               ))}
