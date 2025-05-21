@@ -1,7 +1,7 @@
 "use client";
 
 import { articles } from "@/lib/constants/articles/articles";
-import { ArticleContent } from "@/lib/interfaces/articles";
+import { ArticleContent, ListDetail } from "@/lib/interfaces/articles";
 import { cn } from "@/lib/utils";
 import { formatUrlToID } from "@/lib/utils/format";
 import Image from "next/image";
@@ -12,7 +12,7 @@ const RecursiveList = ({
   list,
   depth = 3,
 }: {
-  list: any[];
+  list: ListDetail[];
   depth?: number;
 }) => {
   return (
@@ -33,12 +33,20 @@ const RecursiveList = ({
                   "text-tertiary ": depth === 5,
                 })}
               >
-                {item.title}
+                {item.url ? (
+                  <a
+                    href={item.url}
+                    className="underline underline-offset-2 hover:no-underline"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <span>{item.title}</span>
+                )}
               </strong>
-              :{" "}
             </>
           )}
-          {item.description && <span>{item.description}</span>}
+          {item.description && <span>: {item.description}</span>}
           {item.list && <RecursiveList list={item.list} depth={depth + 1} />}
         </li>
       ))}
@@ -226,6 +234,33 @@ export default function BlogArticleData() {
                   <p key={cIndex}>{conclusion}</p>
                 ))}
               </div>
+
+              <section className="mt-2">
+                <h5>References</h5>
+                <div className="gap-x-4 grid md:grid-cols-2 lg:grid-cols-3">
+                  {articleData.references?.map((reference, rIndex) => (
+                    <div key={rIndex} className="text-xs">
+                      {reference.title && (
+                        <>
+                          <strong>
+                            {reference.url ? (
+                              <a
+                                href={reference.url}
+                                className="underline underline-offset-2 hover:no-underline"
+                              >
+                                {reference.title}
+                              </a>
+                            ) : (
+                              <span>{reference.title}</span>
+                            )}
+                          </strong>
+                        </>
+                      )}
+                      {reference.description && <p>{reference.description}</p>}
+                    </div>
+                  ))}
+                </div>
+              </section>
             </section>
           )}
         </div>
