@@ -19,13 +19,10 @@ export async function getArticleData(
   }
 }
 
-export async function getResourceData(
-  resourceCategory: string,
-  resource: string
-): Promise<any> {
+export async function getResourceData(resource: string): Promise<any> {
   try {
     const resourceModule = await import(
-      `@/lib/constants/resources/${resourceCategory}`
+      `@/lib/constants/resources/${resource}`
     );
     // Return the specific named export that matches toolKitID
     if (resourceModule[resource]) {
