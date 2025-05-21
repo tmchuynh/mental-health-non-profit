@@ -52,13 +52,13 @@ export const HoverEffect = ({
           />
         )}
       </AnimatePresence>
-      <Card>
-        <CardHeader>
+      <Card className="flex flex-col justify-between h-full">
+        <CardHeader className="h-full">
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </CardHeader>
         {introduction && (
-          <CardContent className="text-sm">{introduction}</CardContent>
+          <CardContent className="h-full text-sm">{introduction}</CardContent>
         )}
       </Card>
     </a>
