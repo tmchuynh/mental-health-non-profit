@@ -170,7 +170,7 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=60",
   },
   {
-    id: "hypomania-vs-hypermania",
+    id: "the-difference-between-hypomania-and-hypermania",
     title: "The Difference Between Hypomania and Hypermania",
     subtitle: "Understanding the Spectrum of Elevated Mood States",
     categoryId: "moodDisorders",
