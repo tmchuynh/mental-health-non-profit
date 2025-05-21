@@ -2,7 +2,7 @@ import { helplineDirectory } from "@/lib/constants/crisisHelplines";
 
 export function HelplineList() {
   return (
-    <ul className="space-y-6 mt-6">
+    <ul className="gap-4 grid lg:grid-cols-2 mt-6">
       {helplineDirectory.map((helpline) => (
         <li key={helpline.name} className="shadow-sm p-4 border rounded">
           <div className="font-semibold text-base">{helpline.name}</div>

@@ -6,34 +6,50 @@ export default function ProgramsAndServices() {
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>Programs and Services</h1>
+      <h5>Empowering Mental Wellness for All</h5>
+      <p>
+        At InnerLight Elevation, we believe mental health is not a luxury—it’s a
+        necessity. Our programs and services are built on the foundation that
+        mental wellness is an essential part of every person’s overall
+        well-being. We are committed to delivering inclusive, accessible, and
+        culturally responsive support to individuals and communities from all
+        walks of life. Whether someone is navigating a mental health condition,
+        facing a life transition, or simply seeking tools to strengthen
+        emotional resilience, our offerings are here to help.
+      </p>
       <div className="gap-5 grid lg:grid-cols-2">
-        <p>
-          At InnerLight Elevation, we are dedicated to transforming mental
-          health care and support through a range of innovative programs and
-          services. Our mission is to empower individuals and communities to
-          prioritize mental wellness, foster resilience, and create a culture of
-          understanding and acceptance. We offer a variety of programs designed
-          to meet the diverse needs of our community, including educational
-          workshops, support groups, outreach initiatives, and culturally
-          responsive resources. Our team of experienced professionals is
-          committed to providing high-quality care and support to individuals
-          from all walks of life.
-        </p>
-        <p>
-          We believe that mental health is a fundamental aspect of overall
-          well-being and that everyone deserves access to the resources and
-          support they need to thrive. Our programs are designed to be
-          inclusive, accessible, and tailored to the unique needs of our
-          community. We are proud to collaborate with a variety of organizations
-          and individuals who share our commitment to making a positive impact
-          in the community. Together, we are working to create a world where
-          mental health is prioritized, understood, and supported. We invite you
-          to explore our programs and services and to join us in this important
-          work. Your support can help us continue to provide vital mental health
-          resources, expand our outreach, and empower individuals to take charge
-          of their mental wellness. Together, we can make a difference and
-          create a brighter future for all.
-        </p>
+        <div>
+          <p>
+            Every program is designed with flexibility and sensitivity in mind.
+            We listen to our community, adapt to evolving needs, and prioritize
+            accessibility—whether that means offering services online,
+            in-person, or through hybrid formats. We continually assess and
+            refine our efforts to ensure that the support we provide is
+            relevant, respectful, and effective.
+          </p>
+          <p>
+            Our impact is amplified through strategic collaboration. We work
+            alongside mental health professionals, educators, nonprofit
+            organizations, community leaders, and advocates who share our
+            vision: a world where mental health is recognized, supported, and
+            treated with the urgency and dignity it deserves. Together, we are
+            dismantling stigma, expanding access, and laying the groundwork for
+            sustainable mental health equity.
+          </p>
+        </div>
+        <div>
+          <p>
+            We invite you to explore our programs and join us in this vital
+            mission. Whether you’re seeking support, want to get involved, or
+            are simply looking to learn more, your presence matters. With your
+            engagement, we can continue to grow our reach, expand our resources,
+            and empower more people to take charge of their mental wellness.
+          </p>
+          <p>
+            Together, we can build a future where mental health is not just
+            treated—it is respected, prioritized, and celebrated.
+          </p>
+        </div>
       </div>
 
       <div className="mx-auto mt-16 sm:mt-20 lg:mt-24 max-w-2xl lg:max-w-none">
