@@ -1,12 +1,11 @@
 import { ArticleContent } from "@/lib/interfaces/articles";
 
-export const hypomaniaVsHypermania: ArticleContent = {
+export const theDifferenceBetweenHypomaniaAndHypermania: ArticleContent = {
   image:
     "https://images.unsplash.com/photo-1557426272-fc759fdf7a8a?auto=format&fit=crop&w=1200&q=80",
   preface: [
     "In the realm of mood disorders, particularly bipolar disorder, hypomania and hypermania are often confused. While both represent states of elevated mood and increased energy, they differ significantly in severity, duration, and impact on daily life. This article aims to clarify the clinical differences between hypomania and hypermania, outline the associated risks, and offer insight into how each state is diagnosed and treated. Understanding these distinctions can empower individuals and caregivers to seek appropriate support and avoid potential crises.",
     "Mood disorders are complex and can manifest in a variety of ways. Recognizing the subtle and overt differences between hypomania and hypermania is crucial for timely intervention and effective management. This article will delve into the clinical features, diagnostic criteria, real-life examples, and treatment strategies for both states, providing a comprehensive resource for patients, families, and clinicians.",
-    "This article also provides practical examples, shares stories from individuals who have experienced these states, and lists reputable resources and support groups across the United States for those seeking help or community.",
   ],
   sections: [
     {
@@ -177,35 +176,153 @@ export const hypomaniaVsHypermania: ArticleContent = {
         {
           topic: "Where to Turn for Support",
           supporting: [
-            "If you or someone you know is struggling with symptoms of hypomania or mania, connecting with support groups and professional resources can make a significant difference. Here are some reputable organizations and resources in the United States:",
-            "- **Depression and Bipolar Support Alliance (DBSA):** Offers free peer-led support groups, both in-person and online. [Find a group](https://www.dbsalliance.org/support/chapters-and-support-groups/)",
-            "- **National Alliance on Mental Illness (NAMI):** Provides education, advocacy, and support groups for individuals and families. [Find your local NAMI](https://www.nami.org/findsupport)",
-            "- **International Bipolar Foundation:** Offers webinars, educational materials, and a global online support community. [Visit IBPF](https://ibpf.org/)",
-            "- **Mental Health America (MHA):** Provides screening tools, information, and local resources. [Find help](https://mhanational.org/)",
-            "- **The Balanced Mind Parent Network:** A family-focused community for parents of children with mood disorders. [Learn more](https://www.dbsalliance.org/support/for-parents/)",
-            "- **Crisis Text Line:** Text HOME to 741741 for free, 24/7 crisis counseling.",
-            "- **988 Suicide & Crisis Lifeline:** Call or text 988 for immediate help in a mental health crisis.",
-            "Many local hospitals and community mental health centers also offer support groups and educational workshops. Ask your healthcare provider or check local listings for more options.",
+            "Navigating hypomania or mania can be daunting, but a robust network of resources and support groups exists across the USA. Whether you are seeking peer support, professional guidance, or crisis intervention, connecting with the right community can make a significant difference in recovery and ongoing wellness.",
+            "National organizations such as the Depression and Bipolar Support Alliance (DBSA) and the National Alliance on Mental Illness (NAMI) offer both in-person and virtual support groups, educational programs, and advocacy. These groups provide a safe space to share experiences, learn coping strategies, and access up-to-date information about mood disorders.",
+            "Online communities are invaluable for those who prefer anonymity or have limited access to local resources. Forums like Reddit's r/bipolar and HealthUnlocked's Bipolar Disorder Community allow individuals to connect, ask questions, and offer mutual support. The International Bipolar Foundation (IBPF) provides webinars, articles, and a global peer network.",
+            "Professional directories such as Psychology Today and the American Psychological Association's Psychologist Locator can help you find therapists and psychiatrists specializing in mood disorders. The SAMHSA Treatment Locator is a comprehensive tool for finding mental health and substance use services nationwide.",
+            "Educational resources empower individuals and families to make informed decisions. The National Institute of Mental Health (NIMH), Mayo Clinic, and Mental Health America (MHA) offer evidence-based guides, self-help tools, and screening tests.",
+            "For immediate help, crisis hotlines and text lines are available 24/7. The 988 Suicide & Crisis Lifeline and Crisis Text Line connect you with trained counselors who can provide support and direct you to local services. If you or someone you know is in immediate danger, call 911 or visit the nearest emergency room.",
+            "Local community mental health centers and hospital programs often offer support groups, psychoeducation, and crisis intervention. Reach out to your healthcare provider or check local listings for options in your area.",
           ],
           list: [
             {
               title: "Online Communities",
               description:
-                "Reddit's r/bipolar and HealthUnlocked's Bipolar Disorder Community offer peer support and shared experiences.",
+                "Peer-led forums and support networks for sharing experiences and advice.",
+              list: [
+                {
+                  title: "Reddit - r/bipolar",
+                  description:
+                    "A large, active online community for people with bipolar disorder and their loved ones.",
+                },
+                {
+                  title: "HealthUnlocked - Bipolar Disorder Community",
+                  description:
+                    "A moderated forum for connecting and discussing challenges and coping strategies.",
+                },
+                {
+                  title: "Depression and Bipolar Support Alliance (DBSA)",
+                  description:
+                    "Free peer-led support groups, both in-person and online, plus educational resources.",
+                },
+                {
+                  title: "International Bipolar Foundation (IBPF)",
+                  description:
+                    "Webinars, articles, and a supportive global community for individuals and families.",
+                },
+                {
+                  title: "NAMI Connection",
+                  description:
+                    "Peer-led support groups for those living with mental health conditions, available nationwide.",
+                },
+              ],
             },
             {
               title: "Professional Directories",
               description:
-                "Psychology Today and the American Psychological Association provide searchable directories for finding therapists and psychiatrists specializing in mood disorders.",
+                "Find therapists, psychiatrists, and treatment centers specializing in mood disorders.",
+              list: [
+                {
+                  title: "Psychology Today",
+                  description:
+                    "Directory for therapists, psychiatrists, and support groups by location and specialty.",
+                },
+                {
+                  title:
+                    "American Psychological Association - Psychologist Locator",
+                  description:
+                    "Search for licensed psychologists in your area.",
+                },
+                {
+                  title: "SAMHSA Treatment Locator",
+                  description:
+                    "Searchable database of mental health and substance use treatment facilities across the US.",
+                },
+              ],
             },
             {
               title: "Educational Resources",
               description:
-                "The National Institute of Mental Health (NIMH) and Mayo Clinic offer comprehensive guides on bipolar disorder, treatment options, and research updates.",
+                "Evidence-based guides, articles, and self-help tools for individuals and families.",
+              list: [
+                {
+                  title: "National Institute of Mental Health (NIMH)",
+                  description:
+                    "Comprehensive guides on bipolar disorder, treatment options, and research updates.",
+                },
+                {
+                  title: "Mayo Clinic",
+                  description:
+                    "Detailed information on symptoms, diagnosis, and treatment of bipolar disorder.",
+                },
+                {
+                  title: "Mental Health America (MHA)",
+                  description:
+                    "Information on mood disorders, self-help tools, and local resources.",
+                },
+                {
+                  title: "National Alliance on Mental Illness (NAMI)",
+                  description:
+                    "Educational programs, advocacy, and support for individuals and families.",
+                },
+                {
+                  title: "International Bipolar Foundation (IBPF)",
+                  description:
+                    "Educational articles, webinars, and resources for people living with bipolar disorder.",
+                },
+              ],
+            },
+            {
+              title: "In-Person and Local Support",
+              description:
+                "Face-to-face groups and local chapters for community connection.",
+              list: [
+                {
+                  title: "DBSA Local Chapters",
+                  description:
+                    "Find in-person support groups and events in your area.",
+                },
+                {
+                  title: "NAMI Local Affiliates",
+                  description:
+                    "Local support groups, educational classes, and advocacy opportunities.",
+                },
+                {
+                  title: "Community Mental Health Centers",
+                  description:
+                    "Counseling, crisis intervention, and support groups in your county or city.",
+                },
+              ],
+            },
+            {
+              title: "Crisis and Emergency Resources",
+              description: "Immediate help for those in crisis or at risk.",
+              list: [
+                {
+                  title: "988 Suicide & Crisis Lifeline",
+                  description:
+                    "Call or text 988 for immediate, confidential support from trained counselors.",
+                },
+                {
+                  title: "Crisis Text Line",
+                  description:
+                    "Text 'HELLO' to 741741 for free, 24/7 crisis support via text message.",
+                },
+                {
+                  title: "National Domestic Violence Hotline",
+                  description:
+                    "Call 1-800-799-7233 or text 'START' to 88788 for confidential support if experiencing abuse.",
+                },
+                {
+                  title: "Emergency Services",
+                  description:
+                    "If there is an immediate risk of harm, call 911 or go to the nearest emergency room.",
+                },
+              ],
             },
           ],
           concluding:
-            "Reaching out for help is a sign of strength. Whether through professional care, peer support, or educational resources, you are not alone. The mental health community in the USA is robust and ready to support individuals and families affected by mood disorders.",
+            "Seeking help is a courageous step. Whether you connect with a peer group, mental health professional, or crisis service, remember that support is available in many forms. Explore these resources to find the right fit for your needs, and know that you are not alone on your journey.",
         },
       ],
     },
