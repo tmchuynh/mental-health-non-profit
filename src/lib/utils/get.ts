@@ -19,16 +19,17 @@ export async function getArticleData(
   }
 }
 
-export async function getResourceData(resource: string): Promise<any> {
+export async function getStoryData(
+  id: string,
+  camelCaseId: string
+): Promise<any> {
   try {
-    const resourceModule = await import(
-      `@/lib/constants/resources/${resource}`
-    );
+    const storyModule = await import(`@/lib/constants/events/stories/${id}`);
     // Return the specific named export that matches toolKitID
-    if (resourceModule[resource]) {
-      return resourceModule[resource];
+    if (storyModule[camelCaseId]) {
+      return storyModule[camelCaseId];
     } else {
-      console.error(`Export named ${resource} not found in module`);
+      console.error(`Export named ${camelCaseId} not found in module`);
       return [];
     }
   } catch (error) {

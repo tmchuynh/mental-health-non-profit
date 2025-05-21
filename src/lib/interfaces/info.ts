@@ -54,6 +54,7 @@ export interface Partner {
 
 export interface PartnerCategory {
   category: string;
+  description: string;
   partners: Partner[];
 }
 
