@@ -1,40 +1,47 @@
-import { Fa1, Fa2, Fa3, Fa4, Fa5, Fa6 } from "react-icons/fa6";
+import {
+  FaBalanceScale,
+  FaChartLine,
+  FaHandsHelping,
+  FaHeart,
+  FaLightbulb,
+  FaUsers,
+} from "react-icons/fa";
 
 export const highlights = [
   {
-    name: "Peer-Led Support",
+    name: "Breaking Stigma",
     description:
-      "Confidential, community-based support circles led by trained peers with lived experience. Build resilience and connection in a safe, welcoming environment.",
-    icon: Fa1, // Replace with an appropriate icon if available
+      "We strive to dismantle the stigma surrounding mental health by fostering open conversations and normalizing seeking support.",
+    icon: FaHandsHelping,
   },
   {
-    name: "Workshops & Education",
+    name: "Building Community",
     description:
-      "Interactive workshops and educational events focused on emotional regulation, self-care, and stress management. Gain practical tools for everyday life.",
-    icon: Fa2,
+      "Our programs create safe spaces for connection, belonging, and mutual support, empowering individuals to thrive together.",
+    icon: FaUsers,
   },
   {
-    name: "Affordable Counseling",
+    name: "Promoting Equity",
     description:
-      "Private, trauma-informed counseling sessions with licensed professionals or supervised trainees. Sliding scale pricing and virtual options available.",
-    icon: Fa3,
+      "We are committed to making mental health resources accessible and culturally responsive for all, regardless of background or circumstance.",
+    icon: FaBalanceScale,
   },
   {
-    name: "Youth Outreach",
+    name: "Empowering Through Education",
     description:
-      "Programs for teens and young adults, including mindfulness workshops, mentorship, and early intervention resources in schools and communities.",
-    icon: Fa4,
+      "We provide tools, knowledge, and skills that help individuals and communities take charge of their mental wellness.",
+    icon: FaLightbulb,
   },
   {
-    name: "Community Events",
+    name: "Compassionate Support",
     description:
-      "Annual walkathons, mental health fairs, and support group launches to raise awareness, build community, and connect people to resources.",
-    icon: Fa5,
+      "Our services are rooted in empathy, respect, and understanding, meeting people where they are on their mental health journey.",
+    icon: FaHeart,
   },
   {
-    name: "Resource Navigation",
+    name: "Driving Lasting Impact",
     description:
-      "Personalized guidance to help you find the right mental health resources, support groups, and professional services for your needs.",
-    icon: Fa6,
+      "We measure our success by the positive, sustainable changes we help create in the lives of those we serve.",
+    icon: FaChartLine,
   },
 ];
