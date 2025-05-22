@@ -113,3 +113,56 @@ export const futureVolunteeringEvents: FutureVolunteeringEvent[] = [
     ],
   },
 ];
+
+
+
+export const volunteerTestimonials = [
+  {
+    name: "Samantha Lee",
+    role: "Peer Support Volunteer",
+    message:
+      "Volunteering at InnerLight Elevation has been one of the most rewarding experiences of my life. I’ve met amazing people and truly felt like I was making a difference.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "David Kim",
+    role: "Event Organizer",
+    message:
+      "Helping organize community events opened my eyes to the importance of mental health outreach. The team is supportive and passionate about what they do.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "Maria Torres",
+    role: "Community Outreach",
+    message:
+      "I started volunteering to give back, but I gained so much more. The friendships and sense of purpose I found here are priceless.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "James Patel",
+    role: "Workshop Facilitator",
+    message:
+      "The training and support I received made it easy to get started. I always feel valued and appreciated as a volunteer.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "Olivia Chen",
+    role: "Fundraising Volunteer",
+    message:
+      "I love being part of a team that truly cares about mental wellness. Every event feels meaningful and impactful.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "Alex Johnson",
+    role: "Administrative Support",
+    message:
+      "Volunteering here has helped me grow personally and professionally. I recommend it to anyone looking to make a real impact.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+];

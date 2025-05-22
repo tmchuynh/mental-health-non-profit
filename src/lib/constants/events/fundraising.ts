@@ -179,3 +179,77 @@ export const futureFundraisingEvents: FutureFundraisingEvent[] = [
     ],
   },
 ];
+
+export const fundraisingEventMetrics = [
+  {
+    metric: "$185,000+",
+    title: "Total Raised",
+    subtitle: "Since 2021",
+  },
+  {
+    metric: "1,200+",
+    title: "Unqiue Donors",
+    subtitle: "Individuals & organizations",
+  },
+  {
+    metric: "18",
+    title: "Fundraising Events",
+    subtitle: "Hosted in 3 years",
+  },
+  {
+    metric: "5,000+",
+    title: "Lives Impacted",
+    subtitle: "Through funded programs",
+  },
+];
+
+export const fundraisingTestimonials = [
+  {
+    name: "Jessica Tran",
+    role: "Annual Gala Attendee",
+    message:
+      "The fundraising gala was inspiring and full of hope. I’m proud to support an organization that truly cares about mental health in our community.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "Michael Lee",
+    role: "Walk for Wellness Participant",
+    message:
+      "I’ve never felt more connected to a cause. The fundraising walk was not only fun, but it also raised awareness and brought people together.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "David Kim",
+    role: "Corporate Sponsor",
+    message:
+      "Supporting InnerLight Elevation’s fundraising events has been a highlight for our company. We see the real impact our contributions make.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "Priya Singh",
+    role: "Auction Participant",
+    message:
+      "The online auction was a creative way to get involved. I loved bidding on items and knowing the proceeds went to such a worthy cause.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "Carlos Ramirez",
+    role: "Dinner Guest",
+    message:
+      "I was moved by the stories shared at the fundraising dinner. It’s clear that every dollar raised is making a difference.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+  {
+    name: "Emily Chen",
+    role: "Recurring Donor",
+    message:
+      "Every event is so well organized and welcoming. I look forward to supporting future fundraisers and being part of this movement.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+  },
+];
