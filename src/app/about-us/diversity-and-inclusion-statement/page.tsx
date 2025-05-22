@@ -1,14 +1,5 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 export default function DiversityAndInclusionStatement() {
   return (
@@ -82,34 +73,40 @@ export default function DiversityAndInclusionStatement() {
         </p>
       </section>
 
-      <Carousel
-        opts={{
-          align: "start",
-          loop: true,
-        }}
-        plugins={[
-          Autoplay({
-            delay: 2000,
-          }),
-        ]}
-        className="mx-auto mt-9 md:w-10/12"
-      >
-        <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex justify-center items-center p-6 aspect-square">
-                    <span className="font-semibold text-3xl">{index + 1}</span>
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+      <div className="gap-6 grid grid-cols-1 md:grid-cols-2 my-12">
+        <div className="flex flex-col gap-2 shadow-sm p-6 border rounded-xl">
+          <span className="mb-2 text-3xl">🌍</span>
+          <h3>Our Commitment</h3>
+          <p>
+            Discover how we embed diversity, equity, and inclusion into every
+            aspect of our mission and daily work.
+          </p>
+        </div>
+        <div className="flex flex-col gap-2 shadow-sm p-6 border rounded-xl">
+          <span className="mb-2 text-3xl">🤝</span>
+          <h3>Community Partnerships</h3>
+          <p>
+            Learn about our collaborations with organizations serving
+            underrepresented and marginalized communities.
+          </p>
+        </div>
+        <div className="flex flex-col gap-2 shadow-sm p-6 border rounded-xl">
+          <span className="mb-2 text-3xl">🗣️</span>
+          <h3>Inclusive Programs</h3>
+          <p>
+            Explore our culturally responsive and trauma-informed programs
+            designed for all backgrounds and identities.
+          </p>
+        </div>
+        <div className="flex flex-col gap-2 shadow-sm p-6 border rounded-xl">
+          <span className="mb-2 text-3xl">📈</span>
+          <h3>Continuous Growth</h3>
+          <p>
+            See how we invest in ongoing training, feedback, and self-reflection
+            to advance equity and inclusion.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
