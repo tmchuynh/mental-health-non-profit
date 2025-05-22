@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { serviceCategories } from "@/lib/constants/serviceCategories";
 import { formatIDToUrl } from "@/lib/utils/format";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function AboutUs() {
@@ -176,55 +175,70 @@ export default function AboutUs() {
         </p>
       </section>
 
-      {/* Resources Section */}
       <section className="mt-16">
         <h2 className="mb-2 font-bold text-xl">Get Involved</h2>
         <hr className="mb-6" />
         <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <Link
-            href="/donations"
-            className="flex flex-col items-start bg-gray-50 p-6 border border-gray-200 rounded-xl min-h-[220px]"
-          >
+          <div className="flex flex-col items-start p-6 border rounded-xl min-h-[220px]">
             <div className="mb-4 text-2xl">💖</div>
             <h3 className="mb-1 font-semibold">Donate</h3>
             <p className="mb-2 text-sm">
               Support our mission by making a donation. Every contribution helps
               us expand mental health programs and reach more people in need.
             </p>
-          </Link>
-          <Link
-            href="/events/volunteer"
-            className="flex flex-col items-start bg-gray-50 p-6 border border-gray-200 rounded-xl min-h-[220px]"
-          >
+            <Button
+              variant="outline"
+              onClick={() => router.push("/donations")}
+              className="mt-auto"
+            >
+              Donate
+            </Button>
+          </div>
+          <div className="flex flex-col items-start p-6 border rounded-xl min-h-[220px]">
             <div className="mb-4 text-2xl">🤝</div>
             <h3 className="mb-1 font-semibold">Volunteer</h3>
             <p className="mb-2 text-sm">
               Join our team of passionate volunteers and make a direct impact in
               your community through events, outreach, and support.
             </p>
-          </Link>
-          <Link
-            href="/events/fundraising"
-            className="flex flex-col items-start bg-gray-50 p-6 border border-gray-200 rounded-xl min-h-[220px]"
-          >
+            <Button
+              variant="outline"
+              onClick={() => router.push("/events/volunteer")}
+              className="mt-auto"
+            >
+              Volunteer
+            </Button>
+          </div>
+          <div className="flex flex-col items-start p-6 border rounded-xl min-h-[220px]">
             <div className="mb-4 text-2xl">🎉</div>
             <h3 className="mb-1 font-semibold">Fundraising</h3>
             <p className="mb-2 text-sm">
               Participate in or support our fundraising campaigns to help us
               sustain and grow our mental health initiatives.
             </p>
-          </Link>
-          <Link
-            href="/events"
-            className="flex flex-col items-start bg-gray-50 p-6 border border-gray-200 rounded-xl min-h-[220px]"
-          >
+            <Button
+              variant="outline"
+              onClick={() => router.push("/events/fundraising")}
+              className="mt-auto"
+            >
+              Fundraise
+            </Button>
+          </div>
+          <div className="flex flex-col items-start p-6 border rounded-xl min-h-[220px]">
             <div className="mb-4 text-2xl">📅</div>
             <h3 className="mb-1 font-semibold">Events</h3>
             <p className="mb-2 text-sm">
               Explore upcoming and past events, workshops, and community
               gatherings to connect and get involved.
             </p>
-          </Link>
+            <Button
+              variant="outline"
+              onClick={() => router.push("/events")}
+              className="mt-auto"
+            >
+              View Events
+            </Button>
+          </div>
         </div>
       </section>
     </div>
