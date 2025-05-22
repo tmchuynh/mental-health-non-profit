@@ -1,6 +1,6 @@
 export const menuData = [
   {
-    type: "home",
+    type: "page",
     label: "Home",
     href: "/",
   },
@@ -61,26 +61,16 @@ export const menuData = [
         label: "Testimonials",
         href: "/programs-and-services/testimonials",
       },
-    ],
-  },
-  {
-    label: "More Information",
-    items: [
-      { type: "item", label: "Articles", href: "/articles" },
-      {
-        type: "item",
-        label: "Resources",
-        href: "/resources",
-      },
       { type: "separator" },
-      { type: "item", label: "Crisis Helplines", href: "/crisis-helplines" },
+      { type: "item", label: "Articles", href: "/articles" },
     ],
   },
+  { type: "page", label: "Crisis Helplines", href: "/crisis-helplines" },
 ];
 
 export const menuDataMobile = [
   {
-    type: "home",
+    type: "page",
     label: "Home",
     href: "/",
   },
@@ -116,24 +106,6 @@ export const menuDataMobile = [
           },
         ],
       },
-      {
-        type: "sub",
-        label: "More Information",
-        items: [
-          { type: "item", label: "Articles", href: "/articles" },
-          {
-            type: "item",
-            label: "Learning Resources",
-            href: "/resources",
-          },
-          { type: "separator" },
-          {
-            type: "item",
-            label: "Crisis Helplines",
-            href: "/crisis-helplines",
-          },
-        ],
-      },
     ],
   },
   {
@@ -145,6 +117,8 @@ export const menuDataMobile = [
         label: "Testimonials",
         href: "/programs-and-services/testimonials",
       },
+      { type: "separator" },
+      { type: "item", label: "Articles", href: "/articles" },
       {
         type: "sub",
         label: "Events",
@@ -163,4 +137,5 @@ export const menuDataMobile = [
       },
     ],
   },
+  { type: "page", label: "Crisis Helplines", href: "/crisis-helplines" },
 ];
