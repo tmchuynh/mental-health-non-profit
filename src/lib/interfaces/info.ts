@@ -45,6 +45,15 @@ export interface StaffMember {
 export interface StaffCategory {
   category: string;
   team: StaffMember[];
+  quotes?: StaffQuote[];
+  introduction?: string;
+}
+
+export interface StaffQuote {
+  name: string;
+  title: string;
+  text: string;
+  image: string;
 }
 
 export interface Partner {

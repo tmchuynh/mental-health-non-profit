@@ -29,6 +29,20 @@ export const staffDirectory: StaffCategory[] = [
         image: "https://images.unsplash.com/photo-1614282349390-5c72f13b8457",
       },
     ],
+    quotes: [
+      {
+        text: "InnerLight Elevation empowers us to create real change in mental health. Every day, I see the impact of our work in the community.",
+        name: "Jessica Martinez",
+        title: "Executive Director",
+        image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      },
+      {
+        text: "Our trauma-informed approach ensures that every voice is heard and every story matters.",
+        name: "Dr. Samuel Chen",
+        title: "Clinical Director",
+        image: "https://images.unsplash.com/photo-1603415526960-f8fbd7e5f187",
+      },
+    ],
   },
   {
     category: "Program Team",
@@ -62,6 +76,20 @@ export const staffDirectory: StaffCategory[] = [
         title: "Men’s Mental Health Coordinator",
         bio: "Tyrell leads outreach and group programs for men, tackling stigma and offering safe spaces for emotional expression.",
         image: "https://images.unsplash.com/photo-1614282280501-67b1763df989",
+      },
+    ],
+    quotes: [
+      {
+        text: "Peer support is the heart of our mission. I’m proud to help others find hope and connection.",
+        name: "Alisha Kumar",
+        title: "Peer Support Coordinator",
+        image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      },
+      {
+        text: "Working with youth inspires me every day. Their resilience is incredible.",
+        name: "Marco Ruiz",
+        title: "Youth Outreach Specialist",
+        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
       },
     ],
   },
@@ -99,6 +127,20 @@ export const staffDirectory: StaffCategory[] = [
         image: "https://images.unsplash.com/photo-1552058544-f2b08422138a",
       },
     ],
+    quotes: [
+      {
+        text: "Supporting our volunteers and staff is key to our success. Together, we make a difference.",
+        name: "James Parker",
+        title: "Volunteer Coordinator",
+        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+      },
+      {
+        text: "Effective communication helps us reach more people and amplify our mission.",
+        name: "Tina Lee",
+        title: "Communications Manager",
+        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+      },
+    ],
   },
   {
     category: "Technology & Data",
@@ -113,6 +155,20 @@ export const staffDirectory: StaffCategory[] = [
         name: "Lara Boone",
         title: "Digital Accessibility Specialist",
         bio: "Lara evaluates and enhances all digital experiences for accessibility, ensuring inclusivity in all online resources and tools.",
+        image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+      },
+    ],
+    quotes: [
+      {
+        text: "Data-driven insights help us improve outcomes for everyone we serve.",
+        name: "Ethan Kim",
+        title: "IT & Data Analyst",
+        image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      },
+      {
+        text: "Accessibility is at the core of our digital work. Everyone deserves access to mental health resources.",
+        name: "Lara Boone",
+        title: "Digital Accessibility Specialist",
         image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
       },
     ],
