@@ -52,7 +52,7 @@ export default function ProgramsAndServices() {
         </div>
       </div>
 
-      <div className="mx-auto mt-16 sm:mt-20 lg:mt-24 max-w-2xl lg:max-w-none">
+      <div className="mx-auto mt-4 sm:mt-8 lg:mt-12">
         <dl className="gap-x-8 gap-y-16 grid grid-cols-1 lg:grid-cols-3 max-w-xl lg:max-w-none">
           {highlights.map((feature) => (
             <div key={feature.name} className="flex flex-col">
@@ -71,7 +71,7 @@ export default function ProgramsAndServices() {
         </dl>
       </div>
 
-      <section className="mt-6">
+      <section className="mt-12">
         <div className="gap-5 grid lg:grid-cols-2">
           {serviceCategories.map((event) => (
             <ServiceCategoryCard key={event.name} category={event} />
