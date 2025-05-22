@@ -66,38 +66,33 @@ export function MenuBarNav() {
   const router = useRouter();
   const isSmallScreen = useSmallScreen();
 
-  // Helper to render the Home button if present
-  function renderHomeButton(menu: any) {
+  // Helper to render a menu entry (page or dropdown)
+  function renderMenu(menu: any, idx: number) {
+    if (menu.type === "page") {
+      return (
+        <MenubarMenu key={menu.label}>
+          <MenubarTrigger onClick={() => router.push(menu.href)}>
+            {menu.label}
+          </MenubarTrigger>
+        </MenubarMenu>
+      );
+    }
+    // Dropdown menu
     return (
-      <MenubarMenu key="home">
-        <MenubarTrigger onClick={() => router.push(menu.href)}>
-          {menu.label}
-        </MenubarTrigger>
+      <MenubarMenu key={menu.label || idx}>
+        <MenubarTrigger>{menu.label}</MenubarTrigger>
+        <MenubarContent>
+          {renderMenuItems(menu.items || [], router, isSmallScreen)}
+        </MenubarContent>
       </MenubarMenu>
     );
   }
 
-  // Split out home button and the rest
   const menus = isSmallScreen ? menuDataMobile : menuData;
-  const homeMenu = menus.find((m: any) => m.type === "home");
-  const otherMenus = menus.filter((m: any) => m.type !== "home");
-
-  console.log("isSmallScreen", isSmallScreen);
-  console.log("menus", menus);
 
   return (
     <Menubar className="relative flex justify-between items-center mx-auto my-4 w-10/12 md:w-11/12">
-      <div className="flex gap-2">
-        {homeMenu && renderHomeButton(homeMenu)}
-        {otherMenus.map((menu, idx) => (
-          <MenubarMenu key={menu.label || idx}>
-            <MenubarTrigger>{menu.label}</MenubarTrigger>
-            <MenubarContent>
-              {renderMenuItems(menu.items || [], router, isSmallScreen)}
-            </MenubarContent>
-          </MenubarMenu>
-        ))}
-      </div>
+      <div className="flex gap-2">{menus.map(renderMenu)}</div>
       <ThemeToggle />
     </Menubar>
   );
