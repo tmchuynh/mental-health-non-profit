@@ -5,6 +5,7 @@ export default function DiversityAndInclusionStatement() {
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>Diversity and Inclusion Statement</h1>
+      <h5>Embracing Diversity, Equity, and Inclusion in Mental Health Care</h5>
 
       <section>
         <div className="gap-2 grid lg:grid-cols-2">

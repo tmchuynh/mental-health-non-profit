@@ -7,7 +7,7 @@ export default function OurStaff() {
   return (
     <main className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <header>
-        <h1>Meet our team</h1>
+        <h1>Meet Our Team</h1>
         <h5>Dedicated. Passionate. Committed to making a difference.</h5>
         <p>
           Our team is a diverse group of professionals, each bringing unique
@@ -15,6 +15,14 @@ export default function OurStaff() {
           goal: to provide the best possible support and resources for mental
           health awareness and education. Together, we strive to create a
           positive impact in our community and beyond.
+        </p>
+        <p>
+          We are proud to have a team that reflects the diversity of the
+          communities we serve. Our staff members come from various backgrounds,
+          cultures, and experiences, allowing us to approach mental health care
+          with empathy and understanding. We believe that this diversity is a
+          strength that enhances our ability to connect with individuals and
+          families from all walks of life.
         </p>
       </header>
       <div className="gap-5 grid mt-7">

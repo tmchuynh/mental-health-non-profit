@@ -29,6 +29,14 @@ export default function OurPartners() {
         do what we do. Their contributions help us to provide the best possible
         care to our clients and to make a positive impact in the community.
       </p>
+      <p>
+        Our partners are a diverse group of organizations and individuals who
+        share our vision of a world where mental health is prioritized and
+        supported. They come from various sectors, including healthcare,
+        education, research, and advocacy. Together, we work to raise awareness,
+        provide resources, and create safe spaces for individuals to share their
+        experiences and find support.
+      </p>
 
       {/* Carousel of partner quotes */}
       <div className="flex justify-center my-8">
