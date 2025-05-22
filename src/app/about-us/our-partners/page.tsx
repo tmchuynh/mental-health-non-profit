@@ -27,20 +27,18 @@ export default function OurPartners() {
         individuals who share our commitment to making a positive impact in the
         community. Without the support of our partners, we would not be able to
         do what we do. Their contributions help us to provide the best possible
-        care to our clients and to make a positive impact in the community.
-      </p>
-      <p>
-        Our partners are a diverse group of organizations and individuals who
-        share our vision of a world where mental health is prioritized and
-        supported. They come from various sectors, including healthcare,
-        education, research, and advocacy. Together, we work to raise awareness,
-        provide resources, and create safe spaces for individuals to share their
+        care to our clients and to make a positive impact in the community. Our
+        partners are a diverse group of organizations and individuals who share
+        our vision of a world where mental health is prioritized and supported.
+        They come from various sectors, including healthcare, education,
+        research, and advocacy. Together, we work to raise awareness, provide
+        resources, and create safe spaces for individuals to share their
         experiences and find support.
       </p>
 
       {/* Carousel of partner quotes */}
       <div className="flex justify-center my-8">
-        <div className="flex flex-col justify-center bg-muted shadow p-6 rounded-lg w-full md:w-2/3 lg:w-1/2 h-60 md:h-52 lg:h-48 transition-all duration-500 pointer-events-none select-none">
+        <div className="flex flex-col justify-center p-6 rounded-lg w-full md:w-2/3 lg:w-1/2 h-60 md:h-52 lg:h-48 transition-all duration-500 pointer-events-none select-none">
           <blockquote className="text-center text-lg italic">
             "{partnerQuotes[current].quote}"
           </blockquote>
