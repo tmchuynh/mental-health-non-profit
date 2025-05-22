@@ -187,6 +187,61 @@ export default function Donations() {
           );
         })}
       </section>
+      {/* FAQ Section */}
+      <section className="mt-14 mb-10 max-w-3xl">
+        <h2 className="mb-4 font-semibold text-2xl">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-6">
+          <div>
+            <h4 className="mb-1 font-bold">How are my donations used?</h4>
+            <p>
+              100% of your donation goes directly to the mental health charity
+              you select. We do not take any fees from your contribution. Each
+              organization uses the funds to support their programs, outreach,
+              and services for mental health awareness and support.
+            </p>
+          </div>
+          <div>
+            <h4 className="mb-1 font-bold">
+              Can I choose which charity receives my donation?
+            </h4>
+            <p>
+              Yes! You can select from our list of supported mental health
+              charities and donate to the one you care about most. Each donation
+              is tracked and sent to the designated organization.
+            </p>
+          </div>
+          <div>
+            <h4 className="mb-1 font-bold">Is my donation tax-deductible?</h4>
+            <p>
+              Donations made through our platform are typically tax-deductible,
+              but we recommend consulting with your tax advisor or the charity
+              directly for official documentation and eligibility.
+            </p>
+          </div>
+          <div>
+            <h4 className="mb-1 font-bold">
+              How do I know my donation reached the charity?
+            </h4>
+            <p>
+              We provide confirmation of your donation and work closely with our
+              partner charities to ensure all funds are delivered securely. For
+              additional assurance, you may contact the charity directly using
+              the information provided on their website.
+            </p>
+          </div>
+          <div>
+            <h4 className="mb-1 font-bold">
+              Can I get a receipt for my donation?
+            </h4>
+            <p>
+              Yes, after completing your donation, you will receive a receipt
+              via email. This can be used for your records or for tax purposes.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
