@@ -57,6 +57,7 @@ export default function Home() {
         </div>
       </Container>
       <Photos />
+
       <main className="mx-auto pb-24 lg:pb-32 w-10/12 md:w-11/12">
         <div className="gap-5 xl:gap-8 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-7 mt-20 h-full">
           <section className="gap-6 grid lg:grid-cols-2 lg:col-span-2 2xl:col-span-5">
