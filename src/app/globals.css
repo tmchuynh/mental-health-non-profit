@@ -198,12 +198,3 @@
     @apply py-1 text-pretty;
   }
 }
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
