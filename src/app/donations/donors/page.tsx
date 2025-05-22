@@ -1,9 +1,41 @@
+"use client";
+
+import { buttonVariants } from "@/components/ui/button";
 import { featuredDonors } from "@/lib/constants/about/donors";
+import { cn } from "@/lib/utils";
 import { groupAndSortByProperties } from "@/lib/utils/sort";
+import { CheckIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Donors() {
-  const sortedDonors = groupAndSortByProperties(featuredDonors, "type", "name");
+  const donorTypes = Array.from(
+    new Set(featuredDonors.map((donor) => donor.type))
+  ).sort();
+
+  // Multiple selection, empty = all types
+  const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+
+  const handleToggle = (type: string) => {
+    if (selectedTypes.includes(type)) {
+      setSelectedTypes(selectedTypes.filter((t) => t !== type));
+    } else {
+      setSelectedTypes([...selectedTypes, type]);
+    }
+  };
+
+  const handleAll = () => {
+    setSelectedTypes([]);
+  };
+
+  // Filter donors by selected types (empty = all)
+  const filteredDonors =
+    selectedTypes.length === 0
+      ? featuredDonors
+      : featuredDonors.filter((donor) => selectedTypes.includes(donor.type));
+
+  const sortedDonors = groupAndSortByProperties(filteredDonors, "type", "name");
+
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>Our Valued Donors</h1>
@@ -37,6 +69,40 @@ export default function Donors() {
         We honor and celebrate these champions of mental health—partners who
         believe in the power of hope, resilience, and collective healing.
       </p>
+
+      {/* Filter Button Group */}
+      <div className="flex flex-wrap items-center gap-2 my-6">
+        <button
+          type="button"
+          onClick={handleAll}
+          className={cn(
+            "px-3 py-1 rounded border font-medium",
+            buttonVariants({
+              variant: selectedTypes.length === 0 ? "secondary" : "outline",
+            })
+          )}
+          aria-pressed={selectedTypes.length === 0}
+        >
+          All types
+        </button>
+        {donorTypes.map((type) => (
+          <button
+            key={type}
+            type="button"
+            onClick={() => handleToggle(type)}
+            className={cn(
+              "px-3 py-1 rounded border font-medium flex items-center gap-2",
+              buttonVariants({
+                variant: selectedTypes.includes(type) ? "secondary" : "outline",
+              })
+            )}
+            aria-pressed={selectedTypes.includes(type)}
+          >
+            {selectedTypes.includes(type) && <CheckIcon className="size-4" />}
+            {type}
+          </button>
+        ))}
+      </div>
 
       <section>
         <ul
