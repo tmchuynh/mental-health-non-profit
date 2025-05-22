@@ -21,6 +21,11 @@ export const categorizedPartners: PartnerCategory[] = [
         description:
           "A grassroots policy initiative that supports marginalized voices in shaping local health systems. We partner for joint town halls and public forums.",
       },
+      {
+        name: "Wellness Advocates",
+        description:
+          "A nonprofit organization that advocates for mental health policy reform and increased funding for mental health services. They work to raise awareness about mental health issues and promote access to care.",
+      },
     ],
   },
   {
@@ -42,6 +47,11 @@ export const categorizedPartners: PartnerCategory[] = [
         name: "WellBeing Trust",
         description:
           "A national foundation focused on mental, social, and spiritual health. Their strategic investments helped us launch our teen crisis outreach in 2023.",
+      },
+      {
+        name: "Together We Rise",
+        description:
+          "A nonprofit organization dedicated to improving mental health access for underserved communities. They provide funding for our outreach programs and community events.",
       },
     ],
   },
@@ -97,6 +107,11 @@ export const categorizedPartners: PartnerCategory[] = [
         description:
           "Partners with us to provide psychiatric consultations and medication management for underserved populations.",
       },
+      {
+        name: "United Supporters",
+        description:
+          "A nonprofit organization that provides mental health services to underserved communities. They offer free counseling and support groups for individuals in need.",
+      },
     ],
   },
   {
@@ -123,6 +138,11 @@ export const categorizedPartners: PartnerCategory[] = [
         name: "HealthyMinds HR Consulting",
         description:
           "Collaborates with us to deliver mental health first aid training and resilience seminars for corporate leaders.",
+      },
+      {
+        name: "Helping Hands Network",
+        description:
+          "A nonprofit organization that provides mental health resources and support to employees in the workplace. They offer training and workshops to promote mental wellness.",
       },
     ],
   },
@@ -211,5 +231,48 @@ export const categorizedPartners: PartnerCategory[] = [
           "A volunteer network offering in-person crisis stabilization and follow-up support for families and youth.",
       },
     ],
+  },
+];
+
+export const partnerQuotes = [
+  {
+    quote:
+      "Partnering with this organization has allowed us to reach more people and make a real difference.",
+    partner: "Mindful Schools Initiative",
+  },
+  {
+    quote:
+      "We love what this company stands for and are proud to support their mission.",
+    partner: "WellBeing Trust",
+  },
+  {
+    quote:
+      "Their dedication to mental health awareness is inspiring and aligns perfectly with our values. It really is a win-win partnership.",
+    partner: "Rapid Response Peer Network",
+  },
+  {
+    quote:
+      "We have seen firsthand the positive impact this partnership brings to those in need.",
+    partner: "Helping Hands Network",
+  },
+  {
+    quote:
+      "It’s a privilege to work alongside such a passionate and effective team. We are excited to see what the future holds.",
+    partner: "Wellness Advocates",
+  },
+  {
+    quote:
+      "Our collaboration has opened new doors for community outreach and support. We are excited to see where this partnership takes us.",
+    partner: "United Supporters",
+  },
+  {
+    quote:
+      "This partnership is a testament to what can be achieved when we work together. We are proud to be part of this initiative.",
+    partner: "Together We Rise",
+  },
+  {
+    quote:
+      "We are grateful for the opportunity to support their important work in the community. They are making a real difference.",
+    partner: "Black Faith Leaders for Wellness",
   },
 ];

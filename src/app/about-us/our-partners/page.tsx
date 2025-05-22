@@ -1,7 +1,23 @@
+"use client";
+
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
-import { categorizedPartners } from "@/lib/constants/about/partners";
+import {
+  categorizedPartners,
+  partnerQuotes,
+} from "@/lib/constants/about/partners";
+import { useEffect, useState } from "react";
 
 export default function OurPartners() {
+  // Carousel state
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % partnerQuotes.length);
+    }, 4000); // 4 seconds per quote
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>Our Partners</h1>
@@ -13,6 +29,18 @@ export default function OurPartners() {
         do what we do. Their contributions help us to provide the best possible
         care to our clients and to make a positive impact in the community.
       </p>
+
+      {/* Carousel of partner quotes */}
+      <div className="flex justify-center my-8">
+        <div className="flex flex-col justify-center bg-muted shadow p-6 rounded-lg w-full md:w-2/3 lg:w-1/2 h-60 md:h-52 lg:h-48 transition-all duration-500 pointer-events-none select-none">
+          <blockquote className="text-center text-lg italic">
+            "{partnerQuotes[current].quote}"
+          </blockquote>
+          <div className="text-right mt-4 font-semibold">
+            – {partnerQuotes[current].partner}
+          </div>
+        </div>
+      </div>
 
       <section className="flex flex-col gap-5 mt-7">
         {categorizedPartners.map((category, index) => (
