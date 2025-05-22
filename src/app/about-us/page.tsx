@@ -1,4 +1,13 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { serviceCategories } from "@/lib/constants/serviceCategories";
+import { formatIDToUrl } from "@/lib/utils/format";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 export default function AboutUs() {
+  const router = useRouter();
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
       <h1>About InnerLight Elevation</h1>
@@ -65,32 +74,7 @@ export default function AboutUs() {
         </p>
       </section>
 
-      <section className="mt-5">
-        <h2>Our Vision</h2>
-        <p>
-          InnerLight Elevation envisions a world where mental wellness is
-          recognized as a fundamental human right, accessible to all individuals
-          regardless of their background or circumstances. We strive to create
-          inclusive communities that celebrate diversity, promote understanding,
-          and empower individuals to embrace their unique journeys toward
-          healing.
-        </p>
-        <p>
-          Our vision is rooted in the belief that every person possesses an
-          inherent light within them—a source of strength, resilience, and hope.
-          By fostering environments that nurture this inner light, we aim to
-          cultivate a society where mental health is prioritized, stigma is
-          dismantled, and collective healing becomes a shared reality. We strive
-          to be a catalyst for systemic transformation—advocating for policy
-          changes, building partnerships, and empowering individuals to become
-          advocates themselves. Our vision is one of collective healing, where
-          communities thrive through compassion, education, and unwavering
-          support, illuminating the path toward mental wellness for generations
-          to come.
-        </p>
-      </section>
-
-      <section className="gap-6 grid lg:grid-cols-8 my-12">
+      <section className="gap-6 grid lg:grid-cols-8 my-5">
         <h2 className="lg:col-span-2 mb-6">What Makes Us Different</h2>
         <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:col-span-6">
           <div className="flex flex-col gap-6">
@@ -136,6 +120,111 @@ export default function AboutUs() {
               identities.
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="mb-2 font-bold text-xl">Programs & Services</h2>
+        <hr className="mb-6" />
+        <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          {serviceCategories.map((category) => (
+            <div
+              key={category.name}
+              className="flex flex-col justify-between h-full"
+            >
+              <div className="h-full">
+                <h3 className="mb-1 font-semibold">{category.name}</h3>
+                <p className="mb-2 text-sm">{category.description}</p>
+              </div>
+              <Button
+                variant={"outline"}
+                onClick={() =>
+                  router.push(
+                    `/programs-and-services/${formatIDToUrl(category.name)}`
+                  )
+                }
+              >
+                View Programs
+              </Button>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-12">
+        <h2>Our Vision</h2>
+        <p>
+          InnerLight Elevation envisions a world where mental wellness is
+          recognized as a fundamental human right, accessible to all individuals
+          regardless of their background or circumstances. We strive to create
+          inclusive communities that celebrate diversity, promote understanding,
+          and empower individuals to embrace their unique journeys toward
+          healing.
+        </p>
+        <p>
+          Our vision is rooted in the belief that every person possesses an
+          inherent light within them—a source of strength, resilience, and hope.
+          By fostering environments that nurture this inner light, we aim to
+          cultivate a society where mental health is prioritized, stigma is
+          dismantled, and collective healing becomes a shared reality. We strive
+          to be a catalyst for systemic transformation—advocating for policy
+          changes, building partnerships, and empowering individuals to become
+          advocates themselves. Our vision is one of collective healing, where
+          communities thrive through compassion, education, and unwavering
+          support, illuminating the path toward mental wellness for generations
+          to come.
+        </p>
+      </section>
+
+      {/* Resources Section */}
+      <section className="mt-16">
+        <h2 className="mb-2 font-bold text-xl">Get Involved</h2>
+        <hr className="mb-6" />
+        <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <Link
+            href="/donations"
+            className="flex flex-col items-start bg-gray-50 p-6 border border-gray-200 rounded-xl min-h-[220px]"
+          >
+            <div className="mb-4 text-2xl">💖</div>
+            <h3 className="mb-1 font-semibold">Donate</h3>
+            <p className="mb-2 text-sm">
+              Support our mission by making a donation. Every contribution helps
+              us expand mental health programs and reach more people in need.
+            </p>
+          </Link>
+          <Link
+            href="/events/volunteer"
+            className="flex flex-col items-start bg-gray-50 p-6 border border-gray-200 rounded-xl min-h-[220px]"
+          >
+            <div className="mb-4 text-2xl">🤝</div>
+            <h3 className="mb-1 font-semibold">Volunteer</h3>
+            <p className="mb-2 text-sm">
+              Join our team of passionate volunteers and make a direct impact in
+              your community through events, outreach, and support.
+            </p>
+          </Link>
+          <Link
+            href="/events/fundraising"
+            className="flex flex-col items-start bg-gray-50 p-6 border border-gray-200 rounded-xl min-h-[220px]"
+          >
+            <div className="mb-4 text-2xl">🎉</div>
+            <h3 className="mb-1 font-semibold">Fundraising</h3>
+            <p className="mb-2 text-sm">
+              Participate in or support our fundraising campaigns to help us
+              sustain and grow our mental health initiatives.
+            </p>
+          </Link>
+          <Link
+            href="/events"
+            className="flex flex-col items-start bg-gray-50 p-6 border border-gray-200 rounded-xl min-h-[220px]"
+          >
+            <div className="mb-4 text-2xl">📅</div>
+            <h3 className="mb-1 font-semibold">Events</h3>
+            <p className="mb-2 text-sm">
+              Explore upcoming and past events, workshops, and community
+              gatherings to connect and get involved.
+            </p>
+          </Link>
         </div>
       </section>
     </div>
