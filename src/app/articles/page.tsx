@@ -10,7 +10,7 @@ import {
 import { CheckIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -309,7 +309,8 @@ function Posts({
   );
 }
 
-export default function Blog() {
+// Create a client component that uses useSearchParams
+function BlogContent() {
   const searchParamsHook = useSearchParams();
   const router = useRouter();
 
@@ -336,16 +337,16 @@ export default function Blog() {
     }
     router.replace(`/articles?${params.toString()}`);
     setResetPageSignal((s) => s + 1);
-  }, [categories]);
+  }, [categories, router, searchParamsHook]);
 
   return (
-    <main className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
+    <>
       <h1 className="max-w-3xl">
         Understanding the Mind, One Article at a Time
       </h1>
       <h5>Mental health, explained with clarity and care</h5>
       <p>
-        Mental health is personal, complex, and deeply human. That’s why we’ve
+        Mental health is personal, complex, and deeply human. That's why we've
         created a space where clarity, empathy, and science come together.
         Whether you're seeking to understand your own experiences, support
         someone you care about, or deepen your knowledge as a professional, our
@@ -360,6 +361,16 @@ export default function Blog() {
         <Categories selected={categories} onChange={setCategories} />
         <Posts categories={categories} resetPageSignal={resetPageSignal} />
       </section>
+    </>
+  );
+}
+
+export default function Blog() {
+  return (
+    <main className="mx-auto pt-3 md:pt-5 lg:pt-9 w-10/12 md:w-11/12">
+      <Suspense fallback={<div>Loading...</div>}>
+        <BlogContent />
+      </Suspense>
     </main>
   );
 }
